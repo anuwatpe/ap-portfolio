@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuwat Pengput | Academic Portfolio</title>
+    
+    <!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- นำเข้า FontAwesome สำหรับไอคอนต่างๆ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- นำเข้า Tailwind CSS ผ่าน CDN (เหมาะสำหรับโปรเจกต์หน้าเดียวและ GitHub Pages) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ตั้งค่าฟอนต์และสีหลักใน Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // slate-900
+                        secondary: '#475569', // slate-600
+                        accent: '#2563eb', // blue-600
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS สำหรับจัดการแอนิเมชันเวลาเลื่อนหน้าจอ -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* คลาสเริ่มต้นสำหรับแอนิเมชัน (ซ่อนและเลื่อนลงมานิดหน่อย) */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+
+        /* คลาสที่จะถูกเติมเข้าไปเมื่อเลื่อนหน้าจอมาถึง (แสดงผลและกลับตำแหน่งเดิม) */
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* ตกแต่ง Scrollbar ให้ดูเรียบหรู */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed selection:bg-accent selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-primary">AP.</a>
+            
+            <!-- เมนูสำหรับหน้าจอ Desktop -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
+                <a href="#about" class="hover:text-accent transition-colors">About</a>
+                <a href="#experience" class="hover:text-accent transition-colors">Experience</a>
+                <a href="#education" class="hover:text-accent transition-colors">Education</a>
+                <a href="#publications" class="hover:text-accent transition-colors">Publications</a>
+                <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
+            </div>
+
+            <!-- ปุ่มเมนูสำหรับหน้าจอ Mobile -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-primary focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- เมนูสำหรับหน้าจอ Mobile (ซ่อนไว้เป็นค่าเริ่มต้น) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full">
+            <a href="#about" class="text-secondary hover:text-accent font-medium mobile-link">About</a>
+            <a href="#experience" class="text-secondary hover:text-accent font-medium mobile-link">Experience</a>
+            <a href="#education" class="text-secondary hover:text-accent font-medium mobile-link">Education</a>
+            <a href="#publications" class="text-secondary hover:text-accent font-medium mobile-link">Publications</a>
+            <a href="#skills" class="text-secondary hover:text-accent font-medium mobile-link">Skills</a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="pt-40 pb-20 px-6 max-w-6xl mx-auto min-h-[85vh] flex flex-col justify-center">
+        <div class="fade-in-section">
+            <h2 class="text-accent font-semibold tracking-wider uppercase text-sm mb-4">Academic Portfolio</h2>
+            <h1 class="text-5xl md:text-7xl font-bold text-primary tracking-tight mb-6 leading-tight">
+                Anuwat Pengput<span class="text-accent">.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-secondary max-w-3xl font-light mb-10 leading-relaxed">
+                Lecturer & Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology.
+            </p>
+            
+            <!-- ข้อมูลติดต่อด่วน -->
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-secondary mb-12">
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-envelope text-accent"></i>
+                    <a href="mailto:anuwat@scphkk.ac.th" class="hover:text-accent transition-colors">anuwat@scphkk.ac.th</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-accent"></i>
+                    <span>Khon Kaen, Thailand</span>
+                </div>
+            </div>
+
+            <!-- ลิงก์ Social / Profiles -->
+            <div class="flex gap-6">
+                <a href="#" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2] transition-all duration-300">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#4285F4] hover:text-white hover:border-[#4285F4] transition-all duration-300">
+                    <i class="fa-brands fa-google text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#00CCBB] hover:text-white hover:border-[#00CCBB] transition-all duration-300">
+                    <i class="fa-brands fa-researchgate text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: About / Current Position -->
+    <section id="about" class="py-24 bg-white px-6">
+        <div class="max-w-4xl mx-auto fade-in-section">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="h-px bg-slate-300 flex-1"></div>
+                <h3 class="text-3xl font-bold text-primary">Current Affiliation</h3>
+                <div class="h-px bg-slate-300 flex-1"></div>
+            </div>
+            
+            <div class="bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <h4 class="text-2xl font-semibold text-primary mb-2">Lecturer</h4>
+                <p class="text-accent font-medium mb-6">Sirindhorn College of Public Health Khon Kaen</p>
+                <p class="text-secondary leading-relaxed mb-4">
+                    Faculty of Public Health and Allied Health Sciences, Praboromarajchanok Institute, Ministry of Public Health.
+                </p>
+                <div class="pt-6 border-t border-slate-200 mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <span class="block text-sm text-slate-500 mb-1">Teaching Areas</span>
+                        <span class="text-primary font-medium">Digital Literacy, Computer in Community Health</span>
+                    </div>
+                    <div>
+                        <span class="block text-sm text-slate-500 mb-1">Research Focus</span>
+                        <span class="text-primary font-medium">Biomedical Informatics, Epidemiology, Public Health</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Experience -->
+    <section id="experience" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold text-primary mb-16 fade-in-section">Professional Experience</h3>
+            
+            <div class="relative border-l border-slate-300 ml-3 md:ml-6 space-y-12">
+                <!-- ข้อมูลประสบการณ์ทำงานแต่ละบล็อก -->
+                
+                <div class="relative pl-8 md:pl-12 fade-in-section">
+                    <div class="absolute w-4 h-4 bg-accent rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+                    <span class="text-sm font-semibold tracking-wider text-accent uppercase">Oct 2023 - Present</span>
+                    <h4 class="text-xl font-bold text-primary mt-2">Lecturer</h4>
+                    <p class="text-secondary mt-1 font-medium">Sirindhorn College of Public Health, Khon Kaen, Thailand</p>
+                    <p class="text-slate-500 mt-3 text-sm leading-relaxed">
+                        Department of Community Public Health. Teaching undergraduate courses including Digital Literacy, Computer in Community Health, and Lifestyles and Exercises for Health.
+                    </p>
+                </div>
+
+                <div class="relative pl-8 md:pl-12 fade-in-section">
+                    <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+                    <span class="text-sm font-semibold tracking-wider text-slate-500 uppercase">Apr 2017 - Oct 2023</span>
+                    <h4 class="text-xl font-bold text-primary mt-2">Public Health Technical Officer</h4>
+                    <p class="text-secondary mt-1 font-medium">Huaimek District Public Health Office, Ministry of Public Health, Kalasin</p>
+                    <p class="text-slate-500 mt-3 text-sm leading-relaxed">
+                        Key responsibilities included research project development and management, public health policy and strategy, and public health administration.
+                    </p>
+                </div>
+
+                <div class="relative pl-8 md:pl-12 fade-in-section">
+                    <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+                    <span class="text-sm font-semibold tracking-wider text-slate-500 uppercase">Apr 2009 - Apr 2017</span>
+                    <h4 class="text-xl font-bold text-primary mt-2">Public Health Officer / Technical Officer</h4>
+                    <p class="text-secondary mt-1 font-medium">Songpluaey Sub-District Health Promotion Hospital, Kalasin</p>
+                    <p class="text-slate-500 mt-3 text-sm leading-relaxed">
+                        Responsible for basic medical services, disease prevention, epidemiology, health promotion, health information systems, and research project management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Education -->
+    <section id="education" class="py-24 px-6 bg-white border-y border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold text-primary mb-16 fade-in-section">Education</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education Item 1 -->
+                <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent shadow-sm mb-6">
+                        <i class="fa-solid fa-graduation-cap text-xl"></i>
+                    </div>
+                    <span class="text-sm font-bold text-accent mb-2 block">June 2024</span>
+                    <h4 class="text-xl font-bold text-primary mb-2">Ph.D. in Biomedical Informatics</h4>
+                    <p class="text-secondary text-sm mb-4">University at Buffalo, State University of New York, USA</p>
+                    <p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
+                        <span class="font-semibold text-slate-700">Dissertation:</span> Development and Use of Cholangiocarcinoma Ontology for Analysis of Risk Factors in a Research Cohort in Thailand.
+                    </p>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent shadow-sm mb-6">
+                        <i class="fa-solid fa-graduation-cap text-xl"></i>
+                    </div>
+                    <span class="text-sm font-bold text-accent mb-2 block">June 2020</span>
+                    <h4 class="text-xl font-bold text-primary mb-2">M.S. in Biomedical Informatics</h4>
+                    <p class="text-secondary text-sm mb-4">University at Buffalo, State University of New York, USA</p>
+                    <p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
+                        <span class="font-semibold text-slate-700">Master Project:</span> Spatial Epidemiological Analysis and Geographical Information System of Opioid Overdoses in New York State.
+                    </p>
+                </div>
+
+                <!-- Education Item 3 -->
+                <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-500 shadow-sm mb-6">
+                        <i class="fa-solid fa-book text-xl"></i>
+                    </div>
+                    <span class="text-sm font-bold text-slate-500 mb-2 block">April 2016</span>
+                    <h4 class="text-xl font-bold text-primary mb-2">Master of Public Health (Biostatistics)</h4>
+                    <p class="text-secondary text-sm mb-4">Khon Kaen University, Thailand</p>
+                    <p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
+                        <span class="font-semibold text-slate-700">Thesis:</span> Quality of Published Randomized Controlled Trials (RCTs) in Thai Healthcare Journals.
+                    </p>
+                </div>
+
+                <!-- Education Item 4 -->
+                <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-500 shadow-sm mb-6">
+                        <i class="fa-solid fa-award text-xl"></i>
+                    </div>
+                    <span class="text-sm font-bold text-slate-500 mb-2 block">August 2011</span>
+                    <h4 class="text-xl font-bold text-primary mb-2">Bachelor of Public Health</h4>
+                    <p class="text-secondary text-sm">Khon Kaen University, Thailand</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Publications (Selected) -->
+    <section id="publications" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-between items-end mb-12 fade-in-section">
+                <h3 class="text-3xl font-bold text-primary">Selected Publications</h3>
+                <a href="#" class="text-accent hover:underline text-sm font-medium flex items-center gap-1">
+                    View Google Scholar <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- คัดเลือก Paper ที่โดดเด่นมานำเสนอ คุณสามารถเพิ่มตามแพทเทิร์นนี้ได้เลย -->
+                
+                <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
+                    <div class="flex flex-col md:flex-row gap-4 justify-between">
+                        <div>
+                            <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                                Ontology development and use for cholangiocarcinoma risk factors and predictions
+                            </h4>
+                            <p class="text-secondary text-sm mb-3">
+                                <span class="font-semibold">Pengput, A.</span>, Diehl, A.
+                            </p>
+                            <p class="text-slate-500 text-sm italic">
+                                J Biomed Semant 17, 2 (2026).
+                            </p>
+                        </div>
+                        <div class="shrink-0 pt-1">
+                            <a href="https://doi.org/10.1186/s13326-025-00345-2" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors">
+                                DOI <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
+                    <div class="flex flex-col md:flex-row gap-4 justify-between">
+                        <div>
+                            <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                                Quality of Reporting of Randomized Controlled Trials of Top 10 Herbs Prescribed in Thailand
+                            </h4>
+                            <p class="text-secondary text-sm mb-3">
+                                <span class="font-semibold">Pengput, A.</span>, Sucharit, C., Nopsopon, T., Sungthong, B., Pongpirul, K.
+                            </p>
+                            <p class="text-slate-500 text-sm italic">
+                                Journal of Herbal Medicine. Volume 41 (2023).
+                            </p>
+                        </div>
+                        <div class="shrink-0 pt-1">
+                            <a href="https://doi.org/10.1016/j.hermed.2023.100739" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors">
+                                DOI <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
+                    <div class="flex flex-col md:flex-row gap-4 justify-between">
+                        <div>
+                            <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                                Telemedicine in Southeast Asia: A Systematic Review
+                            </h4>
+                            <p class="text-secondary text-sm mb-3">
+                                <span class="font-semibold">Pengput, A.</span>, and Schwartz G., D.
+                            </p>
+                            <p class="text-slate-500 text-sm italic">
+                                Telemedicine and e-Health. Dec;28(12):1711-1733 (2022).
+                            </p>
+                        </div>
+                        <div class="shrink-0 pt-1">
+                            <a href="https://doi.org/10.1089/tmj.2021.0516" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors">
+                                DOI <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Skills & Tools -->
+    <section id="skills" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold text-primary mb-12 text-center fade-in-section">Technical Skills</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <div class="fade-in-section">
+                    <h4 class="flex items-center gap-3 text-lg font-bold text-primary mb-6 border-b border-slate-100 pb-3">
+                        <i class="fa-solid fa-laptop-code text-accent"></i> Programming & Databases
+                    </h4>
+                    <div class="flex flex-wrap gap-3">
+                        <!-- Skill Tags -->
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">R</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Python</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">SQL</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Prolog</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">SPARQL</span>
+                    </div>
+                </div>
+
+                <div class="fade-in-section">
+                    <h4 class="flex items-center gap-3 text-lg font-bold text-primary mb-6 border-b border-slate-100 pb-3">
+                        <i class="fa-solid fa-chart-pie text-accent"></i> Analytical & Research Tools
+                    </h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">SAS</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">STATA</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">SPSS</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">Protégé Ontology Editor</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">QGIS / ArcGIS</span>
+                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">RevMAN / Covidence</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-slate-400 py-12 text-center border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="mb-4">&copy; 2026 Anuwat Pengput. All rights reserved.</p>
+            <p class="text-sm">Built for GitHub Pages with HTML & Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript สำหรับจัดการ Interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. ระบบ Mobile Menu Toggle
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const icon = btn.querySelector('i');
+
+            function toggleMenu() {
+                menu.classList.toggle('hidden');
+                if (menu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                }
+            }
+
+            btn.addEventListener('click', toggleMenu);
+            
+            // ปิดเมนูเมื่อคลิกลิงก์ (สำหรับมือถือ)
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!menu.classList.contains('hidden')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            // 2. แอนิเมชัน Fade-in เมื่อ Scroll
+            // ใช้ Intersection Observer API ซึ่งกินทรัพยากรน้อยกว่าการผูก Event scroll โดยตรง
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15 // ทำงานเมื่อเห็น element 15%
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // เติมคลาส is-visible เพื่อให้ CSS transition ทำงาน
+                        entry.target.classList.add('is-visible');
+                        // เลิกติดตาม element นี้เมื่อแสดงแล้ว (แอนิเมชันรอบเดียว)
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // นำ observer ไปผูกกับทุก element ที่มีคลาส fade-in-section
+            document.querySelectorAll('.fade-in-section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // 3. Navbar Effect เวลาเลื่อนหน้าจอ
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    nav.classList.add('shadow-sm', 'bg-white/95');
+                    nav.classList.remove('bg-white/80');
+                } else {
+                    nav.classList.remove('shadow-sm', 'bg-white/95');
+                    nav.classList.add('bg-white/80');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
