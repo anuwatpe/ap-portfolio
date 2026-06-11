@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Academic portfolio of Anuwat Pengput, Lecturer and Researcher in Biomedical Informatics, Public Health, Epidemiology, and Biomedical Ontology." name="description"/>
+<meta content="Anuwat Pengput" name="author"/>
+<link href="https://anuwatpe.github.io/ap-portfolio/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="https://anuwatpe.github.io/ap-portfolio/" property="og:url"/>
+<meta content="Anuwat Pengput | Academic Portfolio" property="og:title"/>
+<meta content="Lecturer and Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology." property="og:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Anuwat Pengput | Academic Portfolio" name="twitter:title"/>
+<meta content="Lecturer and Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology." name="twitter:description"/>
+<meta content="#0f172a" name="theme-color"/>
+<title>Anuwat Pengput | Lectures</title>
+<!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- นำเข้า FontAwesome สำหรับไอคอนต่างๆ -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- นำเข้า Tailwind CSS ผ่าน CDN (เหมาะสำหรับโปรเจกต์หน้าเดียวและ GitHub Pages) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- ตั้งค่าฟอนต์และสีหลักใน Tailwind -->
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // slate-900
+                        secondary: '#475569', // slate-600
+                        accent: '#2563eb', // blue-600
+                    }
+                }
+            }
+        }
+    </script>
+<!-- CSS สำหรับจัดการแอนิเมชันเวลาเลื่อนหน้าจอ -->
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* คลาสเริ่มต้นสำหรับแอนิเมชัน (ซ่อนและเลื่อนลงมานิดหน่อย) */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+
+        /* คลาสที่จะถูกเติมเข้าไปเมื่อเลื่อนหน้าจอมาถึง (แสดงผลและกลับตำแหน่งเดิม) */
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* ตกแต่ง Scrollbar ให้ดูเรียบหรู */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed selection:bg-accent selection:text-white">
+<!-- Navigation Bar -->
+<nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<a class="text-xl font-bold tracking-tight text-primary" href="index.html#">AP.</a>
+<!-- เมนูสำหรับหน้าจอ Desktop -->
+<div class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
+<a class="hover:text-accent transition-colors" href="index.html#about">About</a>
+<a class="hover:text-accent transition-colors" href="index.html#experience">Experience</a>
+<a class="hover:text-accent transition-colors" href="index.html#education">Education</a>
+<a class="hover:text-accent transition-colors" href="index.html#publications">Publications</a>
+<a class="hover:text-accent transition-colors" href="index.html#teaching">Teaching</a>
+<a class="hover:text-accent transition-colors text-accent" href="#">Lectures</a>
+<a class="hover:text-accent transition-colors" href="index.html#people">People</a>
+<a class="hover:text-accent transition-colors" href="index.html#skills">Skills</a>
+</div>
+<!-- ปุ่มเมนูสำหรับหน้าจอ Mobile -->
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="md:hidden text-2xl text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4 rounded" id="mobile-menu-btn" type="button">
+<i aria-hidden="true" class="fa-solid fa-bars"></i>
+</button>
+</div>
+<!-- เมนูสำหรับหน้าจอ Mobile (ซ่อนไว้เป็นค่าเริ่มต้น) -->
+<div class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full" id="mobile-menu">
+<a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#about">About</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#experience">Experience</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#education">Education</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#publications">Publications</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#teaching">Teaching</a>
+<a class="hover:text-accent font-medium mobile-link text-accent" href="#">Lectures</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#people">People</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#skills">Skills</a>
+</div>
+</nav>
+<!-- Header / Hero Section -->
+
+<!-- Section: About / Current Position -->
+
+<!-- Section: Experience -->
+
+<!-- Section: Education -->
+
+<!-- Section: Publications (Selected) -->
+
+<!-- Section: Teaching -->
+
+<!-- Section: Guest Speaker / Expert Lectures -->
+<section class="py-24 px-6 bg-slate-50 border-y border-slate-100" id="lectures">
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
+<div>
+<span class="text-sm font-semibold tracking-wider uppercase text-accent">Guest Speaker / Expert Lectures</span>
+<h3 class="text-3xl font-bold text-primary mt-2">การไปบรรยายวิทยากร ผู้ทรงคุณวุฒิ</h3>
+</div>
+<p class="text-secondary max-w-xl text-sm leading-relaxed">
+                    Sharing knowledge and experiences on digital health, research methods, and biomedical informatics at various conferences and institutions.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="lectures-list">
+<!-- Data will be loaded from JSON -->
+</div>
+<div class="mt-10 text-center fade-in-section">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow" href="lectures.html">
+                    View All Lectures <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Section: People & Mentorship -->
+
+<!-- Section: Skills & Tools -->
+
+<!-- Footer -->
+<footer class="bg-primary text-slate-400 py-12 text-center border-t border-slate-800">
+<div class="max-w-4xl mx-auto px-6">
+<p class="mb-4">© 2026 Anuwat Pengput. All rights reserved.</p>
+<p class="text-sm">Built for GitHub Pages with HTML &amp; Tailwind CSS.</p>
+</div>
+</footer>
+<!-- JavaScript สำหรับจัดการ Interactions -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. ระบบ Mobile Menu Toggle
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const icon = btn.querySelector('i');
+
+            function toggleMenu() {
+                menu.classList.toggle('hidden');
+                if (menu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.setAttribute('aria-label', 'Open navigation menu');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.setAttribute('aria-label', 'Close navigation menu');
+                }
+            }
+
+            btn.addEventListener('click', toggleMenu);
+            
+            // ปิดเมนูเมื่อคลิกลิงก์ (สำหรับมือถือ)
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!menu.classList.contains('hidden')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            // 2. โหลดข้อมูลจาก JSON สำหรับส่วนที่ต้องอัปเดตบ่อย
+            const dataFiles = {
+                publications: 'data/publications.json',
+                teaching: 'data/teaching.json',
+                lectures: 'data/lectures.json',
+                people: 'data/people.json',
+            };
+
+            function escapeHtml(value = '') {
+                return String(value).replace(/[&<>"']/g, char => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;',
+                }[char]));
+            }
+
+            function safeUrl(value = '') {
+                const url = String(value).trim();
+                if (!url) return '';
+                return /^(https?:|mailto:)/i.test(url) ? url : '';
+            }
+
+            function safeAssetUrl(value = '') {
+                const url = String(value).trim();
+                if (!url || /^(javascript:|data:)/i.test(url) || url.startsWith('//')) return '';
+                return url;
+            }
+
+            function getInitials(name = '') {
+                const words = String(name).trim().split(/\s+/).filter(Boolean);
+                if (!words.length) return '?';
+                return words.slice(0, 2).map(word => word[0]).join('').toUpperCase();
+            }
+
+            async function loadJson(path) {
+                const response = await fetch(path, { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Unable to load ${path}`);
+                }
+                return response.json();
+            }
+
+            function renderPublications(publications = []) {
+                const container = document.getElementById('publications-list');
+                if (!container || !publications.length) return;
+
+                container.innerHTML = publications.map(publication => {
+                    const url = safeUrl(publication.url);
+                    const link = url ? `
+                        <div class="shrink-0 pt-1">
+                            <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors">
+                                ${escapeHtml(publication.label || 'Link')} <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    ` : '';
+
+                    return `
+                        <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
+                            <div class="flex flex-col md:flex-row gap-4 justify-between">
+                                <div>
+                                    <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">${escapeHtml(publication.title)}</h4>
+                                    <p class="text-secondary text-sm mb-3">${escapeHtml(publication.authors)}</p>
+                                    <p class="text-slate-500 text-sm italic">${escapeHtml(publication.venue)}</p>
+                                </div>
+                                ${link}
+                            </div>
+                        </article>
+                    `;
+                }).join('');
+            }
+
+            function renderTeaching(items = []) {
+                const container = document.getElementById('teaching-list');
+                if (!container || !items.length) return;
+
+                container.innerHTML = items.map(item => `
+                    <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+                        <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
+                            <i class="${escapeHtml(item.icon || 'fa-solid fa-book-open')}" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-primary mb-3">${escapeHtml(item.title)}</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">${escapeHtml(item.description)}</p>
+                    </article>
+                `).join('');
+            }
+
+            function renderMember(member) {
+                const profileUrl = safeUrl(member.profileUrl);
+                const imageUrl = safeAssetUrl(member.image);
+                const initials = escapeHtml(getInitials(member.name));
+                const name = escapeHtml(member.name);
+                const nameMarkup = profileUrl
+                    ? `<a href="${escapeHtml(profileUrl)}" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">${name}</a>`
+                    : name;
+                const avatar = imageUrl
+                    ? `<img src="${escapeHtml(imageUrl)}" alt="" loading="lazy" class="w-12 h-12 rounded-full object-cover border border-slate-200 bg-slate-100 shrink-0">`
+                    : `<div class="w-12 h-12 rounded-full bg-blue-50 text-accent flex items-center justify-center text-sm font-bold border border-slate-200 shrink-0">${initials}</div>`;
+                const detailRows = [
+                    member.role,
+                    member.program,
+                    member.topic,
+                    member.period,
+                ].filter(Boolean).map(item => `<p class="text-xs text-slate-500 mt-1">${escapeHtml(item)}</p>`).join('');
+
+                return `
+                    <li class="pt-4 first:pt-0 border-t first:border-t-0 border-slate-100">
+                        <div class="flex gap-3">
+                            ${avatar}
+                            <div class="min-w-0">
+                                <p class="text-sm font-semibold text-primary">${nameMarkup}</p>
+                                ${detailRows}
+                            </div>
+                        </div>
+                    </li>
+                `;
+            }
+
+            function renderPeople(groups = [], limitMembers = Infinity) {
+                const container = document.getElementById('people-groups');
+                if (!container || !groups.length) return;
+
+                container.innerHTML = groups.map(group => {
+                    const visibleMembers = (group.members || []).filter(member => member.visible !== false).slice(0, limitMembers);
+                    const body = visibleMembers.length ? `
+                        <ul class="space-y-4 pt-4 border-t border-slate-100">
+                            ${visibleMembers.map(renderMember).join('')}
+                        </ul>
+                    ` : `
+                        <div class="pt-4 border-t border-slate-100">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">${escapeHtml(group.emptyLabel || 'To update')}</span>
+                            <p class="text-sm text-primary mt-1">${escapeHtml(group.emptyText || 'Details will be added soon.')}</p>
+                        </div>
+                    `;
+
+                    return `
+                        <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
+                            <div class="flex items-center gap-3 mb-5">
+                                <div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+                                    <i class="${escapeHtml(group.icon || 'fa-solid fa-user')}" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary">${escapeHtml(group.title)}</h4>
+                                    <p class="text-xs text-slate-500">${escapeHtml(group.subtitle)}</p>
+                                </div>
+                            </div>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-5">${escapeHtml(group.description)}</p>
+                            ${body}
+                        </article>
+                    `;
+                }).join('');
+            }
+
+            function renderLectures(items = []) {
+                const container = document.getElementById('lectures-list');
+                if (!container || !items.length) return;
+
+                container.innerHTML = items.map(item => `
+                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow fade-in-section flex flex-col h-full">
+                        ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy" class="w-full h-48 object-cover border-b border-slate-100">` : ''}
+                        <div class="p-6 flex flex-col flex-1">
+                            <span class="text-xs font-bold tracking-wider text-accent uppercase mb-2 block">${escapeHtml(item.date)}</span>
+                            <h4 class="text-lg font-bold text-primary mb-2">${escapeHtml(item.title)}</h4>
+                            <p class="text-sm font-medium text-secondary mb-3">${escapeHtml(item.event)}<br><span class="font-normal text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> ${escapeHtml(item.location)}</span></p>
+                            <p class="text-slate-500 text-sm leading-relaxed mt-auto">${escapeHtml(item.description)}</p>
+                        </div>
+                    </article>
+                `).join('');
+            }
+
+            async function renderPortfolioData() {
+                try {
+                    const [publications, teaching, lectures, people] = await Promise.all([
+                        loadJson(dataFiles.publications),
+                        loadJson(dataFiles.teaching),
+                        loadJson(dataFiles.lectures),
+                        loadJson(dataFiles.people),
+                    ]);
+
+                    
+                    
+                    
+                    
+                    renderLectures(lectures);
+                } catch (error) {
+                    console.warn('Using embedded fallback content because JSON data could not be loaded.', error);
+                }
+            }
+
+            // 3. แอนิเมชัน Fade-in เมื่อ Scroll
+            // ใช้ Intersection Observer API ซึ่งกินทรัพยากรน้อยกว่าการผูก Event scroll โดยตรง
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15 // ทำงานเมื่อเห็น element 15%
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // เติมคลาส is-visible เพื่อให้ CSS transition ทำงาน
+                        entry.target.classList.add('is-visible');
+                        // เลิกติดตาม element นี้เมื่อแสดงแล้ว (แอนิเมชันรอบเดียว)
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // นำ observer ไปผูกกับทุก element ที่มีคลาส fade-in-section
+            function observeFadeInSections() {
+                document.querySelectorAll('.fade-in-section').forEach(section => {
+                    observer.observe(section);
+                });
+            }
+
+            renderPortfolioData().finally(observeFadeInSections);
+
+            // 4. Navbar Effect เวลาเลื่อนหน้าจอ
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    nav.classList.add('shadow-sm', 'bg-white/95');
+                    nav.classList.remove('bg-white/80');
+                } else {
+                    nav.classList.remove('shadow-sm', 'bg-white/95');
+                    nav.classList.add('bg-white/80');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
