@@ -92,6 +92,7 @@
             <!-- เมนูสำหรับหน้าจอ Desktop -->
             <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
                 <a href="#about" class="hover:text-accent transition-colors">About</a>
+                <a href="#news" class="hover:text-accent transition-colors">News</a>
                 <a href="#experience" class="hover:text-accent transition-colors">Experience</a>
                 <a href="#education" class="hover:text-accent transition-colors">Education</a>
                 <a href="#publications" class="hover:text-accent transition-colors">Publications</a>
@@ -110,6 +111,7 @@
         <!-- เมนูสำหรับหน้าจอ Mobile (ซ่อนไว้เป็นค่าเริ่มต้น) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full">
             <a href="#about" class="text-secondary hover:text-accent font-medium mobile-link">About</a>
+            <a href="#news" class="text-secondary hover:text-accent font-medium mobile-link">News</a>
             <a href="#experience" class="text-secondary hover:text-accent font-medium mobile-link">Experience</a>
             <a href="#education" class="text-secondary hover:text-accent font-medium mobile-link">Education</a>
             <a href="#publications" class="text-secondary hover:text-accent font-medium mobile-link">Publications</a>
@@ -201,6 +203,31 @@
                         <span class="text-primary font-medium">Biomedical Informatics, Epidemiology, Public Health</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: News & Activities -->
+    <section id="news" class="py-24 px-6 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
+                <div>
+                    <span class="text-sm font-semibold tracking-wider uppercase text-accent">Latest Updates</span>
+                    <h3 class="text-3xl font-bold text-primary mt-2">News & Activities</h3>
+                </div>
+                <p class="text-secondary max-w-xl text-sm leading-relaxed">
+                    Recent field trips, workshops, and team activities.
+                </p>
+            </div>
+
+            <div id="news-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Data will be loaded from JSON -->
+            </div>
+            
+            <div class="mt-10 text-center fade-in-section">
+                <a href="news.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow">
+                    View All News <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -643,6 +670,7 @@
 
             // 2. โหลดข้อมูลจาก JSON สำหรับส่วนที่ต้องอัปเดตบ่อย
             const dataFiles = {
+                news: 'data/news.json',
                 publications: 'data/publications.json',
                 teaching: 'data/teaching.json',
                 lectures: 'data/lectures.json',
@@ -683,6 +711,26 @@
                     throw new Error(`Unable to load ${path}`);
                 }
                 return response.json();
+            }
+
+            function renderNews(items = []) {
+                const container = document.getElementById('news-list');
+                if (!container || !items.length) return;
+
+                container.innerHTML = items.map(item => {
+                    const linkMarkup = item.link && item.link !== '#' ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer" class="text-accent text-sm font-semibold hover:underline mt-4 inline-block">Read more <i class="fa-solid fa-arrow-right text-xs ml-1"></i></a>` : '';
+                    return `
+                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow fade-in-section flex flex-col h-full">
+                        ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy" class="w-full h-48 object-cover border-b border-slate-100">` : ''}
+                        <div class="p-6 flex flex-col flex-1">
+                            <span class="text-xs font-bold tracking-wider text-accent uppercase mb-2 block">${escapeHtml(item.date)}</span>
+                            <h4 class="text-lg font-bold text-primary mb-2">${escapeHtml(item.title)}</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed mt-auto">${escapeHtml(item.description)}</p>
+                            ${linkMarkup}
+                        </div>
+                    </article>
+                    `;
+                }).join('');
             }
 
             function renderPublications(publications = []) {
@@ -814,13 +862,15 @@
 
             async function renderPortfolioData() {
                 try {
-                    const [publications, teaching, lectures, people] = await Promise.all([
+                    const [news, publications, teaching, lectures, people] = await Promise.all([
+                        loadJson(dataFiles.news),
                         loadJson(dataFiles.publications),
                         loadJson(dataFiles.teaching),
                         loadJson(dataFiles.lectures),
                         loadJson(dataFiles.people),
                     ]);
 
+                    renderNews(news.slice(0, 2));
                     renderPublications(publications.slice(0, 3));
                     renderTeaching(teaching.slice(0, 3));
                     renderLectures(lectures.slice(0, 2));

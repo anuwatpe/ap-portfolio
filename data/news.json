@@ -1,0 +1,16 @@
+[
+  {
+    "date": "June 2026",
+    "title": "Team Presents at BIOMED 2024 Conference",
+    "description": "Our research team presented a poster on multi-omics approach to precision medicine. The presentation highlighted our recent findings in the field of biomedical informatics.",
+    "image": "assets/news/news_1.png",
+    "link": "#"
+  },
+  {
+    "date": "May 2026",
+    "title": "Digital Health Tools Workshop",
+    "description": "Students and professors engaged in a hands-on workshop exploring the latest mobile solutions and data analytics platforms for public health.",
+    "image": "assets/news/news_2.png",
+    "link": "#"
+  }
+]

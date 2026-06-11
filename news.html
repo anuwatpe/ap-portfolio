@@ -15,7 +15,7 @@
 <meta content="Anuwat Pengput | Academic Portfolio" name="twitter:title"/>
 <meta content="Lecturer and Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology." name="twitter:description"/>
 <meta content="#0f172a" name="theme-color"/>
-<title>Anuwat Pengput | People</title>
+<title>Anuwat Pengput | News &amp; Activities</title>
 <!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -86,13 +86,13 @@
 <!-- เมนูสำหรับหน้าจอ Desktop -->
 <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
 <a class="hover:text-accent transition-colors" href="index.html#about">About</a>
-<a class="hover:text-accent transition-colors" href="news.html">News</a>
+<a class="hover:text-accent transition-colors text-accent" href="#">News</a>
 <a class="hover:text-accent transition-colors" href="index.html#experience">Experience</a>
 <a class="hover:text-accent transition-colors" href="index.html#education">Education</a>
 <a class="hover:text-accent transition-colors" href="index.html#publications">Publications</a>
 <a class="hover:text-accent transition-colors" href="index.html#teaching">Teaching</a>
 <a class="hover:text-accent transition-colors" href="index.html#lectures">Lectures</a>
-<a class="hover:text-accent transition-colors text-accent" href="#">People</a>
+<a class="hover:text-accent transition-colors" href="index.html#people">People</a>
 <a class="hover:text-accent transition-colors" href="index.html#skills">Skills</a>
 </div>
 <!-- ปุ่มเมนูสำหรับหน้าจอ Mobile -->
@@ -103,13 +103,13 @@
 <!-- เมนูสำหรับหน้าจอ Mobile (ซ่อนไว้เป็นค่าเริ่มต้น) -->
 <div class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full" id="mobile-menu">
 <a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#about">About</a>
-<a class="text-secondary hover:text-accent font-medium mobile-link" href="news.html">News</a>
+<a class="hover:text-accent font-medium mobile-link text-accent" href="#">News</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#experience">Experience</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#education">Education</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#publications">Publications</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#teaching">Teaching</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#lectures">Lectures</a>
-<a class="hover:text-accent font-medium mobile-link text-accent" href="#">People</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#people">People</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" href="index.html#skills">Skills</a>
 </div>
 </nav>
@@ -117,6 +117,28 @@
 
 <!-- Section: About / Current Position -->
 
+<!-- Section: News & Activities -->
+<section class="py-24 px-6 bg-slate-50 border-t border-slate-100" id="news">
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
+<div>
+<span class="text-sm font-semibold tracking-wider uppercase text-accent">Latest Updates</span>
+<h3 class="text-3xl font-bold text-primary mt-2">News &amp; Activities</h3>
+</div>
+<p class="text-secondary max-w-xl text-sm leading-relaxed">
+                    Recent field trips, workshops, and team activities.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="news-list">
+<!-- Data will be loaded from JSON -->
+</div>
+<div class="mt-10 text-center fade-in-section">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow" href="news.html">
+                    View All News <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
+</a>
+</div>
+</div>
+</section>
 <!-- Section: Experience -->
 
 <!-- Section: Education -->
@@ -128,89 +150,7 @@
 <!-- Section: Guest Speaker / Expert Lectures -->
 
 <!-- Section: People & Mentorship -->
-<section class="py-24 px-6 bg-slate-50 border-y border-slate-100" id="people">
-<div class="max-w-4xl mx-auto">
-<div class="text-center max-w-2xl mx-auto mb-14 fade-in-section">
-<span class="text-sm font-semibold tracking-wider uppercase text-accent">People &amp; Mentorship</span>
-<h3 class="text-3xl font-bold text-primary mt-2 mb-4">Research Team, Advisees &amp; Alumni</h3>
-<p class="text-secondary leading-relaxed">
-                    This area highlights people working in the current research and teaching network, students under supervision, and former advisees after graduation.
-                </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="people-groups">
-<article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
-<div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
-<i aria-hidden="true" class="fa-solid fa-user-group"></i>
-</div>
-<div>
-<h4 class="font-bold text-primary">Current Team</h4>
-<p class="text-xs text-slate-500">Collaborators &amp; staff</p>
-</div>
-</div>
-<p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Collaborators working across biomedical informatics, digital health, public health research, and ontology-driven projects.
-                    </p>
-<div class="pt-4 border-t border-slate-100">
-<span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
-<p class="text-sm text-primary mt-1">Names, roles, affiliations, and project areas.</p>
-</div>
-</article>
-<article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
-<div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
-<i aria-hidden="true" class="fa-solid fa-user-graduate"></i>
-</div>
-<div>
-<h4 class="font-bold text-primary">Current Advisees</h4>
-<p class="text-xs text-slate-500">Students in progress</p>
-</div>
-</div>
-<p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Students currently supervised through research projects, independent studies, capstone work, or academic development.
-                    </p>
-<div class="pt-4 border-t border-slate-100">
-<span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
-<p class="text-sm text-primary mt-1">Student names, topics, programs, and study years.</p>
-</div>
-</article>
-<article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
-<div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
-<i aria-hidden="true" class="fa-solid fa-award"></i>
-</div>
-<div>
-<h4 class="font-bold text-primary">Alumni</h4>
-<p class="text-xs text-slate-500">Graduated advisees</p>
-</div>
-</div>
-<p class="text-sm text-slate-500 leading-relaxed mb-5">
-                        Former students and advisees, including their completed topics, current roles, and professional destinations where appropriate.
-                    </p>
-<div class="pt-4 border-t border-slate-100">
-<span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
-<p class="text-sm text-primary mt-1">Graduation year, thesis topic, and current affiliation.</p>
-</div>
-</article>
-</div>
-<div class="mt-10 p-6 bg-white border border-dashed border-slate-300 rounded-2xl fade-in-section">
-<div class="flex flex-col md:flex-row md:items-center gap-4 md:justify-between">
-<div>
-<h4 class="font-bold text-primary mb-1">Suggested profile format</h4>
-<p class="text-sm text-slate-500">Name, role, affiliation/program, research topic, year, and public profile link if available.</p>
-</div>
-<span class="inline-flex items-center gap-2 text-sm font-semibold text-accent">
-                        Consent-first listing <i aria-hidden="true" class="fa-solid fa-shield-halved"></i>
-</span>
-</div>
-</div>
-<div class="mt-10 text-center fade-in-section">
-<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow" href="people.html">
-                    View All People <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
-</a>
-</div>
-</div>
-</section>
+
 <!-- Section: Skills & Tools -->
 
 <!-- Footer -->
@@ -258,6 +198,7 @@
 
             // 2. โหลดข้อมูลจาก JSON สำหรับส่วนที่ต้องอัปเดตบ่อย
             const dataFiles = {
+                news: 'data/news.json',
                 publications: 'data/publications.json',
                 teaching: 'data/teaching.json',
                 lectures: 'data/lectures.json',
@@ -298,6 +239,26 @@
                     throw new Error(`Unable to load ${path}`);
                 }
                 return response.json();
+            }
+
+            function renderNews(items = []) {
+                const container = document.getElementById('news-list');
+                if (!container || !items.length) return;
+
+                container.innerHTML = items.map(item => {
+                    const linkMarkup = item.link && item.link !== '#' ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer" class="text-accent text-sm font-semibold hover:underline mt-4 inline-block">Read more <i class="fa-solid fa-arrow-right text-xs ml-1"></i></a>` : '';
+                    return `
+                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow fade-in-section flex flex-col h-full">
+                        ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy" class="w-full h-48 object-cover border-b border-slate-100">` : ''}
+                        <div class="p-6 flex flex-col flex-1">
+                            <span class="text-xs font-bold tracking-wider text-accent uppercase mb-2 block">${escapeHtml(item.date)}</span>
+                            <h4 class="text-lg font-bold text-primary mb-2">${escapeHtml(item.title)}</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed mt-auto">${escapeHtml(item.description)}</p>
+                            ${linkMarkup}
+                        </div>
+                    </article>
+                    `;
+                }).join('');
             }
 
             function renderPublications(publications = []) {
@@ -429,7 +390,8 @@
 
             async function renderPortfolioData() {
                 try {
-                    const [publications, teaching, lectures, people] = await Promise.all([
+                    const [news, publications, teaching, lectures, people] = await Promise.all([
+                        loadJson(dataFiles.news),
                         loadJson(dataFiles.publications),
                         loadJson(dataFiles.teaching),
                         loadJson(dataFiles.lectures),
@@ -440,7 +402,8 @@
                     
                     
                     
-                    renderPeople(people);
+                    
+                    renderNews(news);
                 } catch (error) {
                     console.warn('Using embedded fallback content because JSON data could not be loaded.', error);
                 }
