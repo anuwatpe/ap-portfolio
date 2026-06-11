@@ -1,0 +1,42 @@
+[
+  {
+    "id": "current-team",
+    "title": "Current Team",
+    "subtitle": "Collaborators & staff",
+    "icon": "fa-solid fa-user-group",
+    "description": "Collaborators working across biomedical informatics, digital health, public health research, and ontology-driven projects.",
+    "emptyLabel": "To update",
+    "emptyText": "Names, roles, affiliations, and project areas.",
+    "members": []
+  },
+  {
+    "id": "current-advisees",
+    "title": "Current Advisees",
+    "subtitle": "Students in progress",
+    "icon": "fa-solid fa-user-graduate",
+    "description": "Students currently supervised through research projects, independent studies, capstone work, or academic development.",
+    "emptyLabel": "To update",
+    "emptyText": "Student names, topics, programs, and study years.",
+    "members": [
+      {
+        "name": "Student Name",
+        "role": "Research advisee",
+        "program": "Public Health",
+        "topic": "Research topic or project title",
+        "period": "2026-present",
+        "profileUrl": "",
+        "visible": false
+      }
+    ]
+  },
+  {
+    "id": "alumni",
+    "title": "Alumni",
+    "subtitle": "Graduated advisees",
+    "icon": "fa-solid fa-award",
+    "description": "Former students and advisees, including their completed topics, current roles, and professional destinations where appropriate.",
+    "emptyLabel": "To update",
+    "emptyText": "Graduation year, thesis topic, and current affiliation.",
+    "members": []
+  }
+]

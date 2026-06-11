@@ -312,7 +312,7 @@
                 </a>
             </div>
             
-            <div class="space-y-6">
+            <div id="publications-list" class="space-y-6">
                 <!-- คัดเลือก Paper ที่โดดเด่นมานำเสนอ คุณสามารถเพิ่มตามแพทเทิร์นนี้ได้เลย -->
                 
                 <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
@@ -395,7 +395,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div id="teaching-list" class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
                     <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
                         <i class="fa-solid fa-laptop-medical" aria-hidden="true"></i>
@@ -440,7 +440,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div id="people-groups" class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
                     <div class="flex items-center gap-3 mb-5">
                         <div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
@@ -596,7 +596,154 @@
                 });
             });
 
-            // 2. แอนิเมชัน Fade-in เมื่อ Scroll
+            // 2. โหลดข้อมูลจาก JSON สำหรับส่วนที่ต้องอัปเดตบ่อย
+            const dataFiles = {
+                publications: 'data/publications.json',
+                teaching: 'data/teaching.json',
+                people: 'data/people.json',
+            };
+
+            function escapeHtml(value = '') {
+                return String(value).replace(/[&<>"']/g, char => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;',
+                }[char]));
+            }
+
+            function safeUrl(value = '') {
+                const url = String(value).trim();
+                if (!url) return '';
+                return /^(https?:|mailto:)/i.test(url) ? url : '';
+            }
+
+            async function loadJson(path) {
+                const response = await fetch(path, { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Unable to load ${path}`);
+                }
+                return response.json();
+            }
+
+            function renderPublications(publications = []) {
+                const container = document.getElementById('publications-list');
+                if (!container || !publications.length) return;
+
+                container.innerHTML = publications.map(publication => {
+                    const url = safeUrl(publication.url);
+                    const link = url ? `
+                        <div class="shrink-0 pt-1">
+                            <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors">
+                                ${escapeHtml(publication.label || 'Link')} <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    ` : '';
+
+                    return `
+                        <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
+                            <div class="flex flex-col md:flex-row gap-4 justify-between">
+                                <div>
+                                    <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">${escapeHtml(publication.title)}</h4>
+                                    <p class="text-secondary text-sm mb-3">${escapeHtml(publication.authors)}</p>
+                                    <p class="text-slate-500 text-sm italic">${escapeHtml(publication.venue)}</p>
+                                </div>
+                                ${link}
+                            </div>
+                        </article>
+                    `;
+                }).join('');
+            }
+
+            function renderTeaching(items = []) {
+                const container = document.getElementById('teaching-list');
+                if (!container || !items.length) return;
+
+                container.innerHTML = items.map(item => `
+                    <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+                        <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
+                            <i class="${escapeHtml(item.icon || 'fa-solid fa-book-open')}" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-primary mb-3">${escapeHtml(item.title)}</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">${escapeHtml(item.description)}</p>
+                    </article>
+                `).join('');
+            }
+
+            function renderMember(member) {
+                const profileUrl = safeUrl(member.profileUrl);
+                const name = escapeHtml(member.name);
+                const nameMarkup = profileUrl
+                    ? `<a href="${escapeHtml(profileUrl)}" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">${name}</a>`
+                    : name;
+                const detailRows = [
+                    member.role,
+                    member.program,
+                    member.topic,
+                    member.period,
+                ].filter(Boolean).map(item => `<p class="text-xs text-slate-500 mt-1">${escapeHtml(item)}</p>`).join('');
+
+                return `
+                    <li class="pt-4 first:pt-0 border-t first:border-t-0 border-slate-100">
+                        <p class="text-sm font-semibold text-primary">${nameMarkup}</p>
+                        ${detailRows}
+                    </li>
+                `;
+            }
+
+            function renderPeople(groups = []) {
+                const container = document.getElementById('people-groups');
+                if (!container || !groups.length) return;
+
+                container.innerHTML = groups.map(group => {
+                    const visibleMembers = (group.members || []).filter(member => member.visible !== false);
+                    const body = visibleMembers.length ? `
+                        <ul class="space-y-4 pt-4 border-t border-slate-100">
+                            ${visibleMembers.map(renderMember).join('')}
+                        </ul>
+                    ` : `
+                        <div class="pt-4 border-t border-slate-100">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">${escapeHtml(group.emptyLabel || 'To update')}</span>
+                            <p class="text-sm text-primary mt-1">${escapeHtml(group.emptyText || 'Details will be added soon.')}</p>
+                        </div>
+                    `;
+
+                    return `
+                        <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
+                            <div class="flex items-center gap-3 mb-5">
+                                <div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+                                    <i class="${escapeHtml(group.icon || 'fa-solid fa-user')}" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary">${escapeHtml(group.title)}</h4>
+                                    <p class="text-xs text-slate-500">${escapeHtml(group.subtitle)}</p>
+                                </div>
+                            </div>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-5">${escapeHtml(group.description)}</p>
+                            ${body}
+                        </article>
+                    `;
+                }).join('');
+            }
+
+            async function renderPortfolioData() {
+                try {
+                    const [publications, teaching, people] = await Promise.all([
+                        loadJson(dataFiles.publications),
+                        loadJson(dataFiles.teaching),
+                        loadJson(dataFiles.people),
+                    ]);
+
+                    renderPublications(publications);
+                    renderTeaching(teaching);
+                    renderPeople(people);
+                } catch (error) {
+                    console.warn('Using embedded fallback content because JSON data could not be loaded.', error);
+                }
+            }
+
+            // 3. แอนิเมชัน Fade-in เมื่อ Scroll
             // ใช้ Intersection Observer API ซึ่งกินทรัพยากรน้อยกว่าการผูก Event scroll โดยตรง
             const observerOptions = {
                 root: null,
@@ -616,11 +763,15 @@
             }, observerOptions);
 
             // นำ observer ไปผูกกับทุก element ที่มีคลาส fade-in-section
-            document.querySelectorAll('.fade-in-section').forEach(section => {
-                observer.observe(section);
-            });
+            function observeFadeInSections() {
+                document.querySelectorAll('.fade-in-section').forEach(section => {
+                    observer.observe(section);
+                });
+            }
 
-            // 3. Navbar Effect เวลาเลื่อนหน้าจอ
+            renderPortfolioData().finally(observeFadeInSections);
+
+            // 4. Navbar Effect เวลาเลื่อนหน้าจอ
             const nav = document.querySelector('nav');
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 20) {

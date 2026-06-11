@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Digital Health",
+    "icon": "fa-solid fa-laptop-medical",
+    "description": "Health information systems, digital tools for public health work, and applied technology in community health settings."
+  },
+  {
+    "title": "Data & Digital Literacy",
+    "icon": "fa-solid fa-database",
+    "description": "Data handling, critical use of digital resources, and foundational analytics for health science students."
+  },
+  {
+    "title": "Research Methods",
+    "icon": "fa-solid fa-chart-line",
+    "description": "Epidemiology, biostatistics, literature appraisal, and evidence-based approaches to public health questions."
+  }
+]
