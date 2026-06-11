@@ -619,6 +619,18 @@
                 return /^(https?:|mailto:)/i.test(url) ? url : '';
             }
 
+            function safeAssetUrl(value = '') {
+                const url = String(value).trim();
+                if (!url || /^(javascript:|data:)/i.test(url) || url.startsWith('//')) return '';
+                return url;
+            }
+
+            function getInitials(name = '') {
+                const words = String(name).trim().split(/\s+/).filter(Boolean);
+                if (!words.length) return '?';
+                return words.slice(0, 2).map(word => word[0]).join('').toUpperCase();
+            }
+
             async function loadJson(path) {
                 const response = await fetch(path, { cache: 'no-store' });
                 if (!response.ok) {
@@ -673,10 +685,15 @@
 
             function renderMember(member) {
                 const profileUrl = safeUrl(member.profileUrl);
+                const imageUrl = safeAssetUrl(member.image);
+                const initials = escapeHtml(getInitials(member.name));
                 const name = escapeHtml(member.name);
                 const nameMarkup = profileUrl
                     ? `<a href="${escapeHtml(profileUrl)}" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">${name}</a>`
                     : name;
+                const avatar = imageUrl
+                    ? `<img src="${escapeHtml(imageUrl)}" alt="" loading="lazy" class="w-12 h-12 rounded-full object-cover border border-slate-200 bg-slate-100 shrink-0">`
+                    : `<div class="w-12 h-12 rounded-full bg-blue-50 text-accent flex items-center justify-center text-sm font-bold border border-slate-200 shrink-0">${initials}</div>`;
                 const detailRows = [
                     member.role,
                     member.program,
@@ -686,8 +703,13 @@
 
                 return `
                     <li class="pt-4 first:pt-0 border-t first:border-t-0 border-slate-100">
-                        <p class="text-sm font-semibold text-primary">${nameMarkup}</p>
-                        ${detailRows}
+                        <div class="flex gap-3">
+                            ${avatar}
+                            <div class="min-w-0">
+                                <p class="text-sm font-semibold text-primary">${nameMarkup}</p>
+                                ${detailRows}
+                            </div>
+                        </div>
                     </li>
                 `;
             }

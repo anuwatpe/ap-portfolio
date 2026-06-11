@@ -25,8 +25,9 @@
         "topic": "Research topic or project title",
         "period": "2026-present",
         "profileUrl": "",
+        "image": "assets/people/student1.svg",
         "visible": true
-      }
+      },
       {
         "name": "Student2",
         "role": "Research advisee",
@@ -34,6 +35,7 @@
         "topic": "Research topic or project title",
         "period": "2026-present",
         "profileUrl": "",
+        "image": "assets/people/student2.svg",
         "visible": true
       }
     ]
