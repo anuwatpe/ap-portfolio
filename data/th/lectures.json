@@ -1,0 +1,18 @@
+[
+  {
+    "title": "แนวทางที่ขับเคลื่อนด้วยข้อมูลในงานสาธารณสุข",
+    "event": "การประชุมวิชาการสาธารณสุขระดับโลก 2024",
+    "date": "มีนาคม 2024",
+    "location": "กรุงเทพมหานคร, ประเทศไทย",
+    "description": "Guest speaker on utilizing biomedical informatics to address global health inequities.",
+    "image": "assets/lectures/lecture_1.png"
+  },
+  {
+    "title": "Digital Literacy in Community Health",
+    "event": "National Health Tech Conference",
+    "date": "พฤศจิกายน 2023",
+    "location": "ขอนแก่น, ประเทศไทย",
+    "description": "Keynote presentation on empowering local healthcare workers through digital tools and data literacy.",
+    "image": "assets/lectures/lecture_2.png"
+  }
+]

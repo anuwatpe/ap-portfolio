@@ -1,0 +1,385 @@
+[
+  {
+    "id": "current-team",
+    "title": "ทีมงานปัจจุบัน",
+    "subtitle": "ผู้ร่วมวิจัยและบุคลากร",
+    "icon": "fa-solid fa-user-group",
+    "description": "ผู้ร่วมวิจัยที่ทำงานด้านชีวเวชสนเทศศาสตร์ สุขภาพดิจิทัล สาธารณสุข และออนโทโลยี",
+    "emptyLabel": "To update",
+    "emptyText": "Names, roles, affiliations, and project areas.",
+    "members": [
+      {
+        "name": "Harper Jones",
+        "role": "ผู้ประสานงานวิจัย",
+        "program": "Biomedical Informatics",
+        "topic": "การปรับปรุงขั้นตอนการทำงานในสถานพยาบาล",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Oliver Williams",
+        "role": "ผู้เชี่ยวชาญด้านชีวสารสนเทศ",
+        "program": "Biomedical Informatics",
+        "topic": "การบูรณาการข้อมูลด้วยออนโทโลยี",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Isabella Anderson",
+        "role": "ผู้เชี่ยวชาญด้านชีวสารสนเทศ",
+        "program": "Biomedical Informatics",
+        "topic": "การวิเคราะห์ข้อมูลเชิงพื้นที่",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "Noah Lopez",
+        "role": "ผู้จัดการโครงการ",
+        "program": "Biomedical Informatics",
+        "topic": "การปรับปรุงขั้นตอนการทำงานในสถานพยาบาล",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "William Wilson",
+        "role": "นักวิเคราะห์ข้อมูล",
+        "program": "Biomedical Informatics",
+        "topic": "การบูรณาการข้อมูลด้วยออนโทโลยี",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Lucas Hernandez",
+        "role": "ผู้เชี่ยวชาญด้านชีวสารสนเทศ",
+        "program": "Biomedical Informatics",
+        "topic": "การวิเคราะห์ข้อมูลเชิงพื้นที่",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Mia Thomas",
+        "role": "ผู้ประสานงานวิจัย",
+        "program": "Biomedical Informatics",
+        "topic": "การวิเคราะห์ข้อมูลเชิงพื้นที่",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "Ava Brown",
+        "role": "ผู้เชี่ยวชาญด้านชีวสารสนเทศ",
+        "program": "Biomedical Informatics",
+        "topic": "การวิเคราะห์ข้อมูลเชิงพื้นที่",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "Isabella Gonzalez",
+        "role": "วิศวกรซอฟต์แวร์",
+        "program": "Biomedical Informatics",
+        "topic": "นวัตกรรมดิจิทัลเพื่อสุขภาพ",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Elijah Miller",
+        "role": "นักวิเคราะห์ข้อมูล",
+        "program": "Biomedical Informatics",
+        "topic": "นวัตกรรมดิจิทัลเพื่อสุขภาพ",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "id": "current-advisees",
+    "title": "นักศึกษาในที่ปรึกษา",
+    "subtitle": "นักศึกษาปัจจุบัน",
+    "icon": "fa-solid fa-user-graduate",
+    "description": "นักศึกษาที่อยู่ภายใต้การดูแลในโครงการวิจัย โครงงาน หรือการพัฒนาทางวิชาการ",
+    "emptyLabel": "To update",
+    "emptyText": "Student names, topics, programs, and study years.",
+    "members": [
+      {
+        "name": "Isabella Rodriguez",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "การบูรณาการข้อมูลด้วยออนโทโลยี",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "Isabella Rodriguez",
+        "role": "นักศึกษาปริญญาเอก",
+        "program": "Community Public Health",
+        "topic": "นวัตกรรมดิจิทัลเพื่อสุขภาพ",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Amelia Gonzalez",
+        "role": "ผู้ช่วยวิจัยระดับปริญญาตรี",
+        "program": "Community Public Health",
+        "topic": "การสร้างแบบจำลองทางระบาดวิทยา",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Elijah Moore",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "การวิเคราะห์ข้อมูลเชิงพื้นที่",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "Charlotte Smith",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "นวัตกรรมดิจิทัลเพื่อสุขภาพ",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Ava Wilson",
+        "role": "นักวิจัยหลังปริญญาเอก",
+        "program": "Community Public Health",
+        "topic": "การสร้างแบบจำลองทางระบาดวิทยา",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Liam Williams",
+        "role": "นักวิจัยหลังปริญญาเอก",
+        "program": "Community Public Health",
+        "topic": "ระบบสนับสนุนการตัดสินใจทางคลินิก",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Liam Anderson",
+        "role": "นักศึกษาปริญญาเอก",
+        "program": "Community Public Health",
+        "topic": "ระบบสนับสนุนการตัดสินใจทางคลินิก",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Liam Wilson",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "การเรียนรู้ของเครื่องในงานสาธารณสุข",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Oliver Jones",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "การบูรณาการข้อมูลด้วยออนโทโลยี",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "Mason Miller",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "การสร้างแบบจำลองทางระบาดวิทยา",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Evelyn Taylor",
+        "role": "นักศึกษาปริญญาเอก",
+        "program": "Community Public Health",
+        "topic": "การบูรณาการข้อมูลด้วยออนโทโลยี",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Noah Jones",
+        "role": "ผู้ช่วยวิจัยระดับปริญญาตรี",
+        "program": "Community Public Health",
+        "topic": "นวัตกรรมดิจิทัลเพื่อสุขภาพ",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Emma Wilson",
+        "role": "ผู้ช่วยวิจัยระดับปริญญาตรี",
+        "program": "Community Public Health",
+        "topic": "การปรับปรุงขั้นตอนการทำงานในสถานพยาบาล",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mason Williams",
+        "role": "นักศึกษาปริญญาเอก",
+        "program": "Community Public Health",
+        "topic": "การบูรณาการข้อมูลด้วยออนโทโลยี",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "James Wilson",
+        "role": "นักวิจัยหลังปริญญาเอก",
+        "program": "Community Public Health",
+        "topic": "การบูรณาการข้อมูลด้วยออนโทโลยี",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "Sophia Jackson",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "การปรับปรุงขั้นตอนการทำงานในสถานพยาบาล",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Isabella Miller",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "การปรับปรุงขั้นตอนการทำงานในสถานพยาบาล",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Evelyn Rodriguez",
+        "role": "ผู้ช่วยวิจัยระดับปริญญาตรี",
+        "program": "Community Public Health",
+        "topic": "การสร้างแบบจำลองทางระบาดวิทยา",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Lucas Wilson",
+        "role": "นักศึกษาปริญญาโท",
+        "program": "Community Public Health",
+        "topic": "นวัตกรรมดิจิทัลเพื่อสุขภาพ",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "id": "alumni",
+    "title": "ศิษย์เก่าและอดีตทีมงาน",
+    "subtitle": "ศิษย์เก่าที่จบการศึกษาและอดีตทีมงาน",
+    "icon": "fa-solid fa-award",
+    "description": "อดีตนักศึกษาและทีมงาน รวมไปถึงหัวข้อที่เคยศึกษาและบทบาทปัจจุบัน",
+    "emptyLabel": "To update",
+    "emptyText": "Graduation year, thesis topic, and current affiliation.",
+    "members": [
+      {
+        "name": "Dr. Lucas Miller",
+        "role": "ผู้ช่วยศาสตราจารย์",
+        "program": "Community Public Health",
+        "topic": "ระบบสนับสนุนการตัดสินใจทางคลินิก",
+        "period": "Graduated 2025",
+        "profileUrl": "",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "Dr. Isabella Johnson",
+        "role": "นักวิจัยหลังปริญญาเอก",
+        "program": "Community Public Health",
+        "topic": "การปรับปรุงขั้นตอนการทำงานในสถานพยาบาล",
+        "period": "Graduated 2025",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Dr. Charlotte Miller",
+        "role": "นักวิทยาศาสตร์ข้อมูล",
+        "program": "Community Public Health",
+        "topic": "ระบบสนับสนุนการตัดสินใจทางคลินิก",
+        "period": "Graduated 2025",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Dr. Sarah Conner",
+        "role": "อดีตผู้ประสานงานวิจัย",
+        "program": "Public Health Analytics",
+        "topic": "ย้ายไปทำงานภาคอุตสาหกรรม",
+        "period": "2023-2025",
+        "profileUrl": "",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "John Doe",
+        "role": "อดีตนักวิเคราะห์ข้อมูล",
+        "program": "Biomedical Informatics",
+        "topic": "ศึกษาต่อระดับปริญญาเอก",
+        "period": "2024-2025",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      }
+    ]
+  }
+]

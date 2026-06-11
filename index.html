@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+
+<html class="scroll-smooth" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic portfolio of Anuwat Pengput, Lecturer and Researcher in Biomedical Informatics, Public Health, Epidemiology, and Biomedical Ontology.">
-    <meta name="author" content="Anuwat Pengput">
-    <link rel="canonical" href="https://anuwatpe.github.io/ap-portfolio/">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://anuwatpe.github.io/ap-portfolio/">
-    <meta property="og:title" content="Anuwat Pengput | Academic Portfolio">
-    <meta property="og:description" content="Lecturer and Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology.">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Anuwat Pengput | Academic Portfolio">
-    <meta name="twitter:description" content="Lecturer and Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology.">
-    <meta name="theme-color" content="#0f172a">
-    <title>Anuwat Pengput | Academic Portfolio</title>
-    
-    <!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- นำเข้า FontAwesome สำหรับไอคอนต่างๆ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- นำเข้า Tailwind CSS ผ่าน CDN (เหมาะสำหรับโปรเจกต์หน้าเดียวและ GitHub Pages) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- ตั้งค่าฟอนต์และสีหลักใน Tailwind -->
-    <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Academic portfolio of Anuwat Pengput, Lecturer and Researcher in Biomedical Informatics, Public Health, Epidemiology, and Biomedical Ontology." name="description"/>
+<meta content="Anuwat Pengput" name="author"/>
+<link href="https://anuwatpe.github.io/ap-portfolio/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="https://anuwatpe.github.io/ap-portfolio/" property="og:url"/>
+<meta content="Anuwat Pengput | Academic Portfolio" property="og:title"/>
+<meta content="Lecturer and Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology." property="og:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Anuwat Pengput | Academic Portfolio" name="twitter:title"/>
+<meta content="Lecturer and Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology." name="twitter:description"/>
+<meta content="#0f172a" name="theme-color"/>
+<title>Anuwat Pengput | Academic Portfolio</title>
+<!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- นำเข้า FontAwesome สำหรับไอคอนต่างๆ -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- นำเข้า Tailwind CSS ผ่าน CDN (เหมาะสำหรับโปรเจกต์หน้าเดียวและ GitHub Pages) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- ตั้งค่าฟอนต์และสีหลักใน Tailwind -->
+<script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -44,9 +41,8 @@
             }
         }
     </script>
-
-    <!-- CSS สำหรับจัดการแอนิเมชันเวลาเลื่อนหน้าจอ -->
-    <style>
+<!-- CSS สำหรับจัดการแอนิเมชันเวลาเลื่อนหน้าจอ -->
+<style>
         body {
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
@@ -81,559 +77,520 @@
             background: #94a3b8;
         }
     </style>
+<script src="assets/js/i18n.js"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 leading-relaxed selection:bg-accent selection:text-white">
-
-    <!-- Navigation Bar -->
-    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight text-primary">AP.</a>
-            
-            <!-- เมนูสำหรับหน้าจอ Desktop -->
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
-                <a href="#about" class="hover:text-accent transition-colors">About</a>
-                <a href="#news" class="hover:text-accent transition-colors">News</a>
-                <a href="#experience" class="hover:text-accent transition-colors">Experience</a>
-                <a href="#education" class="hover:text-accent transition-colors">Education</a>
-                <a href="#publications" class="hover:text-accent transition-colors">Publications</a>
-                <a href="#teaching" class="hover:text-accent transition-colors">Teaching</a>
-                <a href="#lectures" class="hover:text-accent transition-colors">Lectures</a>
-                <a href="#people" class="hover:text-accent transition-colors">People</a>
-                <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
-            </div>
-
-            <!-- ปุ่มเมนูสำหรับหน้าจอ Mobile -->
-            <button id="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-2xl text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4 rounded">
-                <i class="fa-solid fa-bars" aria-hidden="true"></i>
-            </button>
-        </div>
-
-        <!-- เมนูสำหรับหน้าจอ Mobile (ซ่อนไว้เป็นค่าเริ่มต้น) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full">
-            <a href="#about" class="text-secondary hover:text-accent font-medium mobile-link">About</a>
-            <a href="#news" class="text-secondary hover:text-accent font-medium mobile-link">News</a>
-            <a href="#experience" class="text-secondary hover:text-accent font-medium mobile-link">Experience</a>
-            <a href="#education" class="text-secondary hover:text-accent font-medium mobile-link">Education</a>
-            <a href="#publications" class="text-secondary hover:text-accent font-medium mobile-link">Publications</a>
-            <a href="#teaching" class="text-secondary hover:text-accent font-medium mobile-link">Teaching</a>
-            <a href="#lectures" class="text-secondary hover:text-accent font-medium mobile-link">Lectures</a>
-            <a href="#people" class="text-secondary hover:text-accent font-medium mobile-link">People</a>
-            <a href="#skills" class="text-secondary hover:text-accent font-medium mobile-link">Skills</a>
-        </div>
-    </nav>
-
-    <!-- Header / Hero Section -->
-    <header class="pt-40 pb-20 px-6 max-w-6xl mx-auto min-h-[85vh] flex flex-col justify-center">
-        <div class="fade-in-section">
-            <h2 class="text-accent font-semibold tracking-wider uppercase text-sm mb-4">Academic Portfolio</h2>
-            <h1 class="text-5xl md:text-7xl font-bold text-primary tracking-tight mb-6 leading-tight">
+<!-- Navigation Bar -->
+<nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<a class="text-xl font-bold tracking-tight text-primary" href="#">AP.</a>
+<!-- เมนูสำหรับหน้าจอ Desktop -->
+<div class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
+<a class="hover:text-accent transition-colors" data-i18n="nav.about" href="#about">About</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.news" href="#news">News</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.experience" href="#experience">Experience</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.education" href="#education">Education</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.publications" href="#publications">Publications</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.teaching" href="#teaching">Teaching</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.lectures" href="#lectures">Lectures</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.people" href="#people">People</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.skills" href="#skills">Skills</a>
+</div>
+<!-- ปุ่มเมนูสำหรับหน้าจอ Mobile -->
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="md:hidden text-2xl text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4 rounded" id="mobile-menu-btn" type="button">
+<i aria-hidden="true" class="fa-solid fa-bars"></i>
+</button>
+</div>
+<!-- เมนูสำหรับหน้าจอ Mobile (ซ่อนไว้เป็นค่าเริ่มต้น) -->
+<div class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full" id="mobile-menu"><div class="lang-toggler-container flex items-center mb-4"></div>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.about" href="#about">About</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.news" href="#news">News</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.experience" href="#experience">Experience</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.education" href="#education">Education</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.publications" href="#publications">Publications</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.teaching" href="#teaching">Teaching</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.lectures" href="#lectures">Lectures</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.people" href="#people">People</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.skills" href="#skills">Skills</a>
+</div>
+</nav>
+<!-- Header / Hero Section -->
+<header class="pt-40 pb-20 px-6 max-w-6xl mx-auto min-h-[85vh] flex flex-col justify-center">
+<div class="fade-in-section">
+<h2 class="text-accent font-semibold tracking-wider uppercase text-sm mb-4" data-i18n="hero.subtitle">Academic Portfolio</h2>
+<h1 class="text-5xl md:text-7xl font-bold text-primary tracking-tight mb-6 leading-tight">
                 Anuwat Pengput<span class="text-accent">.</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-secondary max-w-3xl font-light mb-10 leading-relaxed">
-                Lecturer & Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology.
+</h1>
+<p class="text-xl md:text-2xl text-secondary max-w-3xl font-light mb-10 leading-relaxed" data-i18n="hero.desc">
+                Lecturer &amp; Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology.
             </p>
-            
-            <!-- ข้อมูลติดต่อด่วน -->
-            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-secondary mb-12">
-                <div class="flex items-center gap-2">
-                    <i class="fa-regular fa-envelope text-accent" aria-hidden="true"></i>
-                    <a href="mailto:anuwat@scphkk.ac.th" class="hover:text-accent transition-colors">anuwat@scphkk.ac.th</a>
-                </div>
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-location-dot text-accent" aria-hidden="true"></i>
-                    <span>Khon Kaen, Thailand</span>
-                </div>
-            </div>
-
-            <div class="flex flex-col sm:flex-row gap-3 mb-12">
-                <a href="mailto:anuwat@scphkk.ac.th?subject=Request%20for%20Academic%20CV" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-slate-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4">
-                    <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+<!-- ข้อมูลติดต่อด่วน -->
+<div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-secondary mb-12">
+<div class="flex items-center gap-2">
+<i aria-hidden="true" class="fa-regular fa-envelope text-accent"></i>
+<a class="hover:text-accent transition-colors" href="mailto:anuwat@scphkk.ac.th">anuwat@scphkk.ac.th</a>
+</div>
+<div class="flex items-center gap-2">
+<i aria-hidden="true" class="fa-solid fa-location-dot text-accent"></i>
+<span>Khon Kaen, Thailand</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-3 mb-12">
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-slate-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4" data-i18n="btn.cv" href="mailto:anuwat@scphkk.ac.th?subject=Request%20for%20Academic%20CV">
+<i aria-hidden="true" class="fa-regular fa-file-lines"></i>
                     Request CV
                 </a>
-                <a href="#people" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-slate-300 text-primary text-sm font-semibold hover:border-accent hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4">
-                    <i class="fa-solid fa-users" aria-hidden="true"></i>
-                    People & Mentorship
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-slate-300 text-primary text-sm font-semibold hover:border-accent hover:text-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4" data-i18n="btn.people" href="#people">
+<i aria-hidden="true" class="fa-solid fa-users"></i>
+                    People &amp; Mentorship
                 </a>
-            </div>
-
-            <!-- ลิงก์ Social / Profiles -->
-            <div class="flex gap-6">
-                <!-- แทนที่ลิงก์ใน href ด้วยลิงก์ GitHub ของคุณ -->
-                <a href="https://github.com/anuwatpe" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4">
-                    <i class="fa-brands fa-github text-xl" aria-hidden="true"></i>
-                </a>
-                <!-- แทนที่ลิงก์ใน href ด้วยลิงก์ LinkedIn ของคุณ -->
-                <a href="https://www.linkedin.com/in/anuwat-pengput-726a99167/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4">
-                    <i class="fa-brands fa-linkedin-in text-xl" aria-hidden="true"></i>
-                </a>
-                <!-- แทนที่ลิงก์ใน href ด้วยลิงก์ Google Scholar ของคุณ -->
-                <a href="https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#4285F4] hover:text-white hover:border-[#4285F4] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4">
-                    <i class="fa-brands fa-google text-xl" aria-hidden="true"></i>
-                </a>
-                <!-- แทนที่ลิงก์ใน href ด้วยลิงก์ ResearchGate ของคุณ -->
-                <a href="https://www.researchgate.net/profile/Anuwat-Pengput" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate profile" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#00CCBB] hover:text-white hover:border-[#00CCBB] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4">
-                    <i class="fa-brands fa-researchgate text-xl" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Section: About / Current Position -->
-    <section id="about" class="py-24 bg-white px-6">
-        <div class="max-w-4xl mx-auto fade-in-section">
-            <div class="flex items-center gap-4 mb-12">
-                <div class="h-px bg-slate-300 flex-1"></div>
-                <h3 class="text-3xl font-bold text-primary">Current Affiliation</h3>
-                <div class="h-px bg-slate-300 flex-1"></div>
-            </div>
-            
-            <div class="bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <h4 class="text-2xl font-semibold text-primary mb-2">Lecturer</h4>
-                <p class="text-accent font-medium mb-6">Sirindhorn College of Public Health Khon Kaen</p>
-                <p class="text-secondary leading-relaxed mb-4">
+</div>
+<!-- ลิงก์ Social / Profiles -->
+<div class="flex gap-6">
+<!-- แทนที่ลิงก์ใน href ด้วยลิงก์ GitHub ของคุณ -->
+<a aria-label="GitHub profile" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4" href="https://github.com/anuwatpe" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-github text-xl"></i>
+</a>
+<!-- แทนที่ลิงก์ใน href ด้วยลิงก์ LinkedIn ของคุณ -->
+<a aria-label="LinkedIn profile" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4" href="https://www.linkedin.com/in/anuwat-pengput-726a99167/" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-linkedin-in text-xl"></i>
+</a>
+<!-- แทนที่ลิงก์ใน href ด้วยลิงก์ Google Scholar ของคุณ -->
+<a aria-label="Google Scholar profile" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#4285F4] hover:text-white hover:border-[#4285F4] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4" href="https://scholar.google.com/citations?user=eB9zP4gAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-google text-xl"></i>
+</a>
+<!-- แทนที่ลิงก์ใน href ด้วยลิงก์ ResearchGate ของคุณ -->
+<a aria-label="ResearchGate profile" class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-secondary hover:bg-[#00CCBB] hover:text-white hover:border-[#00CCBB] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4" href="https://www.researchgate.net/profile/Anuwat-Pengput" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-researchgate text-xl"></i>
+</a>
+</div>
+</div>
+</header>
+<!-- Section: About / Current Position -->
+<section class="py-24 bg-white px-6" id="about">
+<div class="max-w-4xl mx-auto fade-in-section">
+<div class="flex items-center gap-4 mb-12">
+<div class="h-px bg-slate-300 flex-1"></div>
+<h3 class="text-3xl font-bold text-primary" data-i18n="section.affiliation">Current Affiliation</h3>
+<div class="h-px bg-slate-300 flex-1"></div>
+</div>
+<div class="bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+<h4 class="text-2xl font-semibold text-primary mb-2" data-i18n="about.lecturer">Lecturer</h4>
+<p class="text-accent font-medium mb-6" data-i18n="about.college">Sirindhorn College of Public Health Khon Kaen</p>
+<p class="text-secondary leading-relaxed mb-4" data-i18n="about.faculty">
                     Faculty of Public Health and Allied Health Sciences, Praboromarajchanok Institute, Ministry of Public Health.
                 </p>
-                <div class="pt-6 border-t border-slate-200 mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <span class="block text-sm text-slate-500 mb-1">Teaching Areas</span>
-                        <span class="text-primary font-medium">Digital Health, Digital Literacy, Machine Learning</span>
-                    </div>
-                    <div>
-                        <span class="block text-sm text-slate-500 mb-1">Research Focus</span>
-                        <span class="text-primary font-medium">Biomedical Informatics, Epidemiology, Public Health</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: News & Activities -->
-    <section id="news" class="py-24 px-6 bg-slate-50 border-t border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
-                <div>
-                    <span class="text-sm font-semibold tracking-wider uppercase text-accent">Latest Updates</span>
-                    <h3 class="text-3xl font-bold text-primary mt-2">News & Activities</h3>
-                </div>
-                <p class="text-secondary max-w-xl text-sm leading-relaxed">
+<div class="pt-6 border-t border-slate-200 mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<span class="block text-sm text-slate-500 mb-1" data-i18n="about.teaching_area">Teaching Areas</span>
+<span class="text-primary font-medium" data-i18n="about.teaching_focus">Digital Health, Digital Literacy, Machine Learning</span>
+</div>
+<div>
+<span class="block text-sm text-slate-500 mb-1" data-i18n="about.research_focus_title">Research Focus</span>
+<span class="text-primary font-medium" data-i18n="about.research_focus_desc">Biomedical Informatics, Epidemiology, Public Health</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: News & Activities -->
+<section class="py-24 px-6 bg-slate-50 border-t border-slate-100" id="news">
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
+<div>
+<span class="text-sm font-semibold tracking-wider uppercase text-accent" data-i18n="news.label">Latest Updates</span>
+<h3 class="text-3xl font-bold text-primary mt-2" data-i18n="news.title">News &amp; Activities</h3>
+</div>
+<p class="text-secondary max-w-xl text-sm leading-relaxed" data-i18n="news.desc">
                     Recent field trips, workshops, and team activities.
                 </p>
-            </div>
-
-            <div id="news-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Data will be loaded from JSON -->
-            </div>
-            
-            <div class="mt-10 text-center fade-in-section">
-                <a href="news.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow">
-                    View All News <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Experience -->
-    <section id="experience" class="py-24 px-6 bg-slate-50">
-        <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold text-primary mb-16 fade-in-section">Professional Experience</h3>
-            
-            <div class="relative border-l border-slate-300 ml-3 md:ml-6 space-y-12">
-                <!-- ข้อมูลประสบการณ์ทำงานแต่ละบล็อก -->
-                
-                <div class="relative pl-8 md:pl-12 fade-in-section">
-                    <div class="absolute w-4 h-4 bg-accent rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
-                    <span class="text-sm font-semibold tracking-wider text-accent uppercase">Oct 2023 - Present</span>
-                    <h4 class="text-xl font-bold text-primary mt-2">Lecturer</h4>
-                    <p class="text-secondary mt-1 font-medium">Sirindhorn College of Public Health, Khon Kaen, Thailand</p>
-                    <p class="text-slate-500 mt-3 text-sm leading-relaxed">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="news-list">
+<!-- Data will be loaded from JSON -->
+</div>
+<div class="mt-10 text-center fade-in-section">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow" data-i18n="btn.view_news" href="news.html">
+                    View All News <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Section: Experience -->
+<section class="py-24 px-6 bg-slate-50" id="experience">
+<div class="max-w-4xl mx-auto">
+<h3 class="text-3xl font-bold text-primary mb-16 fade-in-section" data-i18n="experience.title">Professional Experience</h3>
+<div class="relative border-l border-slate-300 ml-3 md:ml-6 space-y-12">
+<!-- ข้อมูลประสบการณ์ทำงานแต่ละบล็อก -->
+<div class="relative pl-8 md:pl-12 fade-in-section">
+<div class="absolute w-4 h-4 bg-accent rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+<span class="text-sm font-semibold tracking-wider text-accent uppercase" data-i18n="exp.date1">Oct 2023 - Present</span>
+<h4 class="text-xl font-bold text-primary mt-2" data-i18n="exp.role1">Lecturer</h4>
+<p class="text-secondary mt-1 font-medium" data-i18n="exp.loc1">Sirindhorn College of Public Health, Khon Kaen, Thailand</p>
+<p class="text-slate-500 mt-3 text-sm leading-relaxed" data-i18n="exp.desc1">
                         Department of Community Public Health. Teaching undergraduate courses including Digital Literacy, Computer in Community Health, and Lifestyles and Exercises for Health.
                     </p>
-                </div>
-
-                <div class="relative pl-8 md:pl-12 fade-in-section">
-                    <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
-                    <span class="text-sm font-semibold tracking-wider text-slate-500 uppercase">Apr 2017 - Oct 2023</span>
-                    <h4 class="text-xl font-bold text-primary mt-2">Public Health Technical Officer</h4>
-                    <p class="text-secondary mt-1 font-medium">Huaimek District Public Health Office, Ministry of Public Health, Kalasin</p>
-                    <p class="text-slate-500 mt-3 text-sm leading-relaxed">
+</div>
+<div class="relative pl-8 md:pl-12 fade-in-section">
+<div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+<span class="text-sm font-semibold tracking-wider text-slate-500 uppercase" data-i18n="exp.date1">Apr 2017 - Oct 2023</span>
+<h4 class="text-xl font-bold text-primary mt-2">Public Health Technical Officer</h4>
+<p class="text-secondary mt-1 font-medium">Huaimek District Public Health Office, Ministry of Public Health, Kalasin</p>
+<p class="text-slate-500 mt-3 text-sm leading-relaxed">
                         Key responsibilities included research project development and management, public health policy and strategy, and public health administration.
                     </p>
-                </div>
-
-                <div class="relative pl-8 md:pl-12 fade-in-section">
-                    <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
-                    <span class="text-sm font-semibold tracking-wider text-slate-500 uppercase">Apr 2009 - Apr 2017</span>
-                    <h4 class="text-xl font-bold text-primary mt-2">Public Health Officer / Technical Officer</h4>
-                    <p class="text-secondary mt-1 font-medium">Songpluaey Sub-District Health Promotion Hospital, Kalasin</p>
-                    <p class="text-slate-500 mt-3 text-sm leading-relaxed">
+</div>
+<div class="relative pl-8 md:pl-12 fade-in-section">
+<div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+<span class="text-sm font-semibold tracking-wider text-slate-500 uppercase">Apr 2009 - Apr 2017</span>
+<h4 class="text-xl font-bold text-primary mt-2">Public Health Officer / Technical Officer</h4>
+<p class="text-secondary mt-1 font-medium">Songpluaey Sub-District Health Promotion Hospital, Kalasin</p>
+<p class="text-slate-500 mt-3 text-sm leading-relaxed">
                         Responsible for basic medical services, disease prevention, epidemiology, health promotion, health information systems, and research project management.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Education -->
-    <section id="education" class="py-24 px-6 bg-white border-y border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold text-primary mb-16 fade-in-section">Education</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Education Item 1 -->
-                <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent shadow-sm mb-6">
-                        <i class="fa-solid fa-graduation-cap text-xl" aria-hidden="true"></i>
-                    </div>
-                    <span class="text-sm font-bold text-accent mb-2 block">June 2024</span>
-                    <h4 class="text-xl font-bold text-primary mb-2">Ph.D. in Biomedical Informatics</h4>
-                    <p class="text-secondary text-sm mb-4">University at Buffalo, State University of New York, USA</p>
-                    <p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
-                        <span class="font-semibold text-slate-700">Dissertation:</span> Development and Use of Cholangiocarcinoma Ontology for Analysis of Risk Factors in a Research Cohort in Thailand.
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Education -->
+<section class="py-24 px-6 bg-white border-y border-slate-100" id="education">
+<div class="max-w-4xl mx-auto">
+<h3 class="text-3xl font-bold text-primary mb-16 fade-in-section">Education</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Education Item 1 -->
+<div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent shadow-sm mb-6">
+<i aria-hidden="true" class="fa-solid fa-graduation-cap text-xl"></i>
+</div>
+<span class="text-sm font-bold text-accent mb-2 block">June 2024</span>
+<h4 class="text-xl font-bold text-primary mb-2">Ph.D. in Biomedical Informatics</h4>
+<p class="text-secondary text-sm mb-4">University at Buffalo, State University of New York, USA</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
+<span class="font-semibold text-slate-700">Dissertation:</span> Development and Use of Cholangiocarcinoma Ontology for Analysis of Risk Factors in a Research Cohort in Thailand.
                     </p>
-                </div>
-
-                <!-- Education Item 2 -->
-                <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent shadow-sm mb-6">
-                        <i class="fa-solid fa-graduation-cap text-xl" aria-hidden="true"></i>
-                    </div>
-                    <span class="text-sm font-bold text-accent mb-2 block">June 2020</span>
-                    <h4 class="text-xl font-bold text-primary mb-2">M.S. in Biomedical Informatics</h4>
-                    <p class="text-secondary text-sm mb-4">University at Buffalo, State University of New York, USA</p>
-                    <p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
-                        <span class="font-semibold text-slate-700">Master Project:</span> Spatial Epidemiological Analysis and Geographical Information System of Opioid Overdoses in New York State.
+</div>
+<!-- Education Item 2 -->
+<div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent shadow-sm mb-6">
+<i aria-hidden="true" class="fa-solid fa-graduation-cap text-xl"></i>
+</div>
+<span class="text-sm font-bold text-accent mb-2 block">June 2020</span>
+<h4 class="text-xl font-bold text-primary mb-2">M.S. in Biomedical Informatics</h4>
+<p class="text-secondary text-sm mb-4">University at Buffalo, State University of New York, USA</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
+<span class="font-semibold text-slate-700">Master Project:</span> Spatial Epidemiological Analysis and Geographical Information System of Opioid Overdoses in New York State.
                     </p>
-                </div>
-
-                <!-- Education Item 3 -->
-                <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-500 shadow-sm mb-6">
-                        <i class="fa-solid fa-book text-xl" aria-hidden="true"></i>
-                    </div>
-                    <span class="text-sm font-bold text-slate-500 mb-2 block">April 2016</span>
-                    <h4 class="text-xl font-bold text-primary mb-2">Master of Public Health (Biostatistics)</h4>
-                    <p class="text-secondary text-sm mb-4">Khon Kaen University, Thailand</p>
-                    <p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
-                        <span class="font-semibold text-slate-700">Thesis:</span> Quality of Published Randomized Controlled Trials (RCTs) in Thai Healthcare Journals.
+</div>
+<!-- Education Item 3 -->
+<div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-500 shadow-sm mb-6">
+<i aria-hidden="true" class="fa-solid fa-book text-xl"></i>
+</div>
+<span class="text-sm font-bold text-slate-500 mb-2 block">April 2016</span>
+<h4 class="text-xl font-bold text-primary mb-2">Master of Public Health (Biostatistics)</h4>
+<p class="text-secondary text-sm mb-4">Khon Kaen University, Thailand</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
+<span class="font-semibold text-slate-700">Thesis:</span> Quality of Published Randomized Controlled Trials (RCTs) in Thai Healthcare Journals.
                     </p>
-                </div>
-
-                <!-- Education Item 4 -->
-                <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-500 shadow-sm mb-6">
-                        <i class="fa-solid fa-award text-xl" aria-hidden="true"></i>
-                    </div>
-                    <span class="text-sm font-bold text-slate-500 mb-2 block">August 2011</span>
-                    <h4 class="text-xl font-bold text-primary mb-2">Bachelor of Public Health</h4>
-                    <p class="text-secondary text-sm">Khon Kaen University, Thailand</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Publications (Selected) -->
-    <section id="publications" class="py-24 px-6 bg-slate-50">
-        <div class="max-w-4xl mx-auto">
-            <div class="flex justify-between items-end mb-12 fade-in-section">
-                <h3 class="text-3xl font-bold text-primary">Selected Publications</h3>
-                <a href="https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline text-sm font-medium flex items-center gap-1">
-                    View Google Scholar <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                </a>
-            </div>
-            
-            <div id="publications-list" class="space-y-6">
-                <!-- คัดเลือก Paper ที่โดดเด่นมานำเสนอ คุณสามารถเพิ่มตามแพทเทิร์นนี้ได้เลย -->
-                
-                <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
-                    <div class="flex flex-col md:flex-row gap-4 justify-between">
-                        <div>
-                            <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+</div>
+<!-- Education Item 4 -->
+<div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-500 shadow-sm mb-6">
+<i aria-hidden="true" class="fa-solid fa-award text-xl"></i>
+</div>
+<span class="text-sm font-bold text-slate-500 mb-2 block">August 2011</span>
+<h4 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg2">Bachelor of Public Health</h4>
+<p class="text-secondary text-sm">Khon Kaen University, Thailand</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Publications (Selected) -->
+<section class="py-24 px-6 bg-slate-50" id="publications">
+<div class="max-w-4xl mx-auto">
+<div class="flex justify-between items-end mb-12 fade-in-section">
+<h3 class="text-3xl font-bold text-primary" data-i18n="pub.title">Selected Publications</h3>
+<a class="text-accent hover:underline text-sm font-medium flex items-center gap-1" href="https://scholar.google.com/citations?user=eB9zP4gAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">
+                    View Google Scholar <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
+</a>
+</div>
+<div class="space-y-6" id="publications-list">
+<!-- คัดเลือก Paper ที่โดดเด่นมานำเสนอ คุณสามารถเพิ่มตามแพทเทิร์นนี้ได้เลย -->
+<article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
+<div class="flex flex-col md:flex-row gap-4 justify-between">
+<div>
+<h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
                                 Ontology development and use for cholangiocarcinoma risk factors and predictions
                             </h4>
-                            <p class="text-secondary text-sm mb-3">
-                                <span class="font-semibold">Pengput, A.</span>, Diehl, A.
+<p class="text-secondary text-sm mb-3">
+<span class="font-semibold">Pengput, A.</span>, Diehl, A.
                             </p>
-                            <p class="text-slate-500 text-sm italic">
+<p class="text-slate-500 text-sm italic">
                                 J Biomed Semant 17, 2 (2026).
                             </p>
-                        </div>
-                        <div class="shrink-0 pt-1">
-                            <a href="https://doi.org/10.1186/s13326-025-00345-2" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors">
-                                DOI <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
-                    <div class="flex flex-col md:flex-row gap-4 justify-between">
-                        <div>
-                            <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+</div>
+<div class="shrink-0 pt-1">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors" href="https://doi.org/10.1186/s13326-025-00345-2" rel="noopener noreferrer" target="_blank">
+                                DOI <i aria-hidden="true" class="fa-solid fa-external-link-alt"></i>
+</a>
+</div>
+</div>
+</article>
+<article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
+<div class="flex flex-col md:flex-row gap-4 justify-between">
+<div>
+<h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
                                 Quality of Reporting of Randomized Controlled Trials of Top 10 Herbs Prescribed in Thailand
                             </h4>
-                            <p class="text-secondary text-sm mb-3">
-                                <span class="font-semibold">Pengput, A.</span>, Sucharit, C., Nopsopon, T., Sungthong, B., Pongpirul, K.
+<p class="text-secondary text-sm mb-3">
+<span class="font-semibold">Pengput, A.</span>, Sucharit, C., Nopsopon, T., Sungthong, B., Pongpirul, K.
                             </p>
-                            <p class="text-slate-500 text-sm italic">
+<p class="text-slate-500 text-sm italic">
                                 Journal of Herbal Medicine. Volume 41 (2023).
                             </p>
-                        </div>
-                        <div class="shrink-0 pt-1">
-                            <a href="https://doi.org/10.1016/j.hermed.2023.100739" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors">
-                                DOI <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
-                    <div class="flex flex-col md:flex-row gap-4 justify-between">
-                        <div>
-                            <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+</div>
+<div class="shrink-0 pt-1">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors" href="https://doi.org/10.1016/j.hermed.2023.100739" rel="noopener noreferrer" target="_blank">
+                                DOI <i aria-hidden="true" class="fa-solid fa-external-link-alt"></i>
+</a>
+</div>
+</div>
+</article>
+<article class="p-6 md:p-8 bg-white border border-slate-200 rounded-2xl hover:border-accent/30 hover:shadow-md transition-all fade-in-section group">
+<div class="flex flex-col md:flex-row gap-4 justify-between">
+<div>
+<h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
                                 Telemedicine in Southeast Asia: A Systematic Review
                             </h4>
-                            <p class="text-secondary text-sm mb-3">
-                                <span class="font-semibold">Pengput, A.</span>, and Schwartz G., D.
+<p class="text-secondary text-sm mb-3">
+<span class="font-semibold">Pengput, A.</span>, and Schwartz G., D.
                             </p>
-                            <p class="text-slate-500 text-sm italic">
+<p class="text-slate-500 text-sm italic">
                                 Telemedicine and e-Health. Dec;28(12):1711-1733 (2022).
                             </p>
-                        </div>
-                        <div class="shrink-0 pt-1">
-                            <a href="https://doi.org/10.1089/tmj.2021.0516" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors">
-                                DOI <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-
-            <div class="mt-10 text-center fade-in-section">
-                <a href="publications.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow">
-                    View All Publications <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Teaching -->
-    <section id="teaching" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
-                <div>
-                    <span class="text-sm font-semibold tracking-wider uppercase text-accent">Teaching</span>
-                    <h3 class="text-3xl font-bold text-primary mt-2">Courses & Learning Areas</h3>
-                </div>
-                <p class="text-secondary max-w-xl text-sm leading-relaxed">
+</div>
+<div class="shrink-0 pt-1">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 hover:text-accent transition-colors" href="https://doi.org/10.1089/tmj.2021.0516" rel="noopener noreferrer" target="_blank">
+                                DOI <i aria-hidden="true" class="fa-solid fa-external-link-alt"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-10 text-center fade-in-section">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow" data-i18n="btn.view_pub" href="publications.html">
+                    View All Publications <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Section: Teaching -->
+<section class="py-24 px-6 bg-white" id="teaching">
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
+<div>
+<span class="text-sm font-semibold tracking-wider uppercase text-accent">Teaching</span>
+<h3 class="text-3xl font-bold text-primary mt-2">Courses &amp; Learning Areas</h3>
+</div>
+<p class="text-secondary max-w-xl text-sm leading-relaxed">
                     Teaching focuses on practical digital health skills, research literacy, and data-informed public health practice.
                 </p>
-            </div>
-
-            <div id="teaching-list" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
-                    <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
-                        <i class="fa-solid fa-laptop-medical" aria-hidden="true"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-primary mb-3">Digital Health</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="teaching-list">
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+<div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
+<i aria-hidden="true" class="fa-solid fa-laptop-medical"></i>
+</div>
+<h4 class="text-lg font-bold text-primary mb-3">Digital Health</h4>
+<p class="text-slate-500 text-sm leading-relaxed">
                         Health information systems, digital tools for public health work, and applied technology in community health settings.
                     </p>
-                </article>
-
-                <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
-                    <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
-                        <i class="fa-solid fa-database" aria-hidden="true"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-primary mb-3">Data & Digital Literacy</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed">
+</article>
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+<div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
+<i aria-hidden="true" class="fa-solid fa-database"></i>
+</div>
+<h4 class="text-lg font-bold text-primary mb-3">Data &amp; Digital Literacy</h4>
+<p class="text-slate-500 text-sm leading-relaxed">
                         Data handling, critical use of digital resources, and foundational analytics for health science students.
                     </p>
-                </article>
-
-                <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
-                    <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-primary mb-3">Research Methods</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed">
+</article>
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+<div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
+<i aria-hidden="true" class="fa-solid fa-chart-line"></i>
+</div>
+<h4 class="text-lg font-bold text-primary mb-3">Research Methods</h4>
+<p class="text-slate-500 text-sm leading-relaxed">
                         Epidemiology, biostatistics, literature appraisal, and evidence-based approaches to public health questions.
                     </p>
-                </article>
-            </div>
-
-            <div class="mt-10 text-center fade-in-section">
-                <a href="teaching.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow">
-                    View All Teaching <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Guest Speaker / Expert Lectures -->
-    <section id="lectures" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
-                <div>
-                    <span class="text-sm font-semibold tracking-wider uppercase text-accent">Guest Speaker / Expert Lectures</span>
-                    <h3 class="text-3xl font-bold text-primary mt-2">การไปบรรยายวิทยากร ผู้ทรงคุณวุฒิ</h3>
-                </div>
-                <p class="text-secondary max-w-xl text-sm leading-relaxed">
+</article>
+</div>
+<div class="mt-10 text-center fade-in-section">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow" data-i18n="btn.view_teaching" href="teaching.html">
+                    View All Teaching <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Section: Guest Speaker / Expert Lectures -->
+<section class="py-24 px-6 bg-slate-50 border-y border-slate-100" id="lectures">
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
+<div>
+<span class="text-sm font-semibold tracking-wider uppercase text-accent">Guest Speaker / Expert Lectures</span>
+<h3 class="text-3xl font-bold text-primary mt-2">การไปบรรยายวิทยากร ผู้ทรงคุณวุฒิ</h3>
+</div>
+<p class="text-secondary max-w-xl text-sm leading-relaxed">
                     Sharing knowledge and experiences on digital health, research methods, and biomedical informatics at various conferences and institutions.
                 </p>
-            </div>
-
-            <div id="lectures-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Data will be loaded from JSON -->
-            </div>
-
-            <div class="mt-10 text-center fade-in-section">
-                <a href="lectures.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow">
-                    View All Lectures <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: People & Mentorship -->
-    <section id="people" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center max-w-2xl mx-auto mb-14 fade-in-section">
-                <span class="text-sm font-semibold tracking-wider uppercase text-accent">People & Mentorship</span>
-                <h3 class="text-3xl font-bold text-primary mt-2 mb-4">Research Team, Advisees & Alumni</h3>
-                <p class="text-secondary leading-relaxed">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="lectures-list">
+<!-- Data will be loaded from JSON -->
+</div>
+<div class="mt-10 text-center fade-in-section">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow" data-i18n="btn.view_lectures" href="lectures.html">
+                    View All Lectures <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Section: People & Mentorship -->
+<section class="py-24 px-6 bg-slate-50 border-y border-slate-100" id="people">
+<div class="max-w-4xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-14 fade-in-section">
+<span class="text-sm font-semibold tracking-wider uppercase text-accent">People &amp; Mentorship</span>
+<h3 class="text-3xl font-bold text-primary mt-2 mb-4">Research Team, Advisees &amp; Alumni</h3>
+<p class="text-secondary leading-relaxed">
                     This area highlights people working in the current research and teaching network, students under supervision, and former advisees after graduation.
                 </p>
-            </div>
-
-            <div id="people-groups" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
-                            <i class="fa-solid fa-user-group" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-primary">Current Team</h4>
-                            <p class="text-xs text-slate-500">Collaborators & staff</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-slate-500 leading-relaxed mb-5">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="people-groups">
+<article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+<i aria-hidden="true" class="fa-solid fa-user-group"></i>
+</div>
+<div>
+<h4 class="font-bold text-primary">Current Team</h4>
+<p class="text-xs text-slate-500">Collaborators &amp; staff</p>
+</div>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Collaborators working across biomedical informatics, digital health, public health research, and ontology-driven projects.
                     </p>
-                    <div class="pt-4 border-t border-slate-100">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
-                        <p class="text-sm text-primary mt-1">Names, roles, affiliations, and project areas.</p>
-                    </div>
-                </article>
-
-                <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
-                            <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-primary">Current Advisees</h4>
-                            <p class="text-xs text-slate-500">Students in progress</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-slate-500 leading-relaxed mb-5">
+<div class="pt-4 border-t border-slate-100">
+<span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
+<p class="text-sm text-primary mt-1">Names, roles, affiliations, and project areas.</p>
+</div>
+</article>
+<article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+<i aria-hidden="true" class="fa-solid fa-user-graduate"></i>
+</div>
+<div>
+<h4 class="font-bold text-primary">Current Advisees</h4>
+<p class="text-xs text-slate-500">Students in progress</p>
+</div>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Students currently supervised through research projects, independent studies, capstone work, or academic development.
                     </p>
-                    <div class="pt-4 border-t border-slate-100">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
-                        <p class="text-sm text-primary mt-1">Student names, topics, programs, and study years.</p>
-                    </div>
-                </article>
-
-                <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
-                    <div class="flex items-center gap-3 mb-5">
-                        <div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
-                            <i class="fa-solid fa-award" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-primary">Alumni</h4>
-                            <p class="text-xs text-slate-500">Graduated advisees</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-slate-500 leading-relaxed mb-5">
+<div class="pt-4 border-t border-slate-100">
+<span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
+<p class="text-sm text-primary mt-1">Student names, topics, programs, and study years.</p>
+</div>
+</article>
+<article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+<i aria-hidden="true" class="fa-solid fa-award"></i>
+</div>
+<div>
+<h4 class="font-bold text-primary">Alumni</h4>
+<p class="text-xs text-slate-500">Graduated advisees</p>
+</div>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed mb-5">
                         Former students and advisees, including their completed topics, current roles, and professional destinations where appropriate.
                     </p>
-                    <div class="pt-4 border-t border-slate-100">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
-                        <p class="text-sm text-primary mt-1">Graduation year, thesis topic, and current affiliation.</p>
-                    </div>
-                </article>
-            </div>
-
-            <div class="mt-10 p-6 bg-white border border-dashed border-slate-300 rounded-2xl fade-in-section">
-                <div class="flex flex-col md:flex-row md:items-center gap-4 md:justify-between">
-                    <div>
-                        <h4 class="font-bold text-primary mb-1">Suggested profile format</h4>
-                        <p class="text-sm text-slate-500">Name, role, affiliation/program, research topic, year, and public profile link if available.</p>
-                    </div>
-                    <span class="inline-flex items-center gap-2 text-sm font-semibold text-accent">
-                        Consent-first listing <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-                    </span>
-                </div>
-            </div>
-
-            <div class="mt-10 text-center fade-in-section">
-                <a href="people.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow">
-                    View All People <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Skills & Tools -->
-    <section id="skills" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold text-primary mb-12 text-center fade-in-section">Technical Skills</h3>
+<div class="pt-4 border-t border-slate-100">
+<span class="text-xs font-semibold uppercase tracking-wider text-slate-400">To update</span>
+<p class="text-sm text-primary mt-1">Graduation year, thesis topic, and current affiliation.</p>
+</div>
+</article>
+</div>
+<div class="mt-10 p-6 bg-white border border-dashed border-slate-300 rounded-2xl fade-in-section">
+<div class="flex flex-col md:flex-row md:items-center gap-4 md:justify-between">
+<div>
+<h4 class="font-bold text-primary mb-1">Suggested profile format</h4>
+<p class="text-sm text-slate-500">Name, role, affiliation/program, research topic, year, and public profile link if available.</p>
+</div>
+<span class="inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                        Consent-first listing <i aria-hidden="true" class="fa-solid fa-shield-halved"></i>
+</span>
+</div>
+</div>
+<div class="mt-10 text-center fade-in-section">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white border border-slate-200 text-primary font-semibold hover:border-accent hover:text-accent transition-colors shadow-sm hover:shadow" data-i18n="btn.view_people" href="people.html">
+                    View All People <i aria-hidden="true" class="fa-solid fa-arrow-right-long"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- Section: Skills & Tools -->
+<section class="py-24 px-6 bg-white" id="skills">
+<div class="max-w-4xl mx-auto">
+<h3 class="text-3xl font-bold text-primary mb-12 text-center fade-in-section">Technical Skills</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="fade-in-section">
+<h4 class="flex items-center gap-3 text-lg font-bold text-primary mb-6 border-b border-slate-100 pb-3">
+<i aria-hidden="true" class="fa-solid fa-laptop-code text-accent"></i> Programming &amp; Databases
+                    </h4>
+<div class="flex flex-wrap gap-3">
+<!-- Skill Tags -->
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">R</span>
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Python</span>
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">SQL</span>
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Prolog</span>
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">SPARQL</span>
+</div>
+</div>
+<div class="fade-in-section">
+<h4 class="flex items-center gap-3 text-lg font-bold text-primary mb-6 border-b border-slate-100 pb-3">
+<i aria-hidden="true" class="fa-solid fa-chart-pie text-accent"></i> Analytical &amp; Research Tools
+                    </h4>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">SAS</span>
+<span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">STATA</span>
+<span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">SPSS</span>
+<span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">Protégé Ontology Editor</span>
+<span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">QGIS / ArcGIS</span>
+<span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">RevMAN / Covidence</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-slate-400 py-12 text-center border-t border-slate-800">
+<div class="max-w-4xl mx-auto px-6">
+<p class="mb-4" data-i18n="footer.rights">© 2026 Anuwat Pengput. All rights reserved.</p>
+<p class="text-sm" data-i18n="footer.built">Built for GitHub Pages with HTML &amp; Tailwind CSS.</p>
+</div>
+</footer>
+<!-- JavaScript สำหรับจัดการ Interactions -->
+<script>
+            function getDataFiles() {
+                const lang = (typeof currentLang !== 'undefined') ? currentLang : 'en';
+                return {
+                    publications: `data/${lang}/publications.json`,
+                    teaching: `data/${lang}/teaching.json`,
+                    lectures: `data/${lang}/lectures.json`,
+                    people: `data/${lang}/people.json`,
+                    news: `data/${lang}/news.json`
+                };
+            }
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                
-                <div class="fade-in-section">
-                    <h4 class="flex items-center gap-3 text-lg font-bold text-primary mb-6 border-b border-slate-100 pb-3">
-                        <i class="fa-solid fa-laptop-code text-accent" aria-hidden="true"></i> Programming & Databases
-                    </h4>
-                    <div class="flex flex-wrap gap-3">
-                        <!-- Skill Tags -->
-                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">R</span>
-                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Python</span>
-                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">SQL</span>
-                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Prolog</span>
-                        <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">SPARQL</span>
-                    </div>
-                </div>
-
-                <div class="fade-in-section">
-                    <h4 class="flex items-center gap-3 text-lg font-bold text-primary mb-6 border-b border-slate-100 pb-3">
-                        <i class="fa-solid fa-chart-pie text-accent" aria-hidden="true"></i> Analytical & Research Tools
-                    </h4>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">SAS</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">STATA</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">SPSS</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">Protégé Ontology Editor</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">QGIS / ArcGIS</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">RevMAN / Covidence</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-primary text-slate-400 py-12 text-center border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-6">
-            <p class="mb-4">&copy; 2026 Anuwat Pengput. All rights reserved.</p>
-            <p class="text-sm">Built for GitHub Pages with HTML & Tailwind CSS.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript สำหรับจัดการ Interactions -->
-    <script>
         document.addEventListener('DOMContentLoaded', () => {
             
             // 1. ระบบ Mobile Menu Toggle
@@ -669,13 +626,7 @@
             });
 
             // 2. โหลดข้อมูลจาก JSON สำหรับส่วนที่ต้องอัปเดตบ่อย
-            const dataFiles = {
-                news: 'data/news.json',
-                publications: 'data/publications.json',
-                teaching: 'data/teaching.json',
-                lectures: 'data/lectures.json',
-                people: 'data/people.json',
-            };
+            
 
             function escapeHtml(value = '') {
                 return String(value).replace(/[&<>"']/g, char => ({
@@ -863,11 +814,11 @@
             async function renderPortfolioData() {
                 try {
                     const [news, publications, teaching, lectures, people] = await Promise.all([
-                        loadJson(dataFiles.news),
-                        loadJson(dataFiles.publications),
-                        loadJson(dataFiles.teaching),
-                        loadJson(dataFiles.lectures),
-                        loadJson(dataFiles.people),
+                        loadJson(getDataFiles().news),
+                        loadJson(getDataFiles().publications),
+                        loadJson(getDataFiles().teaching),
+                        loadJson(getDataFiles().lectures),
+                        loadJson(getDataFiles().people),
                     ]);
 
                     renderNews(news.slice(0, 2));
@@ -907,6 +858,9 @@
             }
 
             renderPortfolioData().finally(observeFadeInSections);
+            window.addEventListener('languageChanged', (e) => {
+                renderPortfolioData();
+            });
 
             // 4. Navbar Effect เวลาเลื่อนหน้าจอ
             const nav = document.querySelector('nav');
