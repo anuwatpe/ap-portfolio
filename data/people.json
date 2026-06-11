@@ -19,13 +19,22 @@
     "emptyText": "Student names, topics, programs, and study years.",
     "members": [
       {
-        "name": "Student Name",
+        "name": "Student1",
         "role": "Research advisee",
         "program": "Public Health",
         "topic": "Research topic or project title",
         "period": "2026-present",
         "profileUrl": "",
-        "visible": false
+        "visible": true
+      }
+      {
+        "name": "Student2",
+        "role": "Research advisee",
+        "program": "Public Health",
+        "topic": "Research topic or project title",
+        "period": "2026-present",
+        "profileUrl": "",
+        "visible": true
       }
     ]
   },
