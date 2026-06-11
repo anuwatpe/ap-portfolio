@@ -7,7 +7,38 @@
     "description": "Collaborators working across biomedical informatics, digital health, public health research, and ontology-driven projects.",
     "emptyLabel": "To update",
     "emptyText": "Names, roles, affiliations, and project areas.",
-    "members": []
+    "members": [
+      {
+        "name": "Mock Team Member A",
+        "role": "Research collaborator",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member B",
+        "role": "Project coordinator",
+        "program": "Digital Health Research Unit",
+        "topic": "Community health information workflow improvement",
+        "period": "2025-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member C",
+        "role": "Data analyst",
+        "program": "Public Health Analytics",
+        "topic": "Epidemiological dashboard and data visualization",
+        "period": "2025-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      }
+    ]
   },
   {
     "id": "current-advisees",
@@ -19,23 +50,33 @@
     "emptyText": "Student names, topics, programs, and study years.",
     "members": [
       {
-        "name": "Student1",
-        "role": "Research advisee",
-        "program": "Public Health",
-        "topic": "Research topic or project title",
+        "name": "Mock Advisee A",
+        "role": "Undergraduate advisee",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
         "period": "2026-present",
         "profileUrl": "",
-        "image": "assets/people/student1.svg",
+        "image": "",
         "visible": true
       },
       {
-        "name": "Student2",
-        "role": "Research advisee",
+        "name": "Mock Advisee B",
+        "role": "Research project advisee",
         "program": "Public Health",
-        "topic": "Research topic or project title",
+        "topic": "Machine learning for community health risk screening",
         "period": "2026-present",
         "profileUrl": "",
-        "image": "assets/people/student2.svg",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee C",
+        "role": "Capstone project advisee",
+        "program": "Health Data Science",
+        "topic": "Spatial analysis of local disease surveillance data",
+        "period": "2025-present",
+        "profileUrl": "",
+        "image": "",
         "visible": true
       }
     ]
@@ -48,6 +89,37 @@
     "description": "Former students and advisees, including their completed topics, current roles, and professional destinations where appropriate.",
     "emptyLabel": "To update",
     "emptyText": "Graduation year, thesis topic, and current affiliation.",
-    "members": []
+    "members": [
+      {
+        "name": "Mock Alumni A",
+        "role": "Former advisee",
+        "program": "Community Public Health",
+        "topic": "Health information system use in primary care settings",
+        "period": "Graduated 2025",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Alumni B",
+        "role": "Former research student",
+        "program": "Public Health",
+        "topic": "Evidence appraisal of digital health interventions",
+        "period": "Graduated 2024",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Alumni C",
+        "role": "Former capstone advisee",
+        "program": "Health Promotion",
+        "topic": "Data visualization for community health promotion planning",
+        "period": "Graduated 2024",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      }
+    ]
   }
 ]

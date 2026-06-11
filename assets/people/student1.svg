@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
-  <title id="title">Student1 placeholder portrait</title>
-  <desc id="desc">A clean placeholder avatar for a student profile.</desc>
-  <rect width="240" height="240" rx="120" fill="#dbeafe"/>
-  <circle cx="120" cy="92" r="42" fill="#2563eb"/>
-  <path d="M48 210c10-48 43-76 72-76s62 28 72 76" fill="#0f172a"/>
-  <text x="120" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">S1</text>
-</svg>
