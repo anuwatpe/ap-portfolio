@@ -9,8 +9,8 @@
     "emptyText": "Names, roles, affiliations, and project areas.",
     "members": [
       {
-        "name": "Mock Team Member A",
-        "role": "Research collaborator",
+        "name": "Mock Team Member 1",
+        "role": "Research Role 1",
         "program": "Biomedical Informatics",
         "topic": "Ontology-driven public health data integration",
         "period": "2026-present",
@@ -19,22 +19,92 @@
         "visible": true
       },
       {
-        "name": "Mock Team Member B",
-        "role": "Project coordinator",
-        "program": "Digital Health Research Unit",
-        "topic": "Community health information workflow improvement",
-        "period": "2025-present",
-        "profileUrl": "",
+        "name": "Mock Team Member 2",
+        "role": "Research Role 2",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
         "image": "",
         "visible": true
       },
       {
-        "name": "Mock Team Member C",
-        "role": "Data analyst",
-        "program": "Public Health Analytics",
-        "topic": "Epidemiological dashboard and data visualization",
-        "period": "2025-present",
-        "profileUrl": "",
+        "name": "Mock Team Member 3",
+        "role": "Research Role 3",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member 4",
+        "role": "Research Role 4",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member 5",
+        "role": "Research Role 5",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member 6",
+        "role": "Research Role 6",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member 7",
+        "role": "Research Role 7",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member 8",
+        "role": "Research Role 8",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member 9",
+        "role": "Research Role 9",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Team Member 10",
+        "role": "Research Role 10",
+        "program": "Biomedical Informatics",
+        "topic": "Ontology-driven public health data integration",
+        "period": "2026-present",
+        "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
         "image": "",
         "visible": true
       }
@@ -50,8 +120,8 @@
     "emptyText": "Student names, topics, programs, and study years.",
     "members": [
       {
-        "name": "Mock Advisee A",
-        "role": "Undergraduate advisee",
+        "name": "Mock Advisee 1",
+        "role": "Advisee Role 1",
         "program": "Community Public Health",
         "topic": "Digital health literacy among public health students",
         "period": "2026-present",
@@ -60,21 +130,191 @@
         "visible": true
       },
       {
-        "name": "Mock Advisee B",
-        "role": "Research project advisee",
-        "program": "Public Health",
-        "topic": "Machine learning for community health risk screening",
+        "name": "Mock Advisee 2",
+        "role": "Advisee Role 2",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
         "period": "2026-present",
         "profileUrl": "",
         "image": "",
         "visible": true
       },
       {
-        "name": "Mock Advisee C",
-        "role": "Capstone project advisee",
-        "program": "Health Data Science",
-        "topic": "Spatial analysis of local disease surveillance data",
-        "period": "2025-present",
+        "name": "Mock Advisee 3",
+        "role": "Advisee Role 3",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 4",
+        "role": "Advisee Role 4",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 5",
+        "role": "Advisee Role 5",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 6",
+        "role": "Advisee Role 6",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 7",
+        "role": "Advisee Role 7",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 8",
+        "role": "Advisee Role 8",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 9",
+        "role": "Advisee Role 9",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 10",
+        "role": "Advisee Role 10",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 11",
+        "role": "Advisee Role 11",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 12",
+        "role": "Advisee Role 12",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 13",
+        "role": "Advisee Role 13",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 14",
+        "role": "Advisee Role 14",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 15",
+        "role": "Advisee Role 15",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 16",
+        "role": "Advisee Role 16",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 17",
+        "role": "Advisee Role 17",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 18",
+        "role": "Advisee Role 18",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 19",
+        "role": "Advisee Role 19",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Mock Advisee 20",
+        "role": "Advisee Role 20",
+        "program": "Community Public Health",
+        "topic": "Digital health literacy among public health students",
+        "period": "2026-present",
         "profileUrl": "",
         "image": "",
         "visible": true
@@ -91,8 +331,8 @@
     "emptyText": "Graduation year, thesis topic, and current affiliation.",
     "members": [
       {
-        "name": "Mock Alumni A",
-        "role": "Former advisee",
+        "name": "Mock Alumni 1",
+        "role": "Alumni Role 1",
         "program": "Community Public Health",
         "topic": "Health information system use in primary care settings",
         "period": "Graduated 2025",
@@ -101,21 +341,21 @@
         "visible": true
       },
       {
-        "name": "Mock Alumni B",
-        "role": "Former research student",
-        "program": "Public Health",
-        "topic": "Evidence appraisal of digital health interventions",
-        "period": "Graduated 2024",
+        "name": "Mock Alumni 2",
+        "role": "Alumni Role 2",
+        "program": "Community Public Health",
+        "topic": "Health information system use in primary care settings",
+        "period": "Graduated 2025",
         "profileUrl": "",
         "image": "",
         "visible": true
       },
       {
-        "name": "Mock Alumni C",
-        "role": "Former capstone advisee",
-        "program": "Health Promotion",
-        "topic": "Data visualization for community health promotion planning",
-        "period": "Graduated 2024",
+        "name": "Mock Alumni 3",
+        "role": "Alumni Role 3",
+        "program": "Community Public Health",
+        "topic": "Health information system use in primary care settings",
+        "period": "Graduated 2025",
         "profileUrl": "",
         "image": "",
         "visible": true
