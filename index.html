@@ -96,6 +96,7 @@
                 <a href="#education" class="hover:text-accent transition-colors">Education</a>
                 <a href="#publications" class="hover:text-accent transition-colors">Publications</a>
                 <a href="#teaching" class="hover:text-accent transition-colors">Teaching</a>
+                <a href="#lectures" class="hover:text-accent transition-colors">Lectures</a>
                 <a href="#people" class="hover:text-accent transition-colors">People</a>
                 <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
             </div>
@@ -113,6 +114,7 @@
             <a href="#education" class="text-secondary hover:text-accent font-medium mobile-link">Education</a>
             <a href="#publications" class="text-secondary hover:text-accent font-medium mobile-link">Publications</a>
             <a href="#teaching" class="text-secondary hover:text-accent font-medium mobile-link">Teaching</a>
+            <a href="#lectures" class="text-secondary hover:text-accent font-medium mobile-link">Lectures</a>
             <a href="#people" class="text-secondary hover:text-accent font-medium mobile-link">People</a>
             <a href="#skills" class="text-secondary hover:text-accent font-medium mobile-link">Skills</a>
         </div>
@@ -429,6 +431,25 @@
         </div>
     </section>
 
+    <!-- Section: Guest Speaker / Expert Lectures -->
+    <section id="lectures" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
+                <div>
+                    <span class="text-sm font-semibold tracking-wider uppercase text-accent">Guest Speaker / Expert Lectures</span>
+                    <h3 class="text-3xl font-bold text-primary mt-2">การไปบรรยายวิทยากร ผู้ทรงคุณวุฒิ</h3>
+                </div>
+                <p class="text-secondary max-w-xl text-sm leading-relaxed">
+                    Sharing knowledge and experiences on digital health, research methods, and biomedical informatics at various conferences and institutions.
+                </p>
+            </div>
+
+            <div id="lectures-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Data will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
     <!-- Section: People & Mentorship -->
     <section id="people" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
         <div class="max-w-4xl mx-auto">
@@ -600,6 +621,7 @@
             const dataFiles = {
                 publications: 'data/publications.json',
                 teaching: 'data/teaching.json',
+                lectures: 'data/lectures.json',
                 people: 'data/people.json',
             };
 
@@ -749,16 +771,35 @@
                 }).join('');
             }
 
+            function renderLectures(items = []) {
+                const container = document.getElementById('lectures-list');
+                if (!container || !items.length) return;
+
+                container.innerHTML = items.map(item => `
+                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow fade-in-section flex flex-col h-full">
+                        ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy" class="w-full h-48 object-cover border-b border-slate-100">` : ''}
+                        <div class="p-6 flex flex-col flex-1">
+                            <span class="text-xs font-bold tracking-wider text-accent uppercase mb-2 block">${escapeHtml(item.date)}</span>
+                            <h4 class="text-lg font-bold text-primary mb-2">${escapeHtml(item.title)}</h4>
+                            <p class="text-sm font-medium text-secondary mb-3">${escapeHtml(item.event)}<br><span class="font-normal text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> ${escapeHtml(item.location)}</span></p>
+                            <p class="text-slate-500 text-sm leading-relaxed mt-auto">${escapeHtml(item.description)}</p>
+                        </div>
+                    </article>
+                `).join('');
+            }
+
             async function renderPortfolioData() {
                 try {
-                    const [publications, teaching, people] = await Promise.all([
+                    const [publications, teaching, lectures, people] = await Promise.all([
                         loadJson(dataFiles.publications),
                         loadJson(dataFiles.teaching),
+                        loadJson(dataFiles.lectures),
                         loadJson(dataFiles.people),
                     ]);
 
                     renderPublications(publications);
                     renderTeaching(teaching);
+                    renderLectures(lectures);
                     renderPeople(people);
                 } catch (error) {
                     console.warn('Using embedded fallback content because JSON data could not be loaded.', error);

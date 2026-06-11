@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Data-Driven Approach in Public Health",
+    "event": "Global Public Health Symposium 2024",
+    "date": "March 2024",
+    "location": "Bangkok, Thailand",
+    "description": "Guest speaker on utilizing biomedical informatics to address global health inequities.",
+    "image": "assets/lectures/lecture_1.png"
+  },
+  {
+    "title": "Digital Literacy in Community Health",
+    "event": "National Health Tech Conference",
+    "date": "November 2023",
+    "location": "Khon Kaen, Thailand",
+    "description": "Keynote presentation on empowering local healthcare workers through digital tools and data literacy.",
+    "image": "assets/lectures/lecture_2.png"
+  }
+]
