@@ -323,10 +323,10 @@
   },
   {
     "id": "alumni",
-    "title": "Alumni",
-    "subtitle": "Graduated advisees",
+    "title": "Alumni & Former Members",
+    "subtitle": "Graduated advisees and former team members",
     "icon": "fa-solid fa-award",
-    "description": "Former students and advisees, including their completed topics, current roles, and professional destinations where appropriate.",
+    "description": "Former students, advisees, and staff members, including their completed topics and current roles.",
     "emptyLabel": "To update",
     "emptyText": "Graduation year, thesis topic, and current affiliation.",
     "members": [
@@ -356,6 +356,26 @@
         "program": "Community Public Health",
         "topic": "Clinical decision support systems",
         "period": "Graduated 2025",
+        "profileUrl": "",
+        "image": "assets/people/avatar2.png",
+        "visible": true
+      },
+      {
+        "name": "Dr. Sarah Conner",
+        "role": "Former Research Coordinator",
+        "program": "Public Health Analytics",
+        "topic": "Moved to Industry Role",
+        "period": "2023-2025",
+        "profileUrl": "",
+        "image": "assets/people/avatar1.png",
+        "visible": true
+      },
+      {
+        "name": "John Doe",
+        "role": "Former Data Analyst",
+        "program": "Biomedical Informatics",
+        "topic": "Moved to PhD Program",
+        "period": "2024-2025",
         "profileUrl": "",
         "image": "assets/people/avatar2.png",
         "visible": true
