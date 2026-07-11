@@ -54,7 +54,14 @@ const i18nDict = {
         "btn.view_people": "View All People <i class=\"fa-solid fa-arrow-right-long\" aria-hidden=\"true\"></i>",
         "skills.title": "Skills & Tools",
         "footer.rights": "© 2026 Anuwat Pengput. All rights reserved.",
-        "footer.built": "Built for GitHub Pages with HTML & Tailwind CSS."
+        "footer.built": "Built for GitHub Pages with HTML & Tailwind CSS.",
+        "hero.name": "Anuwat Pengput<span class=\"text-accent\">.</span>",
+        "title.home": "Anuwat Pengput | Academic Portfolio",
+        "title.publications": "Anuwat Pengput | Publications",
+        "title.teaching": "Anuwat Pengput | Teaching & Courses",
+        "title.lectures": "Anuwat Pengput | Lectures",
+        "title.people": "Anuwat Pengput | People & Mentorship",
+        "title.news": "Anuwat Pengput | News & Activities"
     },
     th: {
         "nav.about": "เกี่ยวกับ",
@@ -110,12 +117,19 @@ const i18nDict = {
         "people.title": "ทีมงานและนักศึกษา",
         "btn.view_people": "ดูบุคลากรทั้งหมด <i class=\"fa-solid fa-arrow-right-long\" aria-hidden=\"true\"></i>",
         "skills.title": "ทักษะและเครื่องมือ",
-        "footer.rights": "© 2026 อนุวัตร เพ็งพุด สงวนลิขสิทธิ์",
-        "footer.built": "พัฒนาสำหรับ GitHub Pages ด้วย HTML และ Tailwind CSS"
+        "footer.rights": "© 2026 อนุวัตน์ เพ็งพุฒ สงวนลิขสิทธิ์",
+        "footer.built": "พัฒนาสำหรับ GitHub Pages ด้วย HTML และ Tailwind CSS",
+        "hero.name": "อนุวัตน์ เพ็งพุฒ<span class=\"text-accent\">.</span>",
+        "title.home": "อนุวัตน์ เพ็งพุฒ | แฟ้มสะสมผลงานวิชาการ",
+        "title.publications": "อนุวัตน์ เพ็งพุฒ | ผลงานตีพิมพ์",
+        "title.teaching": "อนุวัตน์ เพ็งพุฒ | รายวิชาที่สอน",
+        "title.lectures": "อนุวัตน์ เพ็งพุฒ | งานบรรยายและวิทยากร",
+        "title.people": "อนุวัตน์ เพ็งพุฒ | ทีมงานและนักศึกษา",
+        "title.news": "อนุวัตน์ เพ็งพุฒ | ข่าวสารและกิจกรรม"
     }
 };
 
-let currentLang = localStorage.getItem('site_lang') || 'en';
+let currentLang = localStorage.getItem('site_lang') || 'th';
 
 function setLanguage(lang) {
     currentLang = lang;
