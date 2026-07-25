@@ -74,7 +74,7 @@ const i18nDict = {
         "nav.people": "ทีมงาน",
         "nav.skills": "ทักษะ",
         "hero.subtitle": "แฟ้มสะสมผลงานวิชาการ",
-        "hero.desc": "อาจารย์และนักวิจัยด้านชีวเวชสนเทศศาสตร์ สาธารณสุขศาสตร์ และออนโทโลยีชีวการแพทย์",
+        "hero.desc": "อาจารย์และนักวิจัยด้านชีวเวชสารสนเทศ สาธารณสุขศาสตร์ และออนโทโลยีชีวการแพทย์",
         "btn.cv": "<i class=\"fa-regular fa-file-lines\" aria-hidden=\"true\"></i> ขอประวัติย่อ (CV)",
         "btn.people": "<i class=\"fa-solid fa-users\" aria-hidden=\"true\"></i> ทีมงานและนักศึกษา",
         "section.affiliation": "ตำแหน่งปัจจุบัน",
