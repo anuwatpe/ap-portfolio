@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title data-i18n="title.course_doc">คลังเอกสารบทเรียน | อาจารย์อนุวัตน์ เพ็งพุฒ</title>
+    <meta name="description" content="เอกสารประกอบการเรียน บทความวิชาการ และสื่อการสอนออนไลน์ โดย อาจารย์อนุวัตน์ เพ็งพุฒ"/>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Sarabun', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#475569',
+                        accent: '#2563eb',
+                        accentDark: '#1d4ed8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Sarabun', 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .prose h2 { font-weight: 700; color: #0f172a; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; scroll-margin-top: 6rem; }
+        .prose h3 { font-weight: 600; color: #1e293b; margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.25rem; scroll-margin-top: 6rem; }
+        .prose p { color: #334155; line-height: 1.8; margin-bottom: 1.25rem; font-size: 1rem; }
+        .prose ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; }
+        .prose li { margin-bottom: 0.5rem; line-height: 1.7; }
+        
+        /* Custom Callout Box Styling */
+        .callout-info { background-color: #eff6ff; border-left: 4px solid #2563eb; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0; }
+        .callout-tip { background-color: #f0fdf4; border-left: 4px solid #16a34a; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0; }
+        .callout-warning { background-color: #fffbeb; border-left: 4px solid #d97706; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+    <script src="assets/js/i18n.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Top Sticky Header -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+            
+            <!-- Left: Back link & Title -->
+            <div class="flex items-center gap-3 overflow-hidden">
+                <a href="teaching.html" class="inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-accent transition-colors shrink-0">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span class="hidden sm:inline" data-i18n="doc.back_teaching">กลับหน้ารายวิชา</span>
+                </a>
+                <span class="text-slate-300">|</span>
+                <div class="truncate">
+                    <span class="text-xs font-bold text-accent bg-blue-50 px-2.5 py-1 rounded-full uppercase tracking-wide mr-2">CPH201</span>
+                    <h1 class="text-sm sm:text-base font-bold text-primary truncate inline">สุขภาพดิจิทัลชุมชน (Community Digital Health)</h1>
+                </div>
+            </div>
+
+            <!-- Right: Search & Lang Toggler -->
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="lang-toggler-container flex items-center"></div>
+                <button id="sidebar-mobile-toggle" class="lg:hidden p-2 text-secondary hover:text-primary focus:outline-none">
+                    <i class="fa-solid fa-bars-staggered text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Docs Container (3 Columns on Large Screens) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex-1 flex gap-8 w-full">
+        
+        <!-- Left Sidebar: Course Navigation (Modules & Lessons) -->
+        <aside id="docs-sidebar" class="hidden lg:block w-72 shrink-0 bg-white border border-slate-200 rounded-2xl p-5 h-[calc(100vh-6rem)] sticky top-20 overflow-y-auto shadow-sm">
+            <div class="mb-5 pb-4 border-b border-slate-100">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">รายวิชา (Course)</h3>
+                <p class="text-sm font-bold text-primary">สาธารณสุขศาสตร์และสุขภาพดิจิทัล</p>
+            </div>
+
+            <nav class="space-y-6">
+                <!-- Module 1 -->
+                <div>
+                    <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-folder-open text-accent"></i> บทที่ 1: พื้นฐานสุขภาพดิจิทัล
+                    </h4>
+                    <ul class="space-y-1 pl-3 border-l-2 border-slate-200">
+                        <li>
+                            <a href="#section-1" class="block py-1.5 px-3 rounded-lg text-sm font-semibold bg-blue-50 text-accent transition-colors">
+                                1.1 แนวคิดสุขภาพดิจิทัลชุมชน
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-2" class="block py-1.5 px-3 rounded-lg text-sm text-secondary hover:bg-slate-100 hover:text-primary transition-colors">
+                                1.2 ระบบสารสนเทศสุขภาพ (HIS)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-3" class="block py-1.5 px-3 rounded-lg text-sm text-secondary hover:bg-slate-100 hover:text-primary transition-colors">
+                                1.3 ความเป็นส่วนตัวและความปลอดภัยข้อมูล
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Module 2 -->
+                <div>
+                    <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-folder text-slate-400"></i> บทที่ 2: รหัสมาตรฐานและออนโทโลยี
+                    </h4>
+                    <ul class="space-y-1 pl-3 border-l-2 border-slate-200">
+                        <li>
+                            <a href="#" class="block py-1.5 px-3 rounded-lg text-sm text-secondary hover:bg-slate-100 hover:text-primary transition-colors opacity-75">
+                                2.1 มาตรฐาน ICD-10 และ SNOMED CT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-1.5 px-3 rounded-lg text-sm text-secondary hover:bg-slate-100 hover:text-primary transition-colors opacity-75">
+                                2.2 การประยุกต์ใช้ออนโทโลยีสุขภาพ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Module 3 -->
+                <div>
+                    <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-folder text-slate-400"></i> บทที่ 3: การวิเคราะห์ข้อมูลระบาดวิทยา
+                    </h4>
+                    <ul class="space-y-1 pl-3 border-l-2 border-slate-200">
+                        <li>
+                            <a href="#" class="block py-1.5 px-3 rounded-lg text-sm text-secondary hover:bg-slate-100 hover:text-primary transition-colors opacity-75">
+                                3.1 การวิเคราะห์และทำนายโรคประจำถิ่น
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Center Column: Article Main Content Reader -->
+        <main class="flex-1 min-w-0 bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-sm">
+            
+            <!-- Breadcrumbs -->
+            <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4">
+                <a href="teaching.html" class="hover:underline">รายวิชาที่สอน</a>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span>สุขภาพดิจิทัลชุมชน</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                <span class="text-accent font-semibold">บทที่ 1.1</span>
+            </nav>
+
+            <!-- Article Header Title -->
+            <header class="pb-6 mb-8 border-b border-slate-200">
+                <h1 class="text-2xl sm:text-4xl font-bold text-primary tracking-tight mb-4 leading-tight">
+                    บทที่ 1.1: แนวคิดและกรอบการดำเนินงานสุขภาพดิจิทัลชุมชน
+                </h1>
+                <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-secondary">
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-user-circle text-accent"></i> อ.อนุวัตน์ เพ็งพุฒ
+                    </span>
+                    <span>•</span>
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-clock text-slate-400"></i> เวลาอ่านประมาณ 8 นาที
+                    </span>
+                    <span>•</span>
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-regular fa-calendar-check text-slate-400"></i> อัปเดตล่าสุด: 2 ส.ค. 2026
+                    </span>
+                </div>
+            </header>
+
+            <!-- Article Content Body -->
+            <article class="prose max-w-none">
+
+                <!-- Callout Box Tip -->
+                <div class="callout-info">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-lightbulb text-accent text-xl mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-primary text-base mb-1">วัตถุประสงค์การเรียนรู้ประจำบท</h4>
+                            <p class="text-sm text-slate-700 m-0">
+                                เมื่อเรียนจบบทนี้ นักศึกษาจะสามารถอธิบายความหมายของสุขภาพดิจิทัล (Digital Health), จำแนกองค์ประกอบหลักของระบบสารสนเทศสุขภาพ และประยุกต์ใช้แนวคิดเทคโนโลยีดิจิทัลในการส่งเสริมสุขภาพระดับชุมชนได้อย่างมีประสิทธิภาพ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="section-1">1. ความหมายและวิวัฒนาการของสุขภาพดิจิทัล</h2>
+                <p>
+                    <strong>สุขภาพดิจิทัล (Digital Health)</strong> หมายถึง การนำเทคโนโลยีสารสนเทศ การสื่อสาร และวิทยาการข้อมูล มาประยุกต์ใช้ในระบบสุขภาพและการสาธารณสุข เพื่อเพิ่มประสิทธิภาพในการให้บริการ การป้องกันโรค การส่งเสริมสุขภาพ ตลอดจนการบริหารจัดการข้อมูลสุขภาพของประชาชนอย่างครอบคลุม
+                </p>
+                <p>
+                    ในอดีต ระบบงานสาธารณสุขชุมชนมักพึ่งพาการบันทึกข้อมูลบนเอกสารกระดาษ (Paper-based) ทำให้เกิดข้อจำกัดด้านความรวดเร็วในการส่งต่อข้อมูลและการวิเคราะห์แนวโน้มระบาดวิทยา แต่ในยุคปัจจุบัน เทคโนโลยีดิจิทัลได้เข้ามามีบทบาทใน 3 มิติหลัก ได้แก่:
+                </p>
+
+                <ul>
+                    <li><strong>eHealth & mHealth:</strong> การให้บริการและติดตามสุขภาพผ่านแอปพลิเคชันมือถือและอุปกรณ์สวมใส่ (Wearable Devices)</li>
+                    <li><strong>Biomedical Informatics:</strong> การจัดเก็บ วิเคราะห์ และจัดการข้อมูลทางชีวการแพทย์อย่างเป็นระบบ</li>
+                    <li><strong>Health Data Analytics & AI:</strong> การนำข้อมูลขนาดใหญ่ (Big Data) มาสร้างแบบจำลองทำนายแนวโน้มโรคในชุมชน</li>
+                </ul>
+
+                <!-- Diagram / Key Highlight Box -->
+                <div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-accent">Framework Visual</span>
+                        <span class="text-xs text-slate-400">กรอบแนวคิด Digital Health</span>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+                            <i class="fa-solid fa-network-wired text-accent text-2xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm"> Data Sources</h4>
+                            <p class="text-xs text-slate-400 mt-1">EHR, รพ.สต., อุปกรณ์ IoT</p>
+                        </div>
+                        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+                            <i class="fa-solid fa-brain text-emerald-400 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm"> Analytics & Ontology</h4>
+                            <p class="text-xs text-slate-400 mt-1">โมเดลทำนายโรค & มาตรฐานข้อมูล</p>
+                        </div>
+                        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+                            <i class="fa-solid fa-heart-pulse text-rose-400 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm"> Public Health Action</h4>
+                            <p class="text-xs text-slate-400 mt-1">การควบคุมโรค & ส่งเสริมสุขภาพ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="section-2">2. ระบบสารสนเทศสุขภาพในระดับชุมชน (Community HIS)</h2>
+                <p>
+                    องค์ประกอบสำคัญของการขับเคลื่อนงานสาธารณสุขในระดับพื้นที่ คือการมีระบบสารสนเทศสุขภาพชุมชนที่มีคุณภาพ ข้อมูลจากโรงพยาบาลส่งเสริมสุขภาพตำบล (รพ.สต.) และศูนย์บริการสาธารณสุขเทศบาล จะถูกนำมารวบรวมเพื่อวิเคราะห์ดรรชนีชี้วัดสุขภาพ
+                </p>
+
+                <!-- Comparison Table -->
+                <div class="overflow-x-auto my-6">
+                    <table class="w-full text-left border-collapse border border-slate-200 text-sm">
+                        <thead>
+                            <tr class="bg-slate-100 text-primary">
+                                <th class="p-3 border border-slate-200 font-bold">ประเด็นเปรียบเทียบ</th>
+                                <th class="p-3 border border-slate-200 font-bold">ระบบเดิม (Traditional)</th>
+                                <th class="p-3 border border-slate-200 font-bold">ระบบดิจิทัล (Digital Health)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 text-slate-600">
+                            <tr>
+                                <td class="p-3 border border-slate-200 font-semibold">การบันทึกข้อมูล</td>
+                                <td class="p-3 border border-slate-200">แบบฟอร์มกระดาษ / สรุปรายเดือน</td>
+                                <td class="p-3 border border-slate-200 text-accent font-medium">เรียลไทม์ผ่านแท็บเล็ต/ระบบออนไลน์</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200 font-semibold">การส่งต่อข้อมูล</td>
+                                <td class="p-3 border border-slate-200">ส่งรายงานตามรอบเวลา</td>
+                                <td class="p-3 border border-slate-200 text-accent font-medium">เชื่อมโยง API อัตโนมัติระหว่างหน่วยงาน</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200 font-semibold">การวิเคราะห์ผล</td>
+                                <td class="p-3 border border-slate-200">ใช้สถิติพื้นฐานย้อนหลัง</td>
+                                <td class="p-3 border border-slate-200 text-accent font-medium">Predictive Analytics ทำนายความเสี่ยงพ้นพื้นที่</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout-tip">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-xl mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base mb-1">สรุปสาระสำคัญ (Key Takeaway)</h4>
+                            <p class="text-sm text-slate-700 m-0">
+                                นักศึกษาสาธารณสุขในยุคปัจจุบันจึงไม่ได้ทำหน้าที่เพียงแค่การแจกจ่ายยาหรือรณรงค์สุขภาพแบบเดิม แต่ต้องมี <strong>Digital & Data Literacy</strong> ในการใช้นวัตกรรมดิจิทัลมาขับเคลื่อนงานสุขภาพชุมชนอย่างยั่งยืน
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="section-3">3. คำถามชวนคิดและการอภิปรายในชั้นเรียน</h2>
+                <div class="p-5 bg-slate-50 border border-slate-200 rounded-xl my-4">
+                    <p class="font-semibold text-primary mb-2">❓ คำถามประจำสัปดาห์ (Discussion Prompt):</p>
+                    <p class="text-sm text-slate-600 italic m-0">
+                        "หากนักศึกษาต้องลงพื้นที่ชุมชนที่มีผู้สูงอายุจำนวนมาก เทคโนโลยีดิจิทัลชนิดใดที่คุณคิดว่าจะสามารถเข้าไปช่วยส่งเสริมสุขภาพและลดอุปสรรคการเข้าถึงบริการทางการแพทย์ได้เหมาะสมที่สุด เพราะเหตุใด?"
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- Bottom Navigation Chapter Buttons -->
+            <footer class="mt-12 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-slate-200 text-sm font-semibold text-secondary hover:border-accent hover:text-accent transition-colors opacity-50 cursor-not-allowed">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>บทเรียนก่อนหน้า</span>
+                </a>
+                <a href="#section-2" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-accent text-white text-sm font-semibold hover:bg-accentDark transition-colors shadow-sm">
+                    <span>บทเรียนถัดไป: 1.2 ระบบ HIS</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </footer>
+
+        </main>
+
+        <!-- Right Sidebar: On-Page Headings TOC -->
+        <aside class="hidden xl:block w-56 shrink-0 sticky top-20 h-fit">
+            <div class="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-list-ul text-accent"></i> หัวข้อในหน้านี้
+                </h4>
+                <ul class="space-y-2 text-xs text-secondary border-l border-slate-200 pl-3">
+                    <li>
+                        <a href="#section-1" class="block hover:text-accent transition-colors font-medium text-slate-700">1. ความหมายและวิวัฒนาการ</a>
+                    </li>
+                    <li>
+                        <a href="#section-2" class="block hover:text-accent transition-colors">2. ระบบสารสนเทศชุมชน</a>
+                    </li>
+                    <li>
+                        <a href="#section-3" class="block hover:text-accent transition-colors">3. คำถามชวนคิดในชั้นเรียน</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer Copyright -->
+    <footer class="bg-primary text-slate-400 py-6 text-center text-xs border-t border-slate-800 mt-12">
+        <p data-i18n="footer.rights">© 2026 Anuwat Pengput. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Sidebar Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById('sidebar-mobile-toggle');
+            const sidebar = document.getElementById('docs-sidebar');
+
+            if (toggleBtn && sidebar) {
+                toggleBtn.addEventListener('click', () => {
+                    sidebar.classList.toggle('hidden');
+                    sidebar.classList.toggle('fixed');
+                    sidebar.classList.toggle('inset-0');
+                    sidebar.classList.toggle('z-50');
+                    sidebar.classList.toggle('w-full');
+                    sidebar.classList.toggle('bg-white');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

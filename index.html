@@ -719,12 +719,19 @@
                 if (!container || !items.length) return;
 
                 container.innerHTML = items.map(item => `
-                    <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+                    <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
                         <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
                             <i class="${escapeHtml(item.icon || 'fa-solid fa-book-open')}" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-lg font-bold text-primary mb-3">${escapeHtml(item.title)}</h4>
-                        <p class="text-slate-500 text-sm leading-relaxed">${escapeHtml(item.description)}</p>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-6">${escapeHtml(item.description)}</p>
+                        <div class="mt-auto pt-4 border-t border-slate-200/60">
+                            <a href="course-doc.html" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-accentDark transition-colors">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <span>อ่านบทความและเนื้อหารายวิชา</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
                     </article>
                 `).join('');
             }

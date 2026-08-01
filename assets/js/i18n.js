@@ -59,9 +59,10 @@ const i18nDict = {
         "title.home": "Anuwat Pengput | Academic Portfolio",
         "title.publications": "Anuwat Pengput | Publications",
         "title.teaching": "Anuwat Pengput | Teaching & Courses",
-        "title.lectures": "Anuwat Pengput | Lectures",
-        "title.people": "Anuwat Pengput | People & Mentorship",
-        "title.news": "Anuwat Pengput | News & Activities"
+        "title.lectures": "Anuwat Pengput | Lectures",        "title.people": "Anuwat Pengput | People & Mentorship",
+        "title.news": "Anuwat Pengput | News & Activities",
+        "title.course_doc": "Course Documentation | Anuwat Pengput",
+        "doc.back_teaching": "Back to Courses"
     },
     th: {
         "nav.about": "เกี่ยวกับ",
@@ -84,7 +85,7 @@ const i18nDict = {
         "about.teaching_area": "รายวิชาที่สอน",
         "about.teaching_focus": "สุขภาพดิจิทัล, การรู้เท่าทันสื่อดิจิทัล, การเรียนรู้ของเครื่อง",
         "about.research_focus_title": "ความสนใจงานวิจัย",
-        "about.research_focus_desc": "ชีวเวชสนเทศศาสตร์, วิทยาการระบาด, สาธารณสุขศาสตร์",
+        "about.research_focus_desc": "ชีวเวชสารสนเทศศาสตร์, วิทยาการระบาด, สาธารณสุขศาสตร์",
         "news.label": "อัปเดตล่าสุด",
         "news.title": "ข่าวสารและกิจกรรม",
         "news.desc": "การลงพื้นที่ เวิร์กช็อป และกิจกรรมทีมที่ผ่านมา",
@@ -125,7 +126,9 @@ const i18nDict = {
         "title.teaching": "อนุวัตน์ เพ็งพุฒ | รายวิชาที่สอน",
         "title.lectures": "อนุวัตน์ เพ็งพุฒ | งานบรรยายและวิทยากร",
         "title.people": "อนุวัตน์ เพ็งพุฒ | ทีมงานและนักศึกษา",
-        "title.news": "อนุวัตน์ เพ็งพุฒ | ข่าวสารและกิจกรรม"
+        "title.news": "อนุวัตน์ เพ็งพุฒ | ข่าวสารและกิจกรรม",
+        "title.course_doc": "คลังเอกสารบทเรียน | อนุวัตน์ เพ็งพุฒ",
+        "doc.back_teaching": "กลับหน้ารายวิชา"
     }
 };
 
