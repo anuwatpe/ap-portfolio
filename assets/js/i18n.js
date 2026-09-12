@@ -1,6 +1,8 @@
 const i18nDict = {
     en: {
-        "nav.about": "About & Lab",
+        "nav.lab": "BODHI Health Lab",
+        "nav.pi": "PI Profile & CV",
+        "nav.about": "About Lab",
         "nav.news": "News",
         "nav.experience": "Experience",
         "nav.education": "Education",
@@ -65,6 +67,7 @@ const i18nDict = {
         "footer.built": "Built for GitHub Pages with HTML & Tailwind CSS.",
         "hero.name": "Anuwat Pengput<span class=\"text-accent\">.</span>",
         "title.home": "BODHI Health Lab | Dr. Anuwat Pengput",
+        "title.pi": "Dr. Anuwat Pengput | PI Profile & Academic CV",
         "title.publications": "Publications | BODHI Health Lab",
         "title.teaching": "Teaching & Courses | BODHI Health Lab",
         "title.lectures": "Lectures & Seminars | BODHI Health Lab",
@@ -74,6 +77,8 @@ const i18nDict = {
         "doc.back_teaching": "Back to Courses"
     },
     th: {
+        "nav.lab": "BODHI Health Lab",
+        "nav.pi": "ประวัติอาจารย์ (PI Profile)",
         "nav.about": "เกี่ยวกับ Lab",
         "nav.news": "ข่าวสาร",
         "nav.experience": "ประสบการณ์",
@@ -139,6 +144,7 @@ const i18nDict = {
         "footer.built": "พัฒนาสำหรับ GitHub Pages ด้วย HTML และ Tailwind CSS",
         "hero.name": "Anuwat Pengput<span class=\"text-accent\">.</span>",
         "title.home": "BODHI Health Lab | อาจารย์ ดร. อนุวัตน์ เพ็งพุฒ",
+        "title.pi": "ดร. อนุวัตน์ เพ็งพุฒ | ประวัติอาจารย์ & ผลงานวิชาการ",
         "title.publications": "ผลงานตีพิมพ์ | BODHI Health Lab",
         "title.teaching": "รายวิชาที่สอน | BODHI Health Lab",
         "title.lectures": "งานบรรยายวิทยากร | BODHI Health Lab",

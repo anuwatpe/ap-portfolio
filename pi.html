@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Academic Profile & CV of Dr. Anuwat Pengput, Principal Investigator at BODHI Health Lab & Lecturer in Biomedical Informatics." name="description"/>
+<meta content="Anuwat Pengput" name="author"/>
+<link href="https://anuwatpe.github.io/ap-portfolio/pi.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="https://anuwatpe.github.io/ap-portfolio/pi.html" property="og:url"/>
+<meta content="Dr. Anuwat Pengput | PI Profile & Academic CV" property="og:title"/>
+<meta content="Principal Investigator at BODHI Health Lab & Lecturer in Biomedical Informatics, Public Health, and Biomedical Ontology." property="og:description"/>
+<meta content="#0f172a" name="theme-color"/>
+<title data-i18n="title.pi">ดร. อนุวัตน์ เพ็งพุฒ | ประวัติอาจารย์ & ผลงานวิชาการ</title>
+
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Sarabun', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#475569',
+                        accent: '#2563eb',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Sarabun', 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+<script src="assets/js/i18n.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed selection:bg-accent selection:text-white">
+
+<!-- Navigation Bar -->
+<nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<a class="text-xl font-bold tracking-tight text-primary flex items-center gap-2" href="index.html">
+    <span class="bg-primary text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider">BODHI</span>
+    <span class="text-primary font-bold">Health Lab<span class="text-accent">.</span></span>
+</a>
+<!-- เมนูสำหรับหน้าจอ Desktop -->
+<div class="hidden md:flex space-x-8 text-sm font-medium text-secondary items-center">
+<a class="hover:text-accent transition-colors flex items-center gap-1.5" data-i18n="nav.lab" href="index.html"><i class="fa-solid fa-flask"></i> BODHI Health Lab</a>
+<a class="text-accent font-bold transition-colors flex items-center gap-1.5" data-i18n="nav.pi" href="#"><i class="fa-solid fa-id-badge"></i> PI Profile & CV</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.experience" href="#experience">Experience</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.education" href="#education">Education</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.publications" href="publications.html">Publications</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.teaching" href="teaching.html">Teaching</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.lectures" href="lectures.html">Lectures</a>
+<div class="lang-toggler-container flex items-center pl-6 border-l border-slate-300 ml-6 hidden md:flex"></div>
+</div>
+<!-- ปุ่มเมนูสำหรับหน้าจอ Mobile -->
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="md:hidden text-2xl text-primary focus:outline-none" id="mobile-menu-btn" type="button">
+<i aria-hidden="true" class="fa-solid fa-bars"></i>
+</button>
+</div>
+<!-- เมนูสำหรับหน้าจอ Mobile -->
+<div class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full" id="mobile-menu">
+<div class="lang-toggler-container flex items-center mb-4"></div>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.lab" href="index.html">BODHI Health Lab</a>
+<a class="text-accent font-bold mobile-link" data-i18n="nav.pi" href="#">PI Profile & CV</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.experience" href="#experience">Experience</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.education" href="#education">Education</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.publications" href="publications.html">Publications</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.teaching" href="teaching.html">Teaching</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.lectures" href="lectures.html">Lectures</a>
+</div>
+</nav>
+
+<!-- Header / Personal PI Hero Section -->
+<header class="pt-36 pb-16 px-6 max-w-6xl mx-auto flex flex-col justify-center">
+<div class="fade-in-section bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-8 pb-8 border-b border-slate-100">
+    <div>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 text-accent font-bold text-xs tracking-wider uppercase mb-3">
+            <i class="fa-solid fa-user-check"></i> Principal Investigator (PI) &amp; Faculty Member
+        </span>
+        <h1 class="text-4xl md:text-6xl font-bold text-primary tracking-tight" data-i18n="hero.name">
+            Anuwat Pengput, Ph.D.
+        </h1>
+        <p class="text-accent font-semibold text-lg md:text-xl mt-2" data-i18n="about.lecturer">
+            Lecturer &amp; Principal Investigator (PI), BODHI Health Lab
+        </p>
+    </div>
+    <div class="shrink-0 flex flex-wrap gap-3">
+        <a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-slate-800 transition-colors shadow-sm" data-i18n="btn.cv" href="mailto:anuwat@scphkk.ac.th?subject=Request%20for%20Academic%20CV">
+            <i class="fa-regular fa-file-lines"></i> Request CV
+        </a>
+        <a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-200 text-slate-700 text-sm font-semibold hover:border-accent hover:text-accent transition-colors" href="https://scholar.google.com/citations?user=eB9zP4gAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-google text-accent"></i> Google Scholar
+        </a>
+    </div>
+</div>
+
+<p class="text-slate-600 text-base md:text-lg leading-relaxed max-w-4xl mb-8" data-i18n="hero.desc">
+    Lecturer and Researcher specializing in Biomedical Informatics, Biomedical Ontology (Cholangiocarcinoma Ontology), Public Health, and Epidemiology at Sirindhorn College of Public Health Khon Kaen, Praboromarajchanok Institute.
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-slate-100 text-sm">
+    <div class="flex items-center gap-3 text-secondary">
+        <i class="fa-solid fa-building-columns text-accent text-lg"></i>
+        <span>Sirindhorn College of Public Health Khon Kaen, Ministry of Public Health</span>
+    </div>
+    <div class="flex items-center gap-3 text-secondary">
+        <i class="fa-regular fa-envelope text-accent text-lg"></i>
+        <a href="mailto:anuwat@scphkk.ac.th" class="hover:text-accent transition-colors">anuwat@scphkk.ac.th</a>
+    </div>
+</div>
+
+<!-- Social Links -->
+<div class="flex gap-4 mt-8">
+<a aria-label="GitHub profile" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-secondary hover:bg-primary hover:text-white transition-all" href="https://github.com/anuwatpe" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-github"></i>
+</a>
+<a aria-label="LinkedIn profile" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-secondary hover:bg-[#0A66C2] hover:text-white transition-all" href="https://www.linkedin.com/in/anuwat-pengput-726a99167/" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+<a aria-label="Google Scholar profile" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-secondary hover:bg-[#4285F4] hover:text-white transition-all" href="https://scholar.google.com/citations?user=eB9zP4gAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-google"></i>
+</a>
+<a aria-label="ResearchGate profile" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-secondary hover:bg-[#00CCBB] hover:text-white transition-all" href="https://www.researchgate.net/profile/Anuwat-Pengput" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-researchgate"></i>
+</a>
+</div>
+</div>
+</header>
+
+<!-- Section: Education (Degrees) -->
+<section class="py-16 px-6 max-w-6xl mx-auto" id="education">
+<div class="fade-in-section mb-10">
+    <span class="text-xs font-bold tracking-wider uppercase text-accent">Academic Credentials</span>
+    <h2 class="text-3xl font-bold text-primary mt-1" data-i18n="edu.title">Education</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Education Item 1 -->
+<div class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-accent/30 transition-all shadow-xs fade-in-section">
+<div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-accent mb-6">
+<i class="fa-solid fa-graduation-cap text-xl"></i>
+</div>
+<span class="text-sm font-bold text-accent mb-2 block" data-i18n="edu.date1">June 2024</span>
+<h3 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg1">Ph.D. in Biomedical Informatics</h3>
+<p class="text-secondary text-sm mb-4" data-i18n="edu.loc1">University at Buffalo, State University of New York, USA</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-4" data-i18n="edu.desc1">
+Dissertation: Development and Use of Cholangiocarcinoma Ontology for Analysis of Risk Factors in a Research Cohort in Thailand.
+</p>
+</div>
+<!-- Education Item 2 -->
+<div class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-accent/30 transition-all shadow-xs fade-in-section">
+<div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-accent mb-6">
+<i class="fa-solid fa-graduation-cap text-xl"></i>
+</div>
+<span class="text-sm font-bold text-accent mb-2 block" data-i18n="edu.date2">June 2020</span>
+<h3 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg2">M.S. in Biomedical Informatics</h3>
+<p class="text-secondary text-sm mb-4" data-i18n="edu.loc2">University at Buffalo, State University of New York, USA</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-4" data-i18n="edu.desc2">
+Master Project: Spatial Epidemiological Analysis and Geographical Information System of Opioid Overdoses in New York State.
+</p>
+</div>
+<!-- Education Item 3 -->
+<div class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-accent/30 transition-all shadow-xs fade-in-section">
+<div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-slate-500 mb-6">
+<i class="fa-solid fa-book text-xl"></i>
+</div>
+<span class="text-sm font-bold text-slate-500 mb-2 block" data-i18n="edu.date3">April 2016</span>
+<h3 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg3">Master of Public Health (Biostatistics)</h3>
+<p class="text-secondary text-sm mb-4" data-i18n="edu.loc3">Khon Kaen University, Thailand</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-4" data-i18n="edu.desc3">
+Thesis: Quality of Published Randomized Controlled Trials (RCTs) in Thai Healthcare Journals.
+</p>
+</div>
+<!-- Education Item 4 -->
+<div class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-accent/30 transition-all shadow-xs fade-in-section">
+<div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-slate-500 mb-6">
+<i class="fa-solid fa-award text-xl"></i>
+</div>
+<span class="text-sm font-bold text-slate-500 mb-2 block" data-i18n="edu.date4">August 2011</span>
+<h3 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg4">Bachelor of Public Health</h3>
+<p class="text-secondary text-sm" data-i18n="edu.loc4">Khon Kaen University, Thailand</p>
+</div>
+</div>
+</section>
+
+<!-- Section: Professional Experience Timeline -->
+<section class="py-16 px-6 max-w-6xl mx-auto" id="experience">
+<div class="fade-in-section mb-12">
+    <span class="text-xs font-bold tracking-wider uppercase text-accent">Career History</span>
+    <h2 class="text-3xl font-bold text-primary mt-1" data-i18n="experience.title">Professional Experience</h2>
+</div>
+<div class="relative border-l border-slate-300 ml-4 md:ml-6 space-y-12">
+<!-- Experience Item 1 -->
+<div class="relative pl-8 md:pl-12 fade-in-section">
+<div class="absolute w-4 h-4 bg-accent rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+<span class="text-sm font-bold tracking-wider text-accent uppercase" data-i18n="exp.date1">Oct 2023 - Present</span>
+<h3 class="text-xl font-bold text-primary mt-1" data-i18n="exp.role1">Lecturer &amp; Principal Investigator (PI), BODHI Health Lab</h3>
+<p class="text-secondary mt-1 font-medium" data-i18n="exp.loc1">Sirindhorn College of Public Health, Khon Kaen, Thailand</p>
+<p class="text-slate-500 mt-3 text-sm leading-relaxed" data-i18n="exp.desc1">
+Department of Community Public Health. Leading BODHI Health Lab research and teaching undergraduate courses including Digital Literacy, Computer in Community Health, and Digital Health.
+</p>
+</div>
+<!-- Experience Item 2 -->
+<div class="relative pl-8 md:pl-12 fade-in-section">
+<div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+<span class="text-sm font-semibold tracking-wider text-slate-500 uppercase">Apr 2017 - Oct 2023</span>
+<h3 class="text-xl font-bold text-primary mt-1">Public Health Technical Officer</h3>
+<p class="text-secondary mt-1 font-medium">Huaimek District Public Health Office, Ministry of Public Health, Kalasin</p>
+<p class="text-slate-500 mt-3 text-sm leading-relaxed">
+Key responsibilities included research project development and management, public health policy and strategy, and public health administration.
+</p>
+</div>
+<!-- Experience Item 3 -->
+<div class="relative pl-8 md:pl-12 fade-in-section">
+<div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[8.5px] top-1.5 ring-4 ring-slate-50"></div>
+<span class="text-sm font-semibold tracking-wider text-slate-500 uppercase">Apr 2009 - Apr 2017</span>
+<h3 class="text-xl font-bold text-primary mt-1">Public Health Officer / Technical Officer</h3>
+<p class="text-secondary mt-1 font-medium">Songpluaey Sub-District Health Promotion Hospital, Kalasin</p>
+<p class="text-slate-500 mt-3 text-sm leading-relaxed">
+Responsible for basic medical services, disease prevention, epidemiology, health promotion, health information systems, and research project management.
+</p>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="py-12 bg-white border-t border-slate-200 mt-20 text-center text-sm text-slate-500">
+    <div class="max-w-6xl mx-auto px-6">
+        <p data-i18n="footer.rights">© 2026 BODHI Health Lab / Anuwat Pengput. All rights reserved.</p>
+        <p class="mt-2 text-xs text-slate-400" data-i18n="footer.built">Built for GitHub Pages with HTML &amp; Tailwind CSS.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        }
+    });
+</script>
+</body>
+</html>
