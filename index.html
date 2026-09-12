@@ -19,7 +19,7 @@
 <!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <!-- นำเข้า FontAwesome สำหรับไอคอนต่างๆ -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <!-- นำเข้า Tailwind CSS ผ่าน CDN (เหมาะสำหรับโปรเจกต์หน้าเดียวและ GitHub Pages) -->
@@ -30,7 +30,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Sarabun', 'Inter', 'sans-serif'],
                     },
                     colors: {
                         primary: '#0f172a', // slate-900
@@ -44,7 +44,7 @@
 <!-- CSS สำหรับจัดการแอนิเมชันเวลาเลื่อนหน้าจอ -->
 <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Sarabun', 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -83,7 +83,10 @@
 <!-- Navigation Bar -->
 <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
 <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-<a class="text-xl font-bold tracking-tight text-primary" href="#">AP.</a>
+<a class="text-xl font-bold tracking-tight text-primary flex items-center gap-2" href="#">
+    <span class="bg-primary text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider">BODHI</span>
+    <span class="text-primary font-bold">Health Lab<span class="text-accent">.</span></span>
+</a>
 <!-- เมนูสำหรับหน้าจอ Desktop -->
 <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
 <a class="hover:text-accent transition-colors" data-i18n="nav.about" href="#about">About</a>
@@ -118,12 +121,15 @@
 <!-- Header / Hero Section -->
 <header class="pt-40 pb-20 px-6 max-w-6xl mx-auto min-h-[85vh] flex flex-col justify-center">
 <div class="fade-in-section">
-<h2 class="text-accent font-semibold tracking-wider uppercase text-sm mb-4" data-i18n="hero.subtitle">Academic Portfolio</h2>
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-accent font-semibold text-xs tracking-wide mb-6 shadow-sm" data-i18n="hero.badge">
+    <i class="fa-solid fa-microscope text-accent"></i> Biomedical Ontology &amp; Digital Health Informatics Lab
+</div>
+<h2 class="text-slate-500 font-semibold tracking-wider uppercase text-sm mb-3" data-i18n="hero.subtitle">BODHI Health Lab</h2>
 <h1 class="text-5xl md:text-7xl font-bold text-primary tracking-tight mb-6 leading-tight" data-i18n="hero.name">
                 Anuwat Pengput<span class="text-accent">.</span>
 </h1>
 <p class="text-xl md:text-2xl text-secondary max-w-3xl font-light mb-10 leading-relaxed" data-i18n="hero.desc">
-                Lecturer &amp; Researcher in Biomedical Informatics, Public Health, and Biomedical Ontology.
+                Lecturer &amp; Principal Investigator (PI), BODHI Health Lab | Biomedical Informatics, Public Health, and Biomedical Ontology.
             </p>
 <!-- ข้อมูลติดต่อด่วน -->
 <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-secondary mb-12">
@@ -175,22 +181,48 @@
 <h3 class="text-3xl font-bold text-primary" data-i18n="section.affiliation">Current Affiliation</h3>
 <div class="h-px bg-slate-300 flex-1"></div>
 </div>
-<div class="bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-<h4 class="text-2xl font-semibold text-primary mb-2" data-i18n="about.lecturer">Lecturer</h4>
-<p class="text-accent font-medium mb-6" data-i18n="about.college">Sirindhorn College of Public Health Khon Kaen</p>
-<p class="text-secondary leading-relaxed mb-4" data-i18n="about.faculty">
-                    Faculty of Public Health and Allied Health Sciences, Praboromarajchanok Institute, Ministry of Public Health.
-                </p>
-<div class="pt-6 border-t border-slate-200 mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-<div>
-<span class="block text-sm text-slate-500 mb-1" data-i18n="about.teaching_area">Teaching Areas</span>
-<span class="text-primary font-medium" data-i18n="about.teaching_focus">Digital Health, Digital Literacy, Machine Learning</span>
-</div>
-<div>
-<span class="block text-sm text-slate-500 mb-1" data-i18n="about.research_focus_title">Research Focus</span>
-<span class="text-primary font-medium" data-i18n="about.research_focus_desc">Biomedical Informatics, Epidemiology, Public Health</span>
-</div>
-</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm md:col-span-3">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-200">
+            <div>
+                <span class="text-xs font-bold text-accent bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider">Research Laboratory</span>
+                <h4 class="text-2xl font-bold text-primary mt-2" data-i18n="about.lecturer">Lecturer &amp; Principal Investigator (PI), BODHI Health Lab</h4>
+                <p class="text-accent font-medium mt-1" data-i18n="about.college">Sirindhorn College of Public Health Khon Kaen</p>
+            </div>
+            <div class="shrink-0 bg-white p-4 rounded-xl border border-slate-200 text-center shadow-xs">
+                <span class="text-xs font-semibold text-slate-400 block uppercase">Lab Identifier</span>
+                <span class="text-lg font-black text-primary tracking-wider">BODHI HEALTH LAB</span>
+            </div>
+        </div>
+        <p class="text-secondary leading-relaxed mb-6" data-i18n="about.faculty">
+            Faculty of Public Health and Allied Health Sciences, Praboromarajchanok Institute, Ministry of Public Health.
+        </p>
+
+        <!-- 3 Core Research Pillars of BODHI Lab -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-slate-200">
+            <div class="bg-white p-4 rounded-xl border border-slate-100">
+                <div class="w-8 h-8 rounded-lg bg-blue-50 text-accent flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-sitemap text-sm"></i>
+                </div>
+                <h5 class="font-bold text-primary text-sm mb-1">Biomedical Ontology</h5>
+                <p class="text-xs text-slate-500 leading-relaxed">Knowledge representation, formal ontologies (e.g. Cholangiocarcinoma Ontology), and semantic web technologies.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-100">
+                <div class="w-8 h-8 rounded-lg bg-blue-50 text-accent flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-laptop-medical text-sm"></i>
+                </div>
+                <h5 class="font-bold text-primary text-sm mb-1">Digital Health</h5>
+                <p class="text-xs text-slate-500 leading-relaxed">Health information systems, 43-file health data standard, and applied digital tools for healthcare workers.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-slate-100">
+                <div class="w-8 h-8 rounded-lg bg-blue-50 text-accent flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-chart-line text-sm"></i>
+                </div>
+                <h5 class="font-bold text-primary text-sm mb-1">Epidemiological Informatics</h5>
+                <p class="text-xs text-slate-500 leading-relaxed">Spatial epidemiology, GIS analysis, predictive risk models, and community health data analytics.</p>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 </section>
@@ -255,52 +287,52 @@
 <!-- Section: Education -->
 <section class="py-24 px-6 bg-white border-y border-slate-100" id="education">
 <div class="max-w-4xl mx-auto">
-<h3 class="text-3xl font-bold text-primary mb-16 fade-in-section">Education</h3>
+<h3 class="text-3xl font-bold text-primary mb-16 fade-in-section" data-i18n="edu.title">Education</h3>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <!-- Education Item 1 -->
 <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
 <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent shadow-sm mb-6">
 <i aria-hidden="true" class="fa-solid fa-graduation-cap text-xl"></i>
 </div>
-<span class="text-sm font-bold text-accent mb-2 block">June 2024</span>
-<h4 class="text-xl font-bold text-primary mb-2">Ph.D. in Biomedical Informatics</h4>
-<p class="text-secondary text-sm mb-4">University at Buffalo, State University of New York, USA</p>
-<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
-<span class="font-semibold text-slate-700">Dissertation:</span> Development and Use of Cholangiocarcinoma Ontology for Analysis of Risk Factors in a Research Cohort in Thailand.
-                    </p>
+<span class="text-sm font-bold text-accent mb-2 block" data-i18n="edu.date1">June 2024</span>
+<h4 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg1">Ph.D. in Biomedical Informatics</h4>
+<p class="text-secondary text-sm mb-4" data-i18n="edu.loc1">University at Buffalo, State University of New York, USA</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4" data-i18n="edu.desc1">
+Dissertation: Development and Use of Cholangiocarcinoma Ontology for Analysis of Risk Factors in a Research Cohort in Thailand.
+</p>
 </div>
 <!-- Education Item 2 -->
 <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
 <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-accent shadow-sm mb-6">
 <i aria-hidden="true" class="fa-solid fa-graduation-cap text-xl"></i>
 </div>
-<span class="text-sm font-bold text-accent mb-2 block">June 2020</span>
-<h4 class="text-xl font-bold text-primary mb-2">M.S. in Biomedical Informatics</h4>
-<p class="text-secondary text-sm mb-4">University at Buffalo, State University of New York, USA</p>
-<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
-<span class="font-semibold text-slate-700">Master Project:</span> Spatial Epidemiological Analysis and Geographical Information System of Opioid Overdoses in New York State.
-                    </p>
+<span class="text-sm font-bold text-accent mb-2 block" data-i18n="edu.date2">June 2020</span>
+<h4 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg2">M.S. in Biomedical Informatics</h4>
+<p class="text-secondary text-sm mb-4" data-i18n="edu.loc2">University at Buffalo, State University of New York, USA</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4" data-i18n="edu.desc2">
+Master Project: Spatial Epidemiological Analysis and Geographical Information System of Opioid Overdoses in New York State.
+</p>
 </div>
 <!-- Education Item 3 -->
 <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
 <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-500 shadow-sm mb-6">
 <i aria-hidden="true" class="fa-solid fa-book text-xl"></i>
 </div>
-<span class="text-sm font-bold text-slate-500 mb-2 block">April 2016</span>
-<h4 class="text-xl font-bold text-primary mb-2">Master of Public Health (Biostatistics)</h4>
-<p class="text-secondary text-sm mb-4">Khon Kaen University, Thailand</p>
-<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4">
-<span class="font-semibold text-slate-700">Thesis:</span> Quality of Published Randomized Controlled Trials (RCTs) in Thai Healthcare Journals.
-                    </p>
+<span class="text-sm font-bold text-slate-500 mb-2 block" data-i18n="edu.date3">April 2016</span>
+<h4 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg3">Master of Public Health (Biostatistics)</h4>
+<p class="text-secondary text-sm mb-4" data-i18n="edu.loc3">Khon Kaen University, Thailand</p>
+<p class="text-slate-500 text-sm leading-relaxed border-t border-slate-200 pt-4" data-i18n="edu.desc3">
+Thesis: Quality of Published Randomized Controlled Trials (RCTs) in Thai Healthcare Journals.
+</p>
 </div>
 <!-- Education Item 4 -->
 <div class="p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors fade-in-section">
 <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-500 shadow-sm mb-6">
 <i aria-hidden="true" class="fa-solid fa-award text-xl"></i>
 </div>
-<span class="text-sm font-bold text-slate-500 mb-2 block">August 2011</span>
-<h4 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg2">Bachelor of Public Health</h4>
-<p class="text-secondary text-sm">Khon Kaen University, Thailand</p>
+<span class="text-sm font-bold text-slate-500 mb-2 block" data-i18n="edu.date4">August 2011</span>
+<h4 class="text-xl font-bold text-primary mb-2" data-i18n="edu.deg4">Bachelor of Public Health</h4>
+<p class="text-secondary text-sm" data-i18n="edu.loc4">Khon Kaen University, Thailand</p>
 </div>
 </div>
 </div>

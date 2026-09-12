@@ -19,7 +19,7 @@
 <!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <!-- นำเข้า FontAwesome สำหรับไอคอนต่างๆ -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <!-- นำเข้า Tailwind CSS ผ่าน CDN (เหมาะสำหรับโปรเจกต์หน้าเดียวและ GitHub Pages) -->
@@ -30,7 +30,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Sarabun', 'Inter', 'sans-serif'],
                     },
                     colors: {
                         primary: '#0f172a', // slate-900
@@ -44,7 +44,7 @@
 <!-- CSS สำหรับจัดการแอนิเมชันเวลาเลื่อนหน้าจอ -->
 <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Sarabun', 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -83,7 +83,10 @@
 <!-- Navigation Bar -->
 <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
 <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-<a class="text-xl font-bold tracking-tight text-primary" href="index.html#">AP.</a>
+<a class="text-xl font-bold tracking-tight text-primary flex items-center gap-2" href="index.html">
+    <span class="bg-primary text-white text-xs font-black px-2.5 py-1 rounded-md tracking-wider">BODHI</span>
+    <span class="text-primary font-bold">Health Lab<span class="text-accent">.</span></span>
+</a>
 <!-- เมนูสำหรับหน้าจอ Desktop -->
 <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary">
 <a class="hover:text-accent transition-colors" data-i18n="nav.about" href="index.html#about">About</a>

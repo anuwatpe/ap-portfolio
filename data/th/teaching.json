@@ -1,17 +1,17 @@
 [
   {
-    "title": "Digital Health",
+    "title": "สุขภาพดิจิทัล (Digital Health)",
     "icon": "fa-solid fa-laptop-medical",
-    "description": "Health information systems, digital tools for public health work, and applied technology in community health settings."
+    "description": "ระบบสารสนเทศสุขภาพ เครื่องมือดิจิทัลสำหรับการดำเนินงานสาธารณสุข และการประยุกต์ใช้เทคโนโลยีในระดับสุขภาพชุมชน"
   },
   {
-    "title": "Data & Digital Literacy",
+    "title": "การรู้เท่าทันข้อมูลและสื่อดิจิทัล (Data & Digital Literacy)",
     "icon": "fa-solid fa-database",
-    "description": "Data handling, critical use of digital resources, and foundational analytics for health science students."
+    "description": "การจัดการข้อมูล การวิเคราะห์และใช้ประโยชน์จากทรัพยากรดิจิทัลอย่างมีวิจารณญาณ และวิทยาการข้อมูลพื้นฐานสำหรับนักศึกษาวิทยาศาสตร์สุขภาพ"
   },
   {
-    "title": "Research Methods",
+    "title": "ระเบียบวิธีวิจัยและสถิติ (Research Methods)",
     "icon": "fa-solid fa-chart-line",
-    "description": "Epidemiology, biostatistics, literature appraisal, and evidence-based approaches to public health questions."
+    "description": "วิทยาการระบาด ชีวสถิติ การประเมินวรรณกรรมวิชาการ และการใช้หลักฐานเชิงประจักษ์ในการแก้ไขปัญหาสาธารณสุข"
   }
 ]
