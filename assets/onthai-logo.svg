@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" role="img" aria-labelledby="title desc">
+  <title id="title">ONTHAI Lab</title>
+  <desc id="desc">ONTHAI Lab logo with a connected hierarchy mark and the full name Ontology for Health AI and Informatics</desc>
+  <g transform="translate(4 6) scale(1.35)" fill="none" stroke="#2563eb" stroke-linecap="round" stroke-width="3">
+    <path d="M32 14v4M18 18h28M18 18v4M32 18v4M46 18v4"/>
+    <path d="M18 32v6M8 38h13M8 38v8M21 38v8"/>
+    <path d="M32 32v14M46 32v6M45 38h12M45 38v8M57 38v8"/>
+  </g>
+  <g transform="translate(4 6) scale(1.35)" fill="#2563eb">
+    <rect x="26" y="4" width="12" height="10" rx="2.5"/>
+    <rect x="12" y="22" width="12" height="10" rx="2.5" fill="#0f172a"/>
+    <rect x="26" y="22" width="12" height="10" rx="2.5" fill="#0f172a"/>
+    <rect x="40" y="22" width="12" height="10" rx="2.5" fill="#0f172a"/>
+    <rect x="3" y="46" width="9" height="10" rx="2.5"/>
+    <rect x="16" y="46" width="9" height="10" rx="2.5"/>
+    <rect x="28" y="46" width="9" height="10" rx="2.5"/>
+    <rect x="40" y="46" width="9" height="10" rx="2.5"/>
+    <rect x="52" y="46" width="9" height="10" rx="2.5"/>
+  </g>
+  <path d="M102 17v66" stroke="#2563eb" stroke-width="3"/>
+  <text x="124" y="54" fill="#0f172a" font-family="Inter, Arial, Helvetica, sans-serif" font-size="40" font-weight="800">ONTHAI Lab</text>
+  <text x="126" y="78" fill="#0f172a" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="600">Ontology for Health AI and Informatics</text>
+</svg>
