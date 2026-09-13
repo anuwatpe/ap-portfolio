@@ -1,18 +1,18 @@
 {
-  "name": "Pengput Biomedical Informatics Lab",
-  "tagline": "Evidence Synthesis | Biomedical Ontology | AI | Digital & Population Health",
-  "description": "Pengput Biomedical Informatics Lab connects evidence synthesis, biomedical ontology, artificial intelligence, digital health, and population health research to build practical, data-informed solutions for communities.",
-  "aboutDescription": "Pengput Biomedical Informatics Lab brings together researchers, students, and collaborators to conduct evidence synthesis and develop trustworthy health data, ontologies, AI, and digital tools for digital and population health.",
+  "name": "ONTHAI Lab",
+  "tagline": "Ontology for Health AI and Informatics",
+  "description": "ONTHAI Lab connects biomedical informatics, evidence synthesis, biomedical ontology, health AI, digital health, and population health research to build practical, data-informed solutions for communities.",
+  "aboutDescription": "ONTHAI Lab brings together researchers, students, and collaborators to conduct evidence synthesis and develop trustworthy health data, biomedical ontologies, health AI, and digital tools for digital and population health.",
   "contactLabel": "Contact the Lab",
   "email": "anuwat@scphkk.ac.th",
   "location": "Khon Kaen, Thailand",
   "affiliation": {
     "label": "Research Laboratory",
-    "name": "Pengput Biomedical Informatics Lab",
+    "name": "Ontology for Health AI and Informatics",
     "institution": "Based at Sirindhorn College of Public Health Khon Kaen",
     "faculty": "Faculty of Public Health and Allied Health Sciences, Praboromarajchanok Institute, Ministry of Public Health.",
     "identifierLabel": "Lab Identifier",
-    "identifier": "PENGPUT LAB"
+    "identifier": "ONTHAI LAB"
   },
   "focusAreas": [
     {

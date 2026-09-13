@@ -1,18 +1,18 @@
 {
-  "name": "Pengput Biomedical Informatics Lab",
-  "tagline": "Evidence Synthesis | Biomedical Ontology | AI | Digital & Population Health",
-  "description": "Pengput Biomedical Informatics Lab เชื่อมโยงการสังเคราะห์หลักฐาน ชีวเวชสารสนเทศศาสตร์ ออนโทโลยีชีวเวช ปัญญาประดิษฐ์ สุขภาพดิจิทัล และสุขภาพประชากร เพื่อพัฒนาแนวทางที่ใช้ข้อมูลอย่างมีความหมายและนำไปใช้ได้จริงสำหรับชุมชน",
-  "aboutDescription": "Pengput Biomedical Informatics Lab เชื่อมโยงนักวิจัย นักศึกษา และผู้ร่วมงาน เพื่อทำงานด้านการสังเคราะห์หลักฐานและพัฒนาข้อมูลสุขภาพ ออนโทโลยี ปัญญาประดิษฐ์ และเครื่องมือดิจิทัลที่น่าเชื่อถือสำหรับสุขภาพดิจิทัลและสุขภาพประชากร",
+  "name": "ONTHAI Lab",
+  "tagline": "Ontology for Health AI and Informatics",
+  "description": "ONTHAI Lab เชื่อมโยงชีวเวชสารสนเทศศาสตร์ การสังเคราะห์หลักฐาน ออนโทโลยีชีวเวช ปัญญาประดิษฐ์ด้านสุขภาพ สุขภาพดิจิทัล และสุขภาพประชากร เพื่อพัฒนาแนวทางที่ใช้ข้อมูลอย่างมีความหมายและนำไปใช้ได้จริงสำหรับชุมชน",
+  "aboutDescription": "ONTHAI Lab เชื่อมโยงนักวิจัย นักศึกษา และผู้ร่วมงาน เพื่อทำงานด้านการสังเคราะห์หลักฐานและพัฒนาข้อมูลสุขภาพ ออนโทโลยีชีวเวช ปัญญาประดิษฐ์ด้านสุขภาพ และเครื่องมือดิจิทัลที่น่าเชื่อถือสำหรับสุขภาพดิจิทัลและสุขภาพประชากร",
   "contactLabel": "ติดต่อ Lab",
   "email": "anuwat@scphkk.ac.th",
   "location": "จังหวัดขอนแก่น ประเทศไทย",
   "affiliation": {
     "label": "ห้องปฏิบัติการวิจัย",
-    "name": "Pengput Biomedical Informatics Lab",
+    "name": "Ontology for Health AI and Informatics",
     "institution": "ตั้งอยู่ที่วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
     "faculty": "คณะสาธารณสุขศาสตร์และสหเวชศาสตร์ สถาบันพระบรมราชชนก กระทรวงสาธารณสุข",
     "identifierLabel": "รหัส Lab",
-    "identifier": "PENGPUT LAB"
+    "identifier": "ONTHAI LAB"
   },
   "focusAreas": [
     {
