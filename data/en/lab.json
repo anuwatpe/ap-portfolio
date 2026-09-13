@@ -1,0 +1,34 @@
+{
+  "name": "BODHI Health Lab",
+  "tagline": "Biomedical Ontology & Digital Health Informatics Lab",
+  "description": "BODHI Health Lab connects biomedical ontology, digital health, and public health research to build practical, data-informed solutions for communities.",
+  "aboutDescription": "BODHI Health Lab brings together researchers, students, and collaborators to develop trustworthy health data, ontology, and digital tools for community health.",
+  "contactLabel": "Contact the Lab",
+  "email": "anuwat@scphkk.ac.th",
+  "location": "Khon Kaen, Thailand",
+  "affiliation": {
+    "label": "Research Laboratory",
+    "name": "Biomedical Ontology & Digital Health Informatics",
+    "institution": "Based at Sirindhorn College of Public Health Khon Kaen",
+    "faculty": "Faculty of Public Health and Allied Health Sciences, Praboromarajchanok Institute, Ministry of Public Health.",
+    "identifierLabel": "Lab Identifier",
+    "identifier": "BODHI HEALTH LAB"
+  },
+  "focusAreas": [
+    {
+      "icon": "fa-solid fa-sitemap",
+      "title": "Biomedical Ontology",
+      "description": "Knowledge representation, formal ontologies, and semantic web technologies for health research."
+    },
+    {
+      "icon": "fa-solid fa-laptop-medical",
+      "title": "Digital Health",
+      "description": "Health information systems, data standards, and applied digital tools for healthcare workers."
+    },
+    {
+      "icon": "fa-solid fa-chart-line",
+      "title": "Epidemiological Informatics",
+      "description": "Spatial epidemiology, GIS analysis, predictive risk models, and community health analytics."
+    }
+  ]
+}
