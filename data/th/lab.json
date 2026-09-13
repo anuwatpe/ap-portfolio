@@ -1,8 +1,8 @@
 {
   "name": "ONTHAI Lab",
   "tagline": "Ontology for Health AI and Informatics",
-  "description": "ONTHAI Lab เชื่อมโยงชีวเวชสารสนเทศศาสตร์ การสังเคราะห์หลักฐาน ออนโทโลยีชีวเวช ปัญญาประดิษฐ์ด้านสุขภาพ สุขภาพดิจิทัล และสุขภาพประชากร เพื่อพัฒนาแนวทางที่ใช้ข้อมูลอย่างมีความหมายและนำไปใช้ได้จริงสำหรับชุมชน",
-  "aboutDescription": "ONTHAI Lab เชื่อมโยงนักวิจัย นักศึกษา และผู้ร่วมงาน เพื่อทำงานด้านการสังเคราะห์หลักฐานและพัฒนาข้อมูลสุขภาพ ออนโทโลยีชีวเวช ปัญญาประดิษฐ์ด้านสุขภาพ และเครื่องมือดิจิทัลที่น่าเชื่อถือสำหรับสุขภาพดิจิทัลและสุขภาพประชากร",
+  "description": "ONTHAI Lab เชื่อมโยงชีวเวชสารสนเทศศาสตร์ การสังเคราะห์หลักฐาน ออนโทโลยีชีวเวช ชีวสถิติ ปัญญาประดิษฐ์ด้านสุขภาพ สุขภาพดิจิทัล และสุขภาพประชากร เพื่อพัฒนาแนวทางที่ใช้ข้อมูลอย่างมีความหมายและนำไปใช้ได้จริงสำหรับชุมชน",
+  "aboutDescription": "ONTHAI Lab เชื่อมโยงนักวิจัย นักศึกษา และผู้ร่วมงาน เพื่อทำงานด้านการสังเคราะห์หลักฐานและชีวสถิติ พัฒนาข้อมูลสุขภาพ ออนโทโลยีชีวเวช ปัญญาประดิษฐ์ด้านสุขภาพ และเครื่องมือดิจิทัลที่น่าเชื่อถือสำหรับสุขภาพดิจิทัลและสุขภาพประชากร",
   "contactLabel": "ติดต่อ Lab",
   "email": "anuwat@scphkk.ac.th",
   "location": "จังหวัดขอนแก่น ประเทศไทย",
@@ -18,6 +18,7 @@
     { "icon": "fa-solid fa-sitemap", "title": "Biomedical Informatics" },
     { "icon": "fa-solid fa-book-open", "title": "Evidence Synthesis" },
     { "icon": "fa-solid fa-diagram-project", "title": "Biomedical Ontology" },
+    { "icon": "fa-solid fa-calculator", "title": "Biostatistics" },
     { "icon": "fa-solid fa-robot", "title": "AI in Healthcare" },
     { "icon": "fa-solid fa-laptop-medical", "title": "Digital Health" },
     { "icon": "fa-solid fa-people-group", "title": "Population Health" }

@@ -1,8 +1,8 @@
 {
   "name": "ONTHAI Lab",
   "tagline": "Ontology for Health AI and Informatics",
-  "description": "ONTHAI Lab connects biomedical informatics, evidence synthesis, biomedical ontology, health AI, digital health, and population health research to build practical, data-informed solutions for communities.",
-  "aboutDescription": "ONTHAI Lab brings together researchers, students, and collaborators to conduct evidence synthesis and develop trustworthy health data, biomedical ontologies, health AI, and digital tools for digital and population health.",
+  "description": "ONTHAI Lab connects biomedical informatics, evidence synthesis, biomedical ontology, biostatistics, AI in healthcare, digital health, and population health research to build practical, data-informed solutions for communities.",
+  "aboutDescription": "ONTHAI Lab brings together researchers, students, and collaborators to conduct evidence synthesis and biostatistics, and develop trustworthy health data, biomedical ontologies, AI in healthcare, and digital tools for digital and population health.",
   "contactLabel": "Contact the Lab",
   "email": "anuwat@scphkk.ac.th",
   "location": "Khon Kaen, Thailand",
@@ -18,6 +18,7 @@
     { "icon": "fa-solid fa-sitemap", "title": "Biomedical Informatics" },
     { "icon": "fa-solid fa-book-open", "title": "Evidence Synthesis" },
     { "icon": "fa-solid fa-diagram-project", "title": "Biomedical Ontology" },
+    { "icon": "fa-solid fa-calculator", "title": "Biostatistics" },
     { "icon": "fa-solid fa-robot", "title": "AI in Healthcare" },
     { "icon": "fa-solid fa-laptop-medical", "title": "Digital Health" },
     { "icon": "fa-solid fa-people-group", "title": "Population Health" }
