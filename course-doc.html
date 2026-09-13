@@ -9,8 +9,8 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="https://anuwatpe.github.io/ap-portfolio/course-doc.html"/>
-    <meta property="og:title" content="Course Documentation | BioOnto Lab"/>
-    <meta property="og:description" content="Course documentation and learning materials from BioOnto Lab."/>
+    <meta property="og:title" content="Course Documentation | Pengput Biomedical Informatics Lab"/>
+    <meta property="og:description" content="Course documentation and learning materials from Pengput Biomedical Informatics Lab."/>
 
     <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -628,7 +628,7 @@
             document.getElementById('chapter-prev').textContent = locale.previous;
             document.getElementById('chapter-next').textContent = locale.next;
             courseNav.innerHTML = renderCourseNavigation(locale.modules);
-            document.title = `${locale.title} | BioOnto Lab`;
+            document.title = `${locale.title} | Pengput Biomedical Informatics Lab`;
 
             const courseUrl = `https://anuwatpe.github.io/ap-portfolio/course-doc.html?course=${encodeURIComponent(courseId)}`;
             if (canonical) canonical.href = courseUrl;
