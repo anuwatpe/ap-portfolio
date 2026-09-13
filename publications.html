@@ -458,12 +458,16 @@
             function observeFadeInSections() {
                 document.querySelectorAll('.fade-in-section').forEach(section => {
                     observer.observe(section);
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        section.classList.add('is-visible');
+                    }
                 });
             }
 
             renderPortfolioData().finally(observeFadeInSections);
-            window.addEventListener('languageChanged', (e) => {
-                renderPortfolioData();
+            window.addEventListener('languageChanged', () => {
+                renderPortfolioData().finally(observeFadeInSections);
             });
 
             // 4. Navbar Effect เวลาเลื่อนหน้าจอ
