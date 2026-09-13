@@ -1,19 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title id="title">ONTHAI Lab hierarchy mark</title>
   <g fill="none" stroke="#2563eb" stroke-linecap="round" stroke-width="3">
-    <path d="M32 14v4M18 18h28M18 18v4M32 18v4M46 18v4"/>
-    <path d="M18 32v6M8 38h13M8 38v8M21 38v8"/>
-    <path d="M32 32v14M46 32v6M45 38h12M45 38v8M57 38v8"/>
+    <path d="M32 14v7M14 21h36M14 21v1M32 21v1M50 21v1"/>
+    <path d="M14 34v12M32 34v12M50 34v12"/>
   </g>
   <g fill="#2563eb">
     <rect x="26" y="4" width="12" height="10" rx="2.5"/>
-    <rect x="12" y="22" width="12" height="10" rx="2.5" fill="#0f172a"/>
-    <rect x="26" y="22" width="12" height="10" rx="2.5" fill="#0f172a"/>
-    <rect x="40" y="22" width="12" height="10" rx="2.5" fill="#0f172a"/>
-    <rect x="3" y="46" width="9" height="10" rx="2.5"/>
-    <rect x="16" y="46" width="9" height="10" rx="2.5"/>
-    <rect x="28" y="46" width="9" height="10" rx="2.5"/>
-    <rect x="40" y="46" width="9" height="10" rx="2.5"/>
-    <rect x="52" y="46" width="9" height="10" rx="2.5"/>
+    <rect x="8" y="22" width="12" height="12" rx="2.5" fill="#0f172a"/>
+    <rect x="26" y="22" width="12" height="12" rx="2.5" fill="#0f172a"/>
+    <rect x="44" y="22" width="12" height="12" rx="2.5" fill="#0f172a"/>
+    <rect x="8" y="46" width="12" height="10" rx="2.5"/>
+    <rect x="26" y="46" width="12" height="10" rx="2.5"/>
+    <rect x="44" y="46" width="12" height="10" rx="2.5"/>
   </g>
 </svg>

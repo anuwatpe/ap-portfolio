@@ -85,7 +85,7 @@
 <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
 <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 <a aria-label="ONTHAI Lab" class="flex items-center shrink-0" href="#">
-    <img alt="ONTHAI Lab | Ontology for Health AI and Informatics" class="h-10 w-auto" height="100" src="assets/onthai-logo.svg" width="500"/>
+    <img alt="ONTHAI Lab | Ontology for Health AI and Informatics" class="h-12 w-auto" height="176" src="assets/onthai-logo-designed.png" width="710"/>
 </a>
 <!-- เมนูสำหรับหน้าจอ Desktop -->
 <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary items-center">
@@ -127,6 +127,20 @@
 <p id="lab-description" class="text-xl md:text-2xl text-secondary max-w-3xl font-light mb-10 leading-relaxed" data-i18n="lab.desc">
                 ONTHAI Lab connects biomedical informatics, evidence synthesis, biomedical ontology, health AI, digital health, and population health research to build practical, data-informed solutions for communities.
             </p>
+<div id="research-scope" class="mb-10 max-w-4xl">
+    <div class="flex items-center gap-3 mb-3">
+        <span class="h-px w-8 bg-accent"></span>
+        <span class="text-xs font-bold tracking-wider uppercase text-accent" data-i18n="lab.scope_label">Research Scope</span>
+    </div>
+    <ul id="lab-research-scope" class="flex flex-wrap gap-2.5" aria-label="Research scope">
+        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-sitemap text-accent"></i>Biomedical Informatics</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-book-open text-accent"></i>Evidence Synthesis</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-diagram-project text-accent"></i>Biomedical Ontology</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-robot text-accent"></i>AI in Healthcare</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-laptop-medical text-accent"></i>Digital Health</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-people-group text-accent"></i>Population Health</li>
+    </ul>
+</div>
 <!-- ข้อมูลติดต่อด่วน -->
 <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-secondary mb-12">
 <div class="flex items-center gap-2">
@@ -458,12 +472,12 @@
 <i aria-hidden="true" class="fa-solid fa-sitemap text-accent"></i> <span data-i18n="lab.capabilities_domains">Research Domains</span>
                     </h4>
 <div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Biomedical Informatics</span>
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Evidence Synthesis</span>
 <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Biomedical Ontology</span>
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">AI in Healthcare</span>
 <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Digital Health</span>
-<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Public Health and Epidemiological Informatics</span>
-<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Public Health Analytics</span>
-<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Health Information Systems</span>
-<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Community Health</span>
+<span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">Population Health</span>
 </div>
 </div>
 <div class="fade-in-section">
@@ -596,6 +610,16 @@
                 setText('lab-identifier-label', affiliation.identifierLabel);
                 setText('lab-identifier', affiliation.identifier);
                 setText('lab-about-description', lab.aboutDescription || lab.description);
+
+                const scopeContainer = document.getElementById('lab-research-scope');
+                if (scopeContainer && Array.isArray(lab.researchScope)) {
+                    scopeContainer.innerHTML = lab.researchScope.map(area => `
+                        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm">
+                            <i aria-hidden="true" class="${escapeHtml(area.icon || 'fa-solid fa-flask')} text-accent"></i>
+                            ${escapeHtml(area.title)}
+                        </li>
+                    `).join('');
+                }
 
                 const container = document.getElementById('lab-focus-areas');
                 if (!container || !Array.isArray(lab.focusAreas)) return;

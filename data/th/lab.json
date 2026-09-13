@@ -14,6 +14,14 @@
     "identifierLabel": "รหัส Lab",
     "identifier": "ONTHAI LAB"
   },
+  "researchScope": [
+    { "icon": "fa-solid fa-sitemap", "title": "Biomedical Informatics" },
+    { "icon": "fa-solid fa-book-open", "title": "Evidence Synthesis" },
+    { "icon": "fa-solid fa-diagram-project", "title": "Biomedical Ontology" },
+    { "icon": "fa-solid fa-robot", "title": "AI in Healthcare" },
+    { "icon": "fa-solid fa-laptop-medical", "title": "Digital Health" },
+    { "icon": "fa-solid fa-people-group", "title": "Population Health" }
+  ],
   "focusAreas": [
     {
       "icon": "fa-solid fa-sitemap",
