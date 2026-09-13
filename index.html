@@ -6,6 +6,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Academic portfolio of Anuwat Pengput, Lecturer and Researcher in Biomedical Informatics, Public Health, Epidemiology, and Biomedical Ontology." name="description"/>
 <meta content="Anuwat Pengput" name="author"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://anuwatpe.github.io/ap-portfolio/" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="https://anuwatpe.github.io/ap-portfolio/" property="og:url"/>
@@ -89,7 +90,7 @@
 </a>
 <!-- เมนูสำหรับหน้าจอ Desktop -->
 <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary items-center">
-<a class="text-accent font-bold transition-colors" data-i18n="nav.lab" href="#">BODHI Health Lab</a>
+<a aria-current="page" class="text-accent font-bold transition-colors" data-i18n="nav.lab" href="#">BODHI Health Lab</a>
 <a class="hover:text-accent transition-colors" data-i18n="nav.news" href="news.html">News</a>
 <a class="hover:text-accent transition-colors" data-i18n="nav.publications" href="publications.html">Publications</a>
 <a class="hover:text-accent transition-colors" data-i18n="nav.teaching" href="teaching.html">Teaching</a>
@@ -106,7 +107,7 @@
 <!-- เมนูสำหรับหน้าจอ Mobile (ซ่อนไว้เป็นค่าเริ่มต้น) -->
 <div class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full" id="mobile-menu">
 <div class="lang-toggler-container flex items-center mb-4"></div>
-<a class="text-accent font-bold mobile-link" data-i18n="nav.lab" href="#">BODHI Health Lab</a>
+<a aria-current="page" class="text-accent font-bold mobile-link" data-i18n="nav.lab" href="#">BODHI Health Lab</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.news" href="news.html">News</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.publications" href="publications.html">Publications</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.teaching" href="teaching.html">Teaching</a>
@@ -752,7 +753,12 @@ Thesis: Quality of Published Randomized Controlled Trials (RCTs) in Thai Healthc
                 const container = document.getElementById('teaching-list');
                 if (!container || !items.length) return;
 
-                container.innerHTML = items.map(item => `
+                container.innerHTML = items.map(item => {
+                    const courseId = /^[a-z0-9-]+$/i.test(String(item.id || '')) ? String(item.id) : 'digital-health';
+                    const courseUrl = /^course-doc\.html\?course=[a-z0-9-]+$/i.test(String(item.docUrl || ''))
+                        ? String(item.docUrl)
+                        : `course-doc.html?course=${encodeURIComponent(courseId)}`;
+                    return `
                     <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
                         <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
                             <i class="${escapeHtml(item.icon || 'fa-solid fa-book-open')}" aria-hidden="true"></i>
@@ -760,14 +766,15 @@ Thesis: Quality of Published Randomized Controlled Trials (RCTs) in Thai Healthc
                         <h4 class="text-lg font-bold text-primary mb-3">${escapeHtml(item.title)}</h4>
                         <p class="text-slate-500 text-sm leading-relaxed mb-6">${escapeHtml(item.description)}</p>
                         <div class="mt-auto pt-4 border-t border-slate-200/60">
-                            <a href="course-doc.html" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-accentDark transition-colors">
-                                <i class="fa-solid fa-book-open-reader"></i>
-                                <span>อ่านบทความและเนื้อหารายวิชา</span>
-                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            <a href="${escapeHtml(courseUrl)}" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-accentDark transition-colors">
+                                <i aria-hidden="true" class="fa-solid fa-book-open-reader"></i>
+                                <span>${escapeHtml(translate('course_doc.label', 'Read course materials'))}</span>
+                                <i aria-hidden="true" class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
                         </div>
                     </article>
-                `).join('');
+                `;
+                }).join('');
             }
 
             function renderMember(member) {

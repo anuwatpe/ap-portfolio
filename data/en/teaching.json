@@ -1,17 +1,23 @@
 [
   {
+    "id": "digital-health",
     "title": "Digital Health",
     "icon": "fa-solid fa-laptop-medical",
-    "description": "Health information systems, digital tools for public health work, and applied technology in community health settings."
+    "description": "Health information systems, digital tools for public health work, and applied technology in community health settings.",
+    "docUrl": "course-doc.html?course=digital-health"
   },
   {
+    "id": "data-literacy",
     "title": "Data & Digital Literacy",
     "icon": "fa-solid fa-database",
-    "description": "Data handling, critical use of digital resources, and foundational analytics for health science students."
+    "description": "Data handling, critical use of digital resources, and foundational analytics for health science students.",
+    "docUrl": "course-doc.html?course=data-literacy"
   },
   {
+    "id": "research-methods",
     "title": "Research Methods",
     "icon": "fa-solid fa-chart-line",
-    "description": "Epidemiology, biostatistics, literature appraisal, and evidence-based approaches to public health questions."
+    "description": "Epidemiology, biostatistics, literature appraisal, and evidence-based approaches to public health questions.",
+    "docUrl": "course-doc.html?course=research-methods"
   }
 ]

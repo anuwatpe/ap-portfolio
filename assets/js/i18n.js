@@ -63,12 +63,26 @@ const i18nDict = {
         "badge.lab_project": "<i class=\"fa-solid fa-flask text-[10px] mr-1\"></i> BODHI Lab Project",
         "badge.ongoing": "<i class=\"fa-solid fa-spinner text-[10px] mr-1 fa-spin-pulse\"></i> Ongoing",
         "teaching.title": "Teaching & Courses",
+        "page.teaching.label": "Teaching",
+        "page.teaching.title": "Courses & Learning Areas",
+        "page.teaching.desc": "Teaching focuses on practical digital health skills, research literacy, and data-informed public health practice.",
         "btn.view_teaching": "View All Teaching <i class=\"fa-solid fa-arrow-right-long\" aria-hidden=\"true\"></i>",
         "lectures.title": "Guest Speaker / Expert Lectures",
+        "page.lectures.label": "Guest Speaker / Expert Lectures",
+        "page.lectures.title": "Invited Talks & Expert Sessions",
+        "page.lectures.desc": "Sharing knowledge and experiences on digital health, research methods, and biomedical informatics at various conferences and institutions.",
         "btn.view_lectures": "View All Lectures <i class=\"fa-solid fa-arrow-right-long\" aria-hidden=\"true\"></i>",
         "people.title": "Lab Members & Mentorship",
+        "page.people.label": "People & Mentorship",
+        "page.people.title": "Research Team, Advisees & Alumni",
+        "page.people.desc": "This area highlights people working in the current research and teaching network, students under supervision, and former advisees after graduation.",
         "btn.view_people": "View All People <i class=\"fa-solid fa-arrow-right-long\" aria-hidden=\"true\"></i>",
         "skills.title": "Skills & Tools",
+        "course_doc.label": "Read course materials",
+        "course_doc.in_progress": "Course materials in progress",
+        "course_doc.in_progress_desc": "Course-specific notes and learning activities will be added here.",
+        "course_doc.outline": "Course outline",
+        "course_doc.mock_note": "This course page is a mockup. Detailed modules, readings, and activities will be added as the course is prepared.",
         "footer.rights": "© 2026 BODHI Health Lab / Anuwat Pengput. All rights reserved.",
         "footer.built": "Built for GitHub Pages with HTML & Tailwind CSS.",
         "hero.name": "Anuwat Pengput<span class=\"text-accent\">.</span>",
@@ -146,12 +160,26 @@ const i18nDict = {
         "badge.lab_project": "<i class=\"fa-solid fa-flask text-[10px] mr-1\"></i> โครงการวิจัยของ Lab",
         "badge.ongoing": "<i class=\"fa-solid fa-spinner text-[10px] mr-1 fa-spin-pulse\"></i> กำลังดำเนินการ",
         "teaching.title": "รายวิชาที่สอน",
+        "page.teaching.label": "การสอน",
+        "page.teaching.title": "รายวิชาและพื้นที่การเรียนรู้",
+        "page.teaching.desc": "มุ่งเน้นทักษะสุขภาพดิจิทัล การรู้เท่าทันงานวิจัย และการใช้ข้อมูลเพื่อการปฏิบัติงานสาธารณสุข",
         "btn.view_teaching": "ดูรายวิชาทั้งหมด <i class=\"fa-solid fa-arrow-right-long\" aria-hidden=\"true\"></i>",
         "lectures.title": "วิทยากรบรรยาย / ผู้ทรงคุณวุฒิ",
+        "page.lectures.label": "งานบรรยายวิทยากร / ผู้ทรงคุณวุฒิ",
+        "page.lectures.title": "การไปบรรยายและการแลกเปลี่ยนความรู้",
+        "page.lectures.desc": "แบ่งปันความรู้และประสบการณ์ด้านสุขภาพดิจิทัล ระเบียบวิธีวิจัย และชีวเวชสารสนเทศศาสตร์ในงานประชุมและสถาบันต่าง ๆ",
         "btn.view_lectures": "ดูงานบรรยายทั้งหมด <i class=\"fa-solid fa-arrow-right-long\" aria-hidden=\"true\"></i>",
         "people.title": "สมาชิก BODHI Health Lab และนักศึกษา",
+        "page.people.label": "สมาชิก Lab และการให้คำปรึกษา",
+        "page.people.title": "ทีมวิจัย นักศึกษาที่ปรึกษา และศิษย์เก่า",
+        "page.people.desc": "พื้นที่นี้รวบรวมผู้ที่ทำงานอยู่ในเครือข่ายวิจัยและการสอน นักศึกษาที่อยู่ในการดูแล และศิษย์เก่าหลังสำเร็จการศึกษา",
         "btn.view_people": "ดูบุคลากรทั้งหมด <i class=\"fa-solid fa-arrow-right-long\" aria-hidden=\"true\"></i>",
         "skills.title": "ทักษะและเครื่องมือ",
+        "course_doc.label": "อ่านบทความและเนื้อหารายวิชา",
+        "course_doc.in_progress": "กำลังจัดเตรียมเอกสารรายวิชา",
+        "course_doc.in_progress_desc": "จะทยอยเพิ่มบทความเฉพาะรายวิชา กิจกรรมการเรียนรู้ และเอกสารประกอบในหน้านี้",
+        "course_doc.outline": "โครงร่างรายวิชา",
+        "course_doc.mock_note": "หน้าเอกสารนี้เป็น mockup สำหรับวางโครงสร้างเบื้องต้น โดยจะเพิ่มบทเรียน เอกสารอ่าน และกิจกรรมอย่างละเอียดภายหลัง",
         "footer.rights": "© 2026 BODHI Health Lab / อนุวัตน์ เพ็งพุฒ สงวนลิขสิทธิ์",
         "footer.built": "พัฒนาสำหรับ GitHub Pages ด้วย HTML และ Tailwind CSS",
         "hero.name": "Anuwat Pengput<span class=\"text-accent\">.</span>",
@@ -167,15 +195,21 @@ const i18nDict = {
     }
 };
 
-let currentLang = localStorage.getItem('site_lang') || 'th';
+const supportedLanguages = ['en', 'th'];
+const storedLanguage = localStorage.getItem('site_lang');
+let currentLang = supportedLanguages.includes(storedLanguage) ? storedLanguage : 'th';
+document.documentElement.lang = currentLang;
 
 function setLanguage(lang) {
+    if (!supportedLanguages.includes(lang)) return;
     currentLang = lang;
     localStorage.setItem('site_lang', lang);
+    document.documentElement.lang = currentLang;
     applyTranslations();
     
     // Switch active state on buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
         if (btn.dataset.lang === lang) {
             btn.classList.add('text-accent', 'font-bold');
             btn.classList.remove('text-secondary', 'font-medium');
@@ -190,6 +224,7 @@ function setLanguage(lang) {
 }
 
 function applyTranslations() {
+    document.documentElement.lang = currentLang;
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (i18nDict[currentLang] && i18nDict[currentLang][key]) {
@@ -198,14 +233,18 @@ function applyTranslations() {
     });
 }
 
+function translate(key, fallback = '') {
+    return i18nDict[currentLang]?.[key] || fallback;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Inject lang toggler if it exists
     const togglerContainers = document.querySelectorAll('.lang-toggler-container');
     togglerContainers.forEach(container => {
         container.innerHTML = `
-            <button class="lang-btn hover:text-accent transition-colors ${currentLang === 'en' ? 'text-accent font-bold' : 'text-secondary font-medium'}" data-lang="en">EN</button>
+            <button type="button" class="lang-btn hover:text-accent transition-colors ${currentLang === 'en' ? 'text-accent font-bold' : 'text-secondary font-medium'}" data-lang="en" aria-pressed="${currentLang === 'en'}">EN</button>
             <span class="text-slate-300 mx-1">|</span>
-            <button class="lang-btn hover:text-accent transition-colors ${currentLang === 'th' ? 'text-accent font-bold' : 'text-secondary font-medium'}" data-lang="th">TH</button>
+            <button type="button" class="lang-btn hover:text-accent transition-colors ${currentLang === 'th' ? 'text-accent font-bold' : 'text-secondary font-medium'}" data-lang="th" aria-pressed="${currentLang === 'th'}">TH</button>
         `;
     });
 
