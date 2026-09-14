@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title id="title">ONTHAI Lab hierarchy mark</title>
-  <g fill="none" stroke="#2563eb" stroke-linecap="round" stroke-width="3">
+  <g fill="none" stroke="#6d28d9" stroke-linecap="round" stroke-width="3">
     <path d="M32 14v7M14 21h36M14 21v1M32 21v1M50 21v1"/>
     <path d="M14 34v12M32 34v12M50 34v12"/>
   </g>
-  <g fill="#2563eb">
+  <g fill="#6d28d9">
     <rect x="26" y="4" width="12" height="10" rx="2.5"/>
     <rect x="8" y="22" width="12" height="12" rx="2.5" fill="#0f172a"/>
     <rect x="26" y="22" width="12" height="12" rx="2.5" fill="#0f172a"/>

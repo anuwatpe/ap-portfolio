@@ -15,7 +15,7 @@
 <meta content="summary" name="twitter:card"/>
 <meta content="ONTHAI Lab | Ontology for Health AI and Informatics" name="twitter:title"/>
 <meta content="ONTHAI Lab connects researchers, evidence, and health data to build practical solutions for digital and population health." name="twitter:description"/>
-<meta content="#0f172a" name="theme-color"/>
+<meta content="#6d28d9" name="theme-color"/>
 <title data-i18n="title.home">ONTHAI Lab | Ontology for Health AI and Informatics</title>
 <!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -36,7 +36,8 @@
                     colors: {
                         primary: '#0f172a', // slate-900
                         secondary: '#475569', // slate-600
-                        accent: '#2563eb', // blue-600
+                        accent: '#6d28d9', // violet-700
+                        accentDark: '#5b21b6', // violet-800
                     }
                 }
             }
@@ -85,7 +86,7 @@
 <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
 <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 <a aria-label="ONTHAI Lab" class="flex items-center shrink-0" href="#">
-    <img alt="ONTHAI Lab | Ontology for Health AI and Informatics" class="h-12 w-auto" height="176" src="assets/onthai-logo-designed.png" width="710"/>
+    <img alt="ONTHAI Lab | Ontology for Health AI and Informatics" class="h-12 w-auto" height="176" src="assets/onthai-logo-designed.png" style="filter: hue-rotate(38deg) saturate(0.9);" width="710"/>
 </a>
 <!-- เมนูสำหรับหน้าจอ Desktop -->
 <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary items-center">
@@ -118,7 +119,7 @@
 <!-- Header / Hero Section -->
 <header class="pt-40 pb-20 px-6 max-w-6xl mx-auto min-h-[85vh] flex flex-col justify-center">
 <div class="fade-in-section">
-<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-accent font-semibold text-xs tracking-wide mb-6 shadow-sm" data-i18n="lab.badge">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-50 border border-violet-100 text-accent font-semibold text-xs tracking-wide mb-6 shadow-sm" data-i18n="lab.badge">
     <i aria-hidden="true" class="fa-solid fa-microscope text-accent"></i> Ontology for Health AI and Informatics
 </div>
 <h2 class="text-slate-500 font-semibold tracking-wider uppercase text-sm mb-3" data-i18n="lab.eyebrow">Research Laboratory</h2>
@@ -133,13 +134,13 @@
         <span class="text-xs font-bold tracking-wider uppercase text-accent" data-i18n="lab.scope_label">Research Scope</span>
     </div>
     <ul id="lab-research-scope" class="flex flex-wrap gap-2.5" aria-label="Research scope">
-        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-sitemap text-accent"></i>Biomedical Informatics</li>
-        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-book-open text-accent"></i>Evidence Synthesis</li>
-        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-diagram-project text-accent"></i>Biomedical Ontology</li>
-        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-calculator text-accent"></i>Biostatistics</li>
-        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-robot text-accent"></i>AI in Healthcare</li>
-        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-laptop-medical text-accent"></i>Digital Health</li>
-        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-people-group text-accent"></i>Population Health</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-violet-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-sitemap text-accent"></i>Biomedical Informatics</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-violet-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-book-open text-accent"></i>Evidence Synthesis</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-violet-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-diagram-project text-accent"></i>Biomedical Ontology</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-violet-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-calculator text-accent"></i>Biostatistics</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-violet-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-robot text-accent"></i>AI in Healthcare</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-violet-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-laptop-medical text-accent"></i>Digital Health</li>
+        <li class="inline-flex items-center gap-2 rounded-lg border border-violet-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm"><i aria-hidden="true" class="fa-solid fa-people-group text-accent"></i>Population Health</li>
     </ul>
 </div>
 <!-- ข้อมูลติดต่อด่วน -->
@@ -178,7 +179,7 @@
     <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm md:col-span-3">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-200">
             <div>
-                <span id="lab-about-label" class="text-xs font-bold text-accent bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider" data-i18n="lab.about_label">Research Laboratory</span>
+                <span id="lab-about-label" class="text-xs font-bold text-accent bg-violet-50 px-3 py-1 rounded-full uppercase tracking-wider" data-i18n="lab.about_label">Research Laboratory</span>
                 <h4 id="lab-about-name" class="text-2xl font-bold text-primary mt-2" data-i18n="lab.about_name">Ontology for Health AI and Informatics</h4>
                 <p id="lab-about-institution" class="text-accent font-medium mt-1" data-i18n="lab.about_college">Based at Sirindhorn College of Public Health Khon Kaen</p>
             </div>
@@ -248,7 +249,7 @@
                     <i class="fa-solid fa-spinner text-[10px]"></i> Ongoing
                 </span>
             </div>
-            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-accent mb-4">
+            <div class="w-10 h-10 bg-violet-50 rounded-xl flex items-center justify-center text-accent mb-4">
                 <i class="fa-solid fa-sitemap"></i>
             </div>
             <h4 class="text-base font-bold text-primary mb-2 group-hover:text-accent transition-colors">Biomedical Ontology for Cholangiocarcinoma (CCA)</h4>
@@ -267,7 +268,7 @@
                     <i class="fa-solid fa-spinner text-[10px]"></i> Ongoing
                 </span>
             </div>
-            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-accent mb-4">
+            <div class="w-10 h-10 bg-violet-50 rounded-xl flex items-center justify-center text-accent mb-4">
                 <i class="fa-solid fa-laptop-medical"></i>
             </div>
             <h4 class="text-base font-bold text-primary mb-2 group-hover:text-accent transition-colors">Digital Health Literacy for Community Health Workers</h4>
@@ -286,7 +287,7 @@
                     <i class="fa-solid fa-spinner text-[10px]"></i> Ongoing
                 </span>
             </div>
-            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-accent mb-4">
+            <div class="w-10 h-10 bg-violet-50 rounded-xl flex items-center justify-center text-accent mb-4">
                 <i class="fa-solid fa-chart-network"></i>
             </div>
             <h4 class="text-base font-bold text-primary mb-2 group-hover:text-accent transition-colors">Public Health and Epidemiological Informatics &amp; GIS for Disease Surveillance</h4>
@@ -389,7 +390,7 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="people-groups">
 <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
 <div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+<div class="w-10 h-10 rounded-full bg-violet-50 text-accent flex items-center justify-center">
 <i aria-hidden="true" class="fa-solid fa-user-group"></i>
 </div>
 <div>
@@ -407,7 +408,7 @@
 </article>
 <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
 <div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+<div class="w-10 h-10 rounded-full bg-violet-50 text-accent flex items-center justify-center">
 <i aria-hidden="true" class="fa-solid fa-user-graduate"></i>
 </div>
 <div>
@@ -425,7 +426,7 @@
 </article>
 <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
 <div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+<div class="w-10 h-10 rounded-full bg-violet-50 text-accent flex items-center justify-center">
 <i aria-hidden="true" class="fa-solid fa-award"></i>
 </div>
 <div>
@@ -585,7 +586,7 @@
                 const scopeContainer = document.getElementById('lab-research-scope');
                 if (scopeContainer && Array.isArray(lab.researchScope)) {
                     scopeContainer.innerHTML = lab.researchScope.map(area => `
-                        <li class="inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm">
+                        <li class="inline-flex items-center gap-2 rounded-lg border border-violet-100 bg-white/80 px-3.5 py-2 text-sm font-semibold text-primary shadow-sm">
                             <i aria-hidden="true" class="${escapeHtml(area.icon || 'fa-solid fa-flask')} text-accent"></i>
                             ${escapeHtml(area.title)}
                         </li>
@@ -597,7 +598,7 @@
 
                 container.innerHTML = lab.focusAreas.map(area => `
                     <div class="bg-white p-4 rounded-xl border border-slate-100">
-                        <div class="w-8 h-8 rounded-lg bg-blue-50 text-accent flex items-center justify-center mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-violet-50 text-accent flex items-center justify-center mb-3">
                             <i aria-hidden="true" class="${escapeHtml(area.icon || 'fa-solid fa-flask')}"></i>
                         </div>
                         <h5 class="font-bold text-primary text-sm mb-1">${escapeHtml(area.title)}</h5>
@@ -664,7 +665,7 @@
                     : name;
                 const avatar = imageUrl
                     ? `<img src="${escapeHtml(imageUrl)}" alt="" loading="lazy" class="w-12 h-12 rounded-full object-cover border border-slate-200 bg-slate-100 shrink-0">`
-                    : `<div class="w-12 h-12 rounded-full bg-blue-50 text-accent flex items-center justify-center text-sm font-bold border border-slate-200 shrink-0">${initials}</div>`;
+                    : `<div class="w-12 h-12 rounded-full bg-violet-50 text-accent flex items-center justify-center text-sm font-bold border border-slate-200 shrink-0">${initials}</div>`;
                 const detailRows = [
                     member.role,
                     member.program,
@@ -705,7 +706,7 @@
                     return `
                         <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
                             <div class="flex items-center gap-3 mb-5">
-                                <div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+                                <div class="w-10 h-10 rounded-full bg-violet-50 text-accent flex items-center justify-center">
                                     <i class="${escapeHtml(group.icon || 'fa-solid fa-user')}" aria-hidden="true"></i>
                                 </div>
                                 <div>

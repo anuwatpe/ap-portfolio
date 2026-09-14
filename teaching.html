@@ -15,7 +15,7 @@
 <meta content="summary" name="twitter:card"/>
 <meta content="Teaching &amp; Courses | ONTHAI Lab" name="twitter:title"/>
 <meta content="Courses and learning areas taught by Dr. Anuwat Pengput at ONTHAI Lab." name="twitter:description"/>
-<meta content="#0f172a" name="theme-color"/>
+<meta content="#6d28d9" name="theme-color"/>
 <title data-i18n="title.teaching">Anuwat Pengput | Teaching</title>
 <!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -36,7 +36,8 @@
                     colors: {
                         primary: '#0f172a', // slate-900
                         secondary: '#475569', // slate-600
-                        accent: '#2563eb', // blue-600
+                        accent: '#6d28d9', // violet-700
+                        accentDark: '#5b21b6', // violet-800
                     }
                 }
             }
@@ -85,7 +86,7 @@
 <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
 <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 <a aria-label="ONTHAI Lab" class="flex items-center shrink-0" href="index.html">
-    <img alt="ONTHAI Lab | Ontology for Health AI and Informatics" class="h-12 w-auto" height="176" src="assets/onthai-logo-designed.png" width="710"/>
+    <img alt="ONTHAI Lab | Ontology for Health AI and Informatics" class="h-12 w-auto" height="176" src="assets/onthai-logo-designed.png" style="filter: hue-rotate(38deg) saturate(0.9);" width="710"/>
 </a>
 <!-- เมนูสำหรับหน้าจอ Desktop -->
 <div class="hidden md:flex space-x-8 text-sm font-medium text-secondary items-center">
@@ -325,7 +326,7 @@
                     : name;
                 const avatar = imageUrl
                     ? `<img src="${escapeHtml(imageUrl)}" alt="" loading="lazy" class="w-12 h-12 rounded-full object-cover border border-slate-200 bg-slate-100 shrink-0">`
-                    : `<div class="w-12 h-12 rounded-full bg-blue-50 text-accent flex items-center justify-center text-sm font-bold border border-slate-200 shrink-0">${initials}</div>`;
+                    : `<div class="w-12 h-12 rounded-full bg-violet-50 text-accent flex items-center justify-center text-sm font-bold border border-slate-200 shrink-0">${initials}</div>`;
                 const detailRows = [
                     member.role,
                     member.program,
@@ -366,7 +367,7 @@
                     return `
                         <article class="bg-white border border-slate-200 rounded-2xl p-6 fade-in-section">
                             <div class="flex items-center gap-3 mb-5">
-                                <div class="w-10 h-10 rounded-full bg-blue-50 text-accent flex items-center justify-center">
+                                <div class="w-10 h-10 rounded-full bg-violet-50 text-accent flex items-center justify-center">
                                     <i class="${escapeHtml(group.icon || 'fa-solid fa-user')}" aria-hidden="true"></i>
                                 </div>
                                 <div>

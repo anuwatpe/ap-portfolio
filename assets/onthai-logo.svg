@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" role="img" aria-labelledby="title desc">
   <title id="title">ONTHAI Lab</title>
   <desc id="desc">ONTHAI Lab logo with a connected hierarchy mark and the full name Ontology for Health AI and Informatics</desc>
-  <g transform="translate(4 6) scale(1.35)" fill="none" stroke="#2563eb" stroke-linecap="round" stroke-width="3">
+  <g transform="translate(4 6) scale(1.35)" fill="none" stroke="#6d28d9" stroke-linecap="round" stroke-width="3">
     <path d="M32 14v7M14 21h36M14 21v1M32 21v1M50 21v1"/>
     <path d="M14 34v12M32 34v12M50 34v12"/>
   </g>
-  <g transform="translate(4 6) scale(1.35)" fill="#2563eb">
+  <g transform="translate(4 6) scale(1.35)" fill="#6d28d9">
     <rect x="26" y="4" width="12" height="10" rx="2.5"/>
     <rect x="8" y="22" width="12" height="12" rx="2.5" fill="#0f172a"/>
     <rect x="26" y="22" width="12" height="12" rx="2.5" fill="#0f172a"/>
@@ -14,7 +14,7 @@
     <rect x="26" y="46" width="12" height="10" rx="2.5"/>
     <rect x="44" y="46" width="12" height="10" rx="2.5"/>
   </g>
-  <path d="M102 17v66" stroke="#2563eb" stroke-width="3"/>
+  <path d="M102 17v66" stroke="#6d28d9" stroke-width="3"/>
   <text x="124" y="54" fill="#0f172a" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="42" font-weight="800">ONTHAI Lab</text>
   <text x="126" y="79" fill="#0f172a" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600">Ontology for Health AI and Informatics</text>
 </svg>

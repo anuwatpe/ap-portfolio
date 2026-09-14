@@ -30,8 +30,8 @@
                     colors: {
                         primary: '#0f172a',
                         secondary: '#475569',
-                        accent: '#2563eb',
-                        accentDark: '#1d4ed8',
+                        accent: '#6d28d9',
+                        accentDark: '#5b21b6',
                     }
                 }
             }
@@ -46,7 +46,7 @@
         .prose li { margin-bottom: 0.5rem; line-height: 1.7; }
         
         /* Custom Callout Box Styling */
-        .callout-info { background-color: #eff6ff; border-left: 4px solid #2563eb; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0; }
+        .callout-info { background-color: #f5f3ff; border-left: 4px solid #6d28d9; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0; }
         .callout-tip { background-color: #f0fdf4; border-left: 4px solid #16a34a; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0; }
         .callout-warning { background-color: #fffbeb; border-left: 4px solid #d97706; padding: 1.25rem; border-radius: 0.5rem; margin: 1.5rem 0; }
 
@@ -72,7 +72,7 @@
                 </a>
                 <span class="text-slate-300">|</span>
                 <div class="truncate">
-                    <span id="course-code" class="text-xs font-bold text-accent bg-blue-50 px-2.5 py-1 rounded-full uppercase tracking-wide mr-2">CPH201</span>
+                    <span id="course-code" class="text-xs font-bold text-accent bg-violet-50 px-2.5 py-1 rounded-full uppercase tracking-wide mr-2">CPH201</span>
                     <span id="course-title" class="text-sm sm:text-base font-bold text-primary truncate inline">สุขภาพดิจิทัลชุมชน (Community Digital Health)</span>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                     </h4>
                     <ul class="space-y-1 pl-3 border-l-2 border-slate-200">
                         <li>
-                            <a href="#section-1" class="block py-1.5 px-3 rounded-lg text-sm font-semibold bg-blue-50 text-accent transition-colors">
+                            <a href="#section-1" class="block py-1.5 px-3 rounded-lg text-sm font-semibold bg-violet-50 text-accent transition-colors">
                                 1.1 แนวคิดสุขภาพดิจิทัลชุมชน
                             </a>
                         </li>
@@ -589,7 +589,7 @@
                     <ul class="space-y-1 pl-3 border-l-2 border-slate-200">
                         ${module.lessons.map(lesson => `
                             <li>
-                                <a href="${escapeCourseText(lesson.href)}" ${lesson.active ? 'aria-current="page"' : ''} class="block py-1.5 px-3 rounded-lg text-sm ${lesson.active ? 'font-semibold bg-blue-50 text-accent' : 'text-secondary hover:bg-slate-100 hover:text-primary'} transition-colors">
+                                <a href="${escapeCourseText(lesson.href)}" ${lesson.active ? 'aria-current="page"' : ''} class="block py-1.5 px-3 rounded-lg text-sm ${lesson.active ? 'font-semibold bg-violet-50 text-accent' : 'text-secondary hover:bg-slate-100 hover:text-primary'} transition-colors">
                                     ${escapeCourseText(lesson.label)}
                                 </a>
                             </li>
