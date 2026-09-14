@@ -1,6 +1,7 @@
 const i18nDict = {
     en: {
         "nav.lab": "ONTHAI Lab",
+        "brand.pronunciation": "Pronounced: Ont-Thai",
         "nav.pi": "PI Profile",
         "nav.about": "About Lab",
         "nav.news": "News",
@@ -195,6 +196,7 @@ const i18nDict = {
     },
     th: {
         "nav.lab": "ONTHAI Lab",
+        "brand.pronunciation": "อ่านว่า: ออนท์-ไทย",
         "nav.pi": "ประวัติอาจารย์ (PI Profile)",
         "nav.about": "เกี่ยวกับ Lab",
         "nav.news": "ข่าวสาร",
