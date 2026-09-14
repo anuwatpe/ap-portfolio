@@ -299,6 +299,10 @@
                     const courseUrl = /^course-doc\.html\?course=[a-z0-9-]+$/i.test(String(item.docUrl || ''))
                         ? String(item.docUrl)
                         : '';
+                    const imageUrl = safeAssetUrl(item.image);
+                    const imageMarkup = imageUrl ? `
+                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(item.imageAlt || item.title || '')}" loading="lazy" decoding="async" class="w-full h-40 object-cover rounded-xl mb-5 border border-slate-200 bg-slate-100">
+                        ` : '';
                     const courseMeta = [item.level, item.role].filter(Boolean);
                     const courseMetaMarkup = courseMeta.length ? `
                             <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500 mb-4">
@@ -316,6 +320,7 @@
                         ` : '';
                     return `
                     <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
+                        ${imageMarkup}
                         <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
                             <i class="${escapeHtml(item.icon || 'fa-solid fa-book-open')}" aria-hidden="true"></i>
                         </div>

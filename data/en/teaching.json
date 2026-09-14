@@ -4,6 +4,7 @@
     "title": "Digital Literacy",
     "level": "Bachelor of Public Health · Undergraduate",
     "role": "Core faculty · 2024-present",
+    "image": "assets/illustrations/digital-health.png",
     "icon": "fa-solid fa-database",
     "description": "Digital information literacy, responsible use of online resources, information evaluation, and foundational data skills for health science students.",
     "docUrl": "course-doc.html?course=data-literacy"
@@ -13,6 +14,7 @@
     "title": "Computer in Community Health",
     "level": "Bachelor of Public Health · Undergraduate",
     "role": "Course Director · 2024-present",
+    "image": "assets/illustrations/population-health.png",
     "icon": "fa-solid fa-laptop-medical",
     "description": "Computers, health information systems, and digital tools for community health work, communication, and local public health practice."
   },
@@ -21,6 +23,7 @@
     "title": "Biostatistics",
     "level": "Bachelor of Public Health · Undergraduate",
     "role": "Core faculty · 2024-present",
+    "image": "assets/illustrations/evidence-synthesis.png",
     "icon": "fa-solid fa-chart-line",
     "description": "Descriptive and inferential statistics, study design, sampling, regression, and interpretation of health data for public health research.",
     "docUrl": "course-doc.html?course=research-methods"
@@ -30,6 +33,7 @@
     "title": "Public Health Research I & II",
     "level": "Bachelor of Public Health · Undergraduate",
     "role": "Core faculty · 2024-present",
+    "image": "assets/illustrations/evidence-synthesis.png",
     "icon": "fa-solid fa-flask",
     "description": "Research questions, measurement tools, sample size, sampling methods, literature appraisal, research ethics, and evidence-based public health practice.",
     "docUrl": "course-doc.html?course=research-methods"
@@ -39,6 +43,7 @@
     "title": "Lifestyles and Exercises for Health",
     "level": "Bachelor of Public Health · Undergraduate",
     "role": "Core faculty · 2024-present",
+    "image": "assets/illustrations/population-health.png",
     "icon": "fa-solid fa-person-running",
     "description": "Health-promoting lifestyles, physical activity, behavioral risk factors, and practical approaches to supporting health in individuals and communities."
   },
@@ -47,6 +52,7 @@
     "title": "Innovation and Digital Technology in Primary Health Care",
     "level": "Graduate-level teaching",
     "role": "Core faculty · 2025-present",
+    "image": "assets/illustrations/digital-health.png",
     "icon": "fa-solid fa-lightbulb",
     "description": "Innovation and digital technology for primary health care, connecting health information, service design, implementation, and practical digital solutions."
   }

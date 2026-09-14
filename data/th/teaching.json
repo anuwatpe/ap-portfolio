@@ -4,6 +4,7 @@
     "title": "การรู้เท่าทันดิจิทัล (Digital Literacy)",
     "level": "สาธารณสุขศาสตรบัณฑิต · ระดับปริญญาตรี",
     "role": "อาจารย์ผู้สอนหลัก · 2024-ปัจจุบัน",
+    "image": "assets/illustrations/digital-health.png",
     "icon": "fa-solid fa-database",
     "description": "การรู้เท่าทันสารสนเทศดิจิทัล การใช้ทรัพยากรออนไลน์อย่างรับผิดชอบ การประเมินข้อมูล และทักษะข้อมูลพื้นฐานสำหรับนักศึกษาวิทยาศาสตร์สุขภาพ",
     "docUrl": "course-doc.html?course=data-literacy"
@@ -13,6 +14,7 @@
     "title": "คอมพิวเตอร์ในงานสาธารณสุขชุมชน (Computer in Community Health)",
     "level": "สาธารณสุขศาสตรบัณฑิต · ระดับปริญญาตรี",
     "role": "ผู้รับผิดชอบรายวิชา · 2024-ปัจจุบัน",
+    "image": "assets/illustrations/population-health.png",
     "icon": "fa-solid fa-laptop-medical",
     "description": "คอมพิวเตอร์ ระบบสารสนเทศสุขภาพ และเครื่องมือดิจิทัลสำหรับการปฏิบัติงานสุขภาพชุมชน การสื่อสาร และงานสาธารณสุขในพื้นที่"
   },
@@ -21,6 +23,7 @@
     "title": "ชีวสถิติ (Biostatistics)",
     "level": "สาธารณสุขศาสตรบัณฑิต · ระดับปริญญาตรี",
     "role": "อาจารย์ผู้สอนหลัก · 2024-ปัจจุบัน",
+    "image": "assets/illustrations/evidence-synthesis.png",
     "icon": "fa-solid fa-chart-line",
     "description": "สถิติเชิงพรรณนาและอนุมาน การออกแบบการวิจัย การสุ่มตัวอย่าง การวิเคราะห์ถดถอย และการแปลผลข้อมูลสุขภาพสำหรับงานวิจัยสาธารณสุข",
     "docUrl": "course-doc.html?course=research-methods"
@@ -30,6 +33,7 @@
     "title": "การวิจัยสาธารณสุข I และ II (Public Health Research I & II)",
     "level": "สาธารณสุขศาสตรบัณฑิต · ระดับปริญญาตรี",
     "role": "อาจารย์ผู้สอนหลัก · 2024-ปัจจุบัน",
+    "image": "assets/illustrations/evidence-synthesis.png",
     "icon": "fa-solid fa-flask",
     "description": "การตั้งคำถามวิจัย เครื่องมือวัด การกำหนดขนาดตัวอย่าง วิธีการสุ่มตัวอย่าง การประเมินวรรณกรรม จริยธรรมการวิจัย และการใช้หลักฐานเชิงประจักษ์",
     "docUrl": "course-doc.html?course=research-methods"
@@ -39,6 +43,7 @@
     "title": "วิถีชีวิตและการออกกำลังกายเพื่อสุขภาพ (Lifestyles and Exercises for Health)",
     "level": "สาธารณสุขศาสตรบัณฑิต · ระดับปริญญาตรี",
     "role": "อาจารย์ผู้สอนหลัก · 2024-ปัจจุบัน",
+    "image": "assets/illustrations/population-health.png",
     "icon": "fa-solid fa-person-running",
     "description": "วิถีชีวิตที่ส่งเสริมสุขภาพ กิจกรรมทางกาย ปัจจัยเสี่ยงด้านพฤติกรรม และแนวทางสนับสนุนสุขภาพของบุคคลและชุมชน"
   },
@@ -47,6 +52,7 @@
     "title": "นวัตกรรมและเทคโนโลยีดิจิทัลในระบบบริการปฐมภูมิ (Innovation and Digital Technology in Primary Health Care)",
     "level": "การสอนระดับบัณฑิตศึกษา",
     "role": "อาจารย์ผู้สอนหลัก · 2025-ปัจจุบัน",
+    "image": "assets/illustrations/digital-health.png",
     "icon": "fa-solid fa-lightbulb",
     "description": "นวัตกรรมและเทคโนโลยีดิจิทัลสำหรับระบบบริการปฐมภูมิ เชื่อมโยงสารสนเทศสุขภาพ การออกแบบบริการ การนำไปใช้ และแนวทางดิจิทัลที่ใช้ได้จริง"
   }

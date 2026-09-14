@@ -2,6 +2,7 @@
   {
     "title": "Biomedical Ontology for Cholangiocarcinoma Risk Factors and Predictions",
     "role": "Invited Speaker",
+    "image": "assets/illustrations/biomedical-ontology.png",
     "event": "Asian Neglected Tropical Diseases Conference (NTDASIA2025), Department of Tropical Medicine, Faculty of Medicine, Khon Kaen University",
     "date": "November 28, 2025",
     "location": "Pullman Khon Kaen Hotel, Thailand",
@@ -10,6 +11,7 @@
   {
     "title": "Digital Health, Biomedical Informatics, Big Data, and Artificial Intelligence",
     "role": "Lecturer",
+    "image": "assets/illustrations/digital-health.png",
     "event": "Health System Management and Public Policy Course, Master of Public Health Program, Sirindhorn College of Public Health Khon Kaen",
     "date": "October 5, 2025",
     "location": "Khon Kaen, Thailand",
@@ -18,6 +20,7 @@
   {
     "title": "Ontology for Biomedical Data Integration and Analysis",
     "role": "Speaker",
+    "image": "assets/illustrations/biomedical-ontology.png",
     "event": "Multilateral Research Seminar: Advancing Multilateral Research, Building Sustainable Global Partnerships - Digital Health Showcase",
     "date": "September 24, 2025",
     "location": "Torrens University, Adelaide, Australia",
@@ -26,6 +29,7 @@
   {
     "title": "The Role of Health Information in Supporting Primary Healthcare Services",
     "role": "Keynote Speaker",
+    "image": "assets/illustrations/population-health.png",
     "event": "The 8th International Conference on Health and Well-Being (ICHWB) 2025, Universitas Muhammadiyah Surakarta",
     "date": "June 28, 2025",
     "location": "Surakarta, Indonesia",
@@ -34,6 +38,7 @@
   {
     "title": "Development of Thai Traditional Medicine and Alternative Medicine Officials for Conducting Routine to Research (R2R)",
     "role": "Speaker",
+    "image": "assets/illustrations/evidence-synthesis.png",
     "event": "Roi Et Provincial Public Health Office",
     "date": "March 28, 2025",
     "location": "Roi Et, Thailand",
@@ -42,6 +47,7 @@
   {
     "title": "Development of Research Measurement Tools, Sample Size Determination, and Sampling Methods",
     "role": "Lecturer",
+    "image": "assets/illustrations/evidence-synthesis.png",
     "event": "Public Health Research I Course, Bachelor of Public Health Program (Weekend Program), Sirindhorn College of Public Health Ubon Ratchathani",
     "date": "December 8, 2024",
     "location": "Ubon Ratchathani, Thailand",
@@ -50,6 +56,7 @@
   {
     "title": "Introduction to Biomedical Informatics and Ontology with Their Applications",
     "role": "Lecturer",
+    "image": "assets/illustrations/biomedical-ontology.png",
     "event": "Statistics for Public Health Research Course, Master of Public Health Program, Sirindhorn College of Public Health Khon Kaen",
     "date": "August 24, 2024",
     "location": "Khon Kaen, Thailand",
@@ -58,6 +65,7 @@
   {
     "title": "Cholangiocarcinoma Ontology for an Analysis of Risk Factors",
     "role": "Speaker",
+    "image": "assets/illustrations/biomedical-ontology.png",
     "event": "Master of Public Health (Biostatistics) Program, Faculty of Public Health, Khon Kaen University",
     "date": "August 3, 2024",
     "location": "Khon Kaen, Thailand",
@@ -66,6 +74,7 @@
   {
     "title": "Introduction to Biomedical and Health Informatics",
     "role": "Lecturer",
+    "image": "assets/illustrations/digital-health.png",
     "event": "Health Impact Assessment Course, Master of Public Health Program, Sirindhorn College of Public Health Khon Kaen",
     "date": "January 14, 2024",
     "location": "Khon Kaen, Thailand",
@@ -74,6 +83,7 @@
   {
     "title": "Peer Review and Program Committee Service",
     "role": "Peer Reviewer / Program Committee Member",
+    "image": "assets/illustrations/academic-service.png",
     "event": "AMIA, ICBO, MedInfo, Medical Informatics Europe, PLOS ONE, JMIR, and public health journals and conferences",
     "date": "2020-present",
     "location": "International and Thailand",
@@ -82,6 +92,7 @@
   {
     "title": "Scientific Program and Organizing Committees",
     "role": "Program / Organizing Committee Member",
+    "image": "assets/illustrations/academic-service.png",
     "event": "ICBO 2022, ICBO 2024-2026, ICBO-EAST 2025, OntoThailand 2025, and PHAS 2025",
     "date": "2022-2026",
     "location": "International conferences and Thailand",
@@ -90,6 +101,7 @@
   {
     "title": "Award Judge, Session Referee, and Commentator",
     "role": "Award Committee / Referee / Commentator",
+    "image": "assets/illustrations/academic-service.png",
     "event": "Ministry of Public Health Annual Academic Conference 2026 and 2nd International Conference of PHAS 2025",
     "date": "2025-2026",
     "location": "Thailand",
@@ -98,6 +110,7 @@
   {
     "title": "Innovation Presentation Advisory Committee",
     "role": "Advisory Committee Member",
+    "image": "assets/illustrations/academic-service.png",
     "event": "Khon Kaen Provincial Public Health Office",
     "date": "August 17, 2026",
     "location": "Khon Kaen, Thailand",
@@ -106,6 +119,7 @@
   {
     "title": "Cochrane Translation and OntoThailand Local Host",
     "role": "Knowledge Exchange / Local Host",
+    "image": "assets/illustrations/academic-service.png",
     "event": "Cochrane translation work and ICBO-EAST 2025 Thailand Session (OntoThailand 2025)",
     "date": "2017-present - OntoThailand 2025",
     "location": "Thailand",

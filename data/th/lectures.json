@@ -2,6 +2,7 @@
   {
     "title": "Biomedical Ontology for Cholangiocarcinoma Risk Factors and Predictions",
     "role": "วิทยากรรับเชิญ",
+    "image": "assets/illustrations/biomedical-ontology.png",
     "event": "Asian Neglected Tropical Diseases Conference (NTDASIA2025), ภาควิชาเวชศาสตร์เขตร้อน คณะแพทยศาสตร์ มหาวิทยาลัยขอนแก่น",
     "date": "28 พฤศจิกายน 2025",
     "location": "โรงแรมพูลแมน ขอนแก่น ประเทศไทย",
@@ -10,6 +11,7 @@
   {
     "title": "Digital Health, Biomedical Informatics, Big Data, and Artificial Intelligence",
     "role": "อาจารย์ผู้บรรยาย",
+    "image": "assets/illustrations/digital-health.png",
     "event": "รายวิชา Health System Management and Public Policy หลักสูตรสาธารณสุขศาสตรมหาบัณฑิต วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
     "date": "5 ตุลาคม 2025",
     "location": "จังหวัดขอนแก่น ประเทศไทย",
@@ -18,6 +20,7 @@
   {
     "title": "Ontology for Biomedical Data Integration and Analysis",
     "role": "วิทยากร",
+    "image": "assets/illustrations/biomedical-ontology.png",
     "event": "Multilateral Research Seminar: Advancing Multilateral Research, Building Sustainable Global Partnerships · Digital Health Showcase",
     "date": "24 กันยายน 2025",
     "location": "Torrens University เมืองแอดิเลด ประเทศออสเตรเลีย",
@@ -26,6 +29,7 @@
   {
     "title": "The Role of Health Information in Supporting Primary Healthcare Services",
     "role": "วิทยากรปาฐกถาพิเศษ",
+    "image": "assets/illustrations/population-health.png",
     "event": "The 8th International Conference on Health and Well-Being (ICHWB) 2025, Universitas Muhammadiyah Surakarta",
     "date": "28 มิถุนายน 2025",
     "location": "เมืองสุราการ์ตา ประเทศอินโดนีเซีย",
@@ -34,6 +38,7 @@
   {
     "title": "Development of Thai Traditional Medicine and Alternative Medicine Officials for Conducting Routine to Research (R2R)",
     "role": "วิทยากร",
+    "image": "assets/illustrations/evidence-synthesis.png",
     "event": "สำนักงานสาธารณสุขจังหวัดร้อยเอ็ด",
     "date": "28 มีนาคม 2025",
     "location": "จังหวัดร้อยเอ็ด ประเทศไทย",
@@ -42,6 +47,7 @@
   {
     "title": "การพัฒนาเครื่องมือวัด การกำหนดขนาดตัวอย่าง และวิธีการสุ่มตัวอย่างสำหรับงานวิจัยทางการแพทย์และสาธารณสุข",
     "role": "อาจารย์ผู้บรรยาย",
+    "image": "assets/illustrations/evidence-synthesis.png",
     "event": "รายวิชาการวิจัยสาธารณสุข I หลักสูตรสาธารณสุขศาสตรบัณฑิต (ภาคพิเศษ) วิทยาลัยการสาธารณสุขสิรินธร จังหวัดอุบลราชธานี",
     "date": "8 ธันวาคม 2024",
     "location": "จังหวัดอุบลราชธานี ประเทศไทย",
@@ -50,6 +56,7 @@
   {
     "title": "บทนำชีวเวชสารสนเทศศาสตร์และออนโทโลยีพร้อมการประยุกต์ใช้",
     "role": "อาจารย์ผู้บรรยาย",
+    "image": "assets/illustrations/biomedical-ontology.png",
     "event": "รายวิชา Statistics for Public Health Research หลักสูตรสาธารณสุขศาสตรมหาบัณฑิต วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
     "date": "24 สิงหาคม 2024",
     "location": "จังหวัดขอนแก่น ประเทศไทย",
@@ -58,6 +65,7 @@
   {
     "title": "Cholangiocarcinoma Ontology for an Analysis of Risk Factors",
     "role": "วิทยากร",
+    "image": "assets/illustrations/biomedical-ontology.png",
     "event": "หลักสูตรสาธารณสุขศาสตรมหาบัณฑิต (ชีวสถิติ) คณะสาธารณสุขศาสตร์ มหาวิทยาลัยขอนแก่น",
     "date": "3 สิงหาคม 2024",
     "location": "จังหวัดขอนแก่น ประเทศไทย",
@@ -66,6 +74,7 @@
   {
     "title": "บทนำชีวเวชสารสนเทศศาสตร์และสารสนเทศสุขภาพ",
     "role": "อาจารย์ผู้บรรยาย",
+    "image": "assets/illustrations/digital-health.png",
     "event": "รายวิชา Health Impact Assessment หลักสูตรสาธารณสุขศาสตรมหาบัณฑิต วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
     "date": "14 มกราคม 2024",
     "location": "จังหวัดขอนแก่น ประเทศไทย",
@@ -74,6 +83,7 @@
   {
     "title": "การประเมินบทความและกรรมการวิชาการ",
     "role": "ผู้ประเมินบทความ / กรรมการวิชาการ",
+    "image": "assets/illustrations/academic-service.png",
     "event": "AMIA, ICBO, MedInfo, Medical Informatics Europe, PLOS ONE, JMIR และวารสาร/งานประชุมด้านสาธารณสุข",
     "date": "2020-ปัจจุบัน",
     "location": "นานาชาติและประเทศไทย",
@@ -82,6 +92,7 @@
   {
     "title": "คณะกรรมการวิชาการและคณะกรรมการจัดงานประชุม",
     "role": "กรรมการวิชาการ / กรรมการจัดงาน",
+    "image": "assets/illustrations/academic-service.png",
     "event": "ICBO 2022, ICBO 2024-2026, ICBO-EAST 2025, OntoThailand 2025 และ PHAS 2025",
     "date": "2022-2026",
     "location": "งานประชุมนานาชาติและประเทศไทย",
@@ -90,6 +101,7 @@
   {
     "title": "กรรมการตัดสินรางวัล ผู้วิพากษ์ผลงาน และผู้ดำเนินรายการ",
     "role": "กรรมการตัดสินรางวัล / Referee / Commentator",
+    "image": "assets/illustrations/academic-service.png",
     "event": "การประชุมวิชาการประจำปี กระทรวงสาธารณสุข 2026 และการประชุมวิชาการ PHAS ครั้งที่ 2 ปี 2025",
     "date": "2025-2026",
     "location": "ประเทศไทย",
@@ -98,6 +110,7 @@
   {
     "title": "คณะกรรมการที่ปรึกษาการเตรียมผลงานนวัตกรรม",
     "role": "กรรมการที่ปรึกษา",
+    "image": "assets/illustrations/academic-service.png",
     "event": "สำนักงานสาธารณสุขจังหวัดขอนแก่น",
     "date": "17 สิงหาคม 2026",
     "location": "จังหวัดขอนแก่น ประเทศไทย",
@@ -106,6 +119,7 @@
   {
     "title": "งานแปล Cochrane และผู้ประสานงานเจ้าภาพ OntoThailand",
     "role": "แลกเปลี่ยนความรู้ / ผู้ประสานงานเจ้าภาพ",
+    "image": "assets/illustrations/academic-service.png",
     "event": "งานแปลหลักฐาน Cochrane และการประชุม ICBO-EAST 2025 ช่วงประเทศไทย (OntoThailand 2025)",
     "date": "2017-ปัจจุบัน · OntoThailand 2025",
     "location": "ประเทศไทย",
