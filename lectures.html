@@ -10,11 +10,11 @@
 <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <meta content="website" property="og:type"/>
 <meta content="https://anuwatpe.github.io/ap-portfolio/lectures.html" property="og:url"/>
-<meta content="Lectures &amp; Seminars | ONTHAI Lab" property="og:title"/>
-<meta content="Invited talks and expert lectures by Dr. Anuwat Pengput on digital health and biomedical informatics." property="og:description"/>
+<meta content="Lectures &amp; Academic Service | ONTHAI Lab" property="og:title"/>
+<meta content="Invited talks, peer review, committees, award judging, and academic service by Dr. Anuwat Pengput." property="og:description"/>
 <meta content="summary" name="twitter:card"/>
-<meta content="Lectures &amp; Seminars | ONTHAI Lab" name="twitter:title"/>
-<meta content="Invited talks and expert lectures by Dr. Anuwat Pengput on digital health and biomedical informatics." name="twitter:description"/>
+<meta content="Lectures &amp; Academic Service | ONTHAI Lab" name="twitter:title"/>
+<meta content="Invited talks, peer review, committees, award judging, and academic service by Dr. Anuwat Pengput." name="twitter:description"/>
 <meta content="#6d28d9" name="theme-color"/>
 <title data-i18n="title.lectures">Anuwat Pengput | Lectures</title>
 <!-- นำเข้า Google Fonts: Inter สำหรับดีไซน์ที่ดูมินิมอลและอ่านง่าย -->
@@ -121,16 +121,16 @@
 <!-- Section: Education -->
 <!-- Section: Publications (Selected) -->
 <!-- Section: Teaching -->
-<!-- Section: Guest Speaker / Expert Lectures -->
+<!-- Section: Lectures & Academic Service -->
 <section class="py-24 px-6 bg-slate-50 border-y border-slate-100" id="lectures">
 <div class="max-w-4xl mx-auto">
 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
 <div>
-<span class="text-sm font-semibold tracking-wider uppercase text-accent" data-i18n="page.lectures.label">Guest Speaker / Expert Lectures</span>
-<h1 class="text-3xl font-bold text-primary mt-2" data-i18n="page.lectures.title">Invited Talks &amp; Expert Sessions</h1>
+<span class="text-sm font-semibold tracking-wider uppercase text-accent" data-i18n="page.lectures.label">Lectures &amp; Academic Service</span>
+<h1 class="text-3xl font-bold text-primary mt-2" data-i18n="page.lectures.title">Invited Talks, Reviews &amp; Committees</h1>
 </div>
 <p class="text-secondary max-w-xl text-sm leading-relaxed">
-                    <span data-i18n="page.lectures.desc">Sharing knowledge and experiences on digital health, research methods, and biomedical informatics at various conferences and institutions.</span>
+                    <span data-i18n="page.lectures.desc">Invited talks, peer review, scientific program and organizing committees, award judging, session referee work, and knowledge exchange across digital health, biomedical informatics, and public health.</span>
                 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="lectures-list">
@@ -351,7 +351,10 @@
                     <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow fade-in-section flex flex-col h-full">
                         ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy" class="w-full h-48 object-cover border-b border-slate-100">` : ''}
                         <div class="p-6 flex flex-col flex-1">
-                            <span class="text-xs font-bold tracking-wider text-accent uppercase mb-2 block">${escapeHtml(item.date)}</span>
+                            <div class="flex flex-wrap items-center gap-2 mb-3">
+                                ${item.role ? `<span class="inline-flex items-center rounded-full bg-violet-50 border border-violet-100 px-2.5 py-1 text-[10px] font-bold tracking-wide text-accent uppercase">${escapeHtml(item.role)}</span>` : ''}
+                                ${item.date ? `<span class="text-xs font-semibold tracking-wide text-slate-400">${escapeHtml(item.date)}</span>` : ''}
+                            </div>
                             <h4 class="text-lg font-bold text-primary mb-2">${escapeHtml(item.title)}</h4>
                             <p class="text-sm font-medium text-secondary mb-3">${escapeHtml(item.event)}<br><span class="font-normal text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> ${escapeHtml(item.location)}</span></p>
                             <p class="text-slate-500 text-sm leading-relaxed mt-auto">${escapeHtml(item.description)}</p>

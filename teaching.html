@@ -129,41 +129,44 @@
 <h1 class="text-3xl font-bold text-primary mt-2" data-i18n="page.teaching.title">Courses &amp; Learning Areas</h1>
 </div>
 <p class="text-secondary max-w-xl text-sm leading-relaxed">
-                    <span data-i18n="page.teaching.desc">Teaching focuses on practical digital health skills, research literacy, and data-informed public health practice.</span>
+                    <span data-i18n="page.teaching.desc">Teaching spans undergraduate public health courses and graduate-level topics in digital health, biomedical informatics, research methods, biostatistics, and primary care innovation.</span>
                 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="teaching-list">
-<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
-<div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
-<i aria-hidden="true" class="fa-solid fa-laptop-medical"></i>
-</div>
-<h4 class="text-lg font-bold text-primary mb-3">Digital Health</h4>
-<p class="text-slate-500 text-sm leading-relaxed">
-                        Health information systems, digital tools for public health work, and applied technology in community health settings.
-                    </p>
-</article>
-<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
 <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
 <i aria-hidden="true" class="fa-solid fa-database"></i>
 </div>
-<h4 class="text-lg font-bold text-primary mb-3">Data &amp; Digital Literacy</h4>
+<h4 class="text-lg font-bold text-primary mb-3">Digital Literacy</h4>
+<p class="text-xs text-slate-500 mb-4">Bachelor of Public Health &middot; Undergraduate &middot; Core faculty &middot; 2024-present</p>
 <p class="text-slate-500 text-sm leading-relaxed">
-                        Data handling, critical use of digital resources, and foundational analytics for health science students.
+                        Digital information literacy, responsible use of online resources, information evaluation, and foundational data skills for health science students.
                     </p>
 </article>
-<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
+<div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
+<i aria-hidden="true" class="fa-solid fa-laptop-medical"></i>
+</div>
+<h4 class="text-lg font-bold text-primary mb-3">Computer in Community Health</h4>
+<p class="text-xs text-slate-500 mb-4">Bachelor of Public Health &middot; Undergraduate &middot; Course Director &middot; 2024-present</p>
+<p class="text-slate-500 text-sm leading-relaxed">
+                        Computers, health information systems, and digital tools for community health work, communication, and local public health practice.
+                    </p>
+</article>
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
 <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
 <i aria-hidden="true" class="fa-solid fa-chart-line"></i>
 </div>
-<h4 class="text-lg font-bold text-primary mb-3">Research Methods</h4>
+<h4 class="text-lg font-bold text-primary mb-3">Biostatistics</h4>
+<p class="text-xs text-slate-500 mb-4">Bachelor of Public Health &middot; Undergraduate &middot; Core faculty &middot; 2024-present</p>
 <p class="text-slate-500 text-sm leading-relaxed">
-                        Epidemiology, biostatistics, literature appraisal, and evidence-based approaches to public health questions.
+                        Descriptive and inferential statistics, study design, sampling, regression, and interpretation of health data for public health research.
                     </p>
 </article>
 </div>
 </div>
 </section>
-<!-- Section: Guest Speaker / Expert Lectures -->
+<!-- Section: Lectures & Academic Service -->
 <!-- Section: People & Mentorship -->
 <!-- Section: Skills & Tools -->
 <!-- Footer -->
@@ -293,24 +296,33 @@
                 if (!container || !items.length) return;
 
                 container.innerHTML = items.map(item => {
-                    const courseId = /^[a-z0-9-]+$/i.test(String(item.id || '')) ? String(item.id) : 'digital-health';
                     const courseUrl = /^course-doc\.html\?course=[a-z0-9-]+$/i.test(String(item.docUrl || ''))
                         ? String(item.docUrl)
-                        : `course-doc.html?course=${encodeURIComponent(courseId)}`;
+                        : '';
+                    const courseMeta = [item.level, item.role].filter(Boolean);
+                    const courseMetaMarkup = courseMeta.length ? `
+                            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500 mb-4">
+                                ${courseMeta.map((meta, index) => `${index ? '<span aria-hidden="true" class="text-slate-300">&middot;</span>' : ''}<span>${escapeHtml(meta)}</span>`).join('')}
+                            </div>
+                        ` : '';
+                    const courseLinkMarkup = courseUrl ? `
+                            <div class="mt-auto pt-4 border-t border-slate-200/60">
+                                <a href="${escapeHtml(courseUrl)}" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-accentDark transition-colors">
+                                    <i aria-hidden="true" class="fa-solid fa-book-open-reader"></i>
+                                    <span>${escapeHtml(translate('course_doc.label', 'Read course materials'))}</span>
+                                    <i aria-hidden="true" class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        ` : '';
                     return `
                     <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
                         <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
                             <i class="${escapeHtml(item.icon || 'fa-solid fa-book-open')}" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-lg font-bold text-primary mb-3">${escapeHtml(item.title)}</h4>
+                        ${courseMetaMarkup}
                         <p class="text-slate-500 text-sm leading-relaxed mb-6">${escapeHtml(item.description)}</p>
-                        <div class="mt-auto pt-4 border-t border-slate-200/60">
-                            <a href="${escapeHtml(courseUrl)}" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-accentDark transition-colors">
-                                <i aria-hidden="true" class="fa-solid fa-book-open-reader"></i>
-                                <span>${escapeHtml(translate('course_doc.label', 'Read course materials'))}</span>
-                                <i aria-hidden="true" class="fa-solid fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
+                        ${courseLinkMarkup}
                     </article>
                 `;
                 }).join('');

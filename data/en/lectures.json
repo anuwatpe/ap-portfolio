@@ -1,18 +1,114 @@
 [
   {
-    "title": "Data-Driven Approach in Public Health",
-    "event": "Global Public Health Symposium 2024",
-    "date": "March 2024",
-    "location": "Bangkok, Thailand",
-    "description": "Guest speaker on utilizing biomedical informatics to address global health inequities.",
-    "image": "assets/lectures/lecture_1.png"
+    "title": "Biomedical Ontology for Cholangiocarcinoma Risk Factors and Predictions",
+    "role": "Invited Speaker",
+    "event": "Asian Neglected Tropical Diseases Conference (NTDASIA2025), Department of Tropical Medicine, Faculty of Medicine, Khon Kaen University",
+    "date": "November 28, 2025",
+    "location": "Pullman Khon Kaen Hotel, Thailand",
+    "description": "Invited talk in the Innovation for Impact: Technologies, Digital Health, and NTDs session, connecting biomedical ontology with risk-factor analysis and prediction."
   },
   {
-    "title": "Digital Literacy in Community Health",
-    "event": "National Health Tech Conference",
-    "date": "November 2023",
+    "title": "Digital Health, Biomedical Informatics, Big Data, and Artificial Intelligence",
+    "role": "Lecturer",
+    "event": "Health System Management and Public Policy Course, Master of Public Health Program, Sirindhorn College of Public Health Khon Kaen",
+    "date": "October 5, 2025",
     "location": "Khon Kaen, Thailand",
-    "description": "Keynote presentation on empowering local healthcare workers through digital tools and data literacy.",
-    "image": "assets/lectures/lecture_2.png"
+    "description": "Teaching session on digital health, biomedical informatics, big data, and artificial intelligence for public health systems and policy."
+  },
+  {
+    "title": "Ontology for Biomedical Data Integration and Analysis",
+    "role": "Speaker",
+    "event": "Multilateral Research Seminar: Advancing Multilateral Research, Building Sustainable Global Partnerships - Digital Health Showcase",
+    "date": "September 24, 2025",
+    "location": "Torrens University, Adelaide, Australia",
+    "description": "Research seminar on applying ontology to integrate and analyze biomedical and health data across research contexts."
+  },
+  {
+    "title": "The Role of Health Information in Supporting Primary Healthcare Services",
+    "role": "Keynote Speaker",
+    "event": "The 8th International Conference on Health and Well-Being (ICHWB) 2025, Universitas Muhammadiyah Surakarta",
+    "date": "June 28, 2025",
+    "location": "Surakarta, Indonesia",
+    "description": "Keynote on using health information to support primary healthcare services in urban and rural settings."
+  },
+  {
+    "title": "Development of Thai Traditional Medicine and Alternative Medicine Officials for Conducting Routine to Research (R2R)",
+    "role": "Speaker",
+    "event": "Roi Et Provincial Public Health Office",
+    "date": "March 28, 2025",
+    "location": "Roi Et, Thailand",
+    "description": "Knowledge-sharing session on developing public health personnel and turning routine work into research through R2R."
+  },
+  {
+    "title": "Development of Research Measurement Tools, Sample Size Determination, and Sampling Methods",
+    "role": "Lecturer",
+    "event": "Public Health Research I Course, Bachelor of Public Health Program (Weekend Program), Sirindhorn College of Public Health Ubon Ratchathani",
+    "date": "December 8, 2024",
+    "location": "Ubon Ratchathani, Thailand",
+    "description": "Lecture on measurement tools, sample-size determination, and sampling methods for medical and public health research."
+  },
+  {
+    "title": "Introduction to Biomedical Informatics and Ontology with Their Applications",
+    "role": "Lecturer",
+    "event": "Statistics for Public Health Research Course, Master of Public Health Program, Sirindhorn College of Public Health Khon Kaen",
+    "date": "August 24, 2024",
+    "location": "Khon Kaen, Thailand",
+    "description": "Introduction to biomedical informatics and ontology, with examples of their applications in health research and data integration."
+  },
+  {
+    "title": "Cholangiocarcinoma Ontology for an Analysis of Risk Factors",
+    "role": "Speaker",
+    "event": "Master of Public Health (Biostatistics) Program, Faculty of Public Health, Khon Kaen University",
+    "date": "August 3, 2024",
+    "location": "Khon Kaen, Thailand",
+    "description": "Research talk on developing and applying a cholangiocarcinoma ontology to analyze risk factors."
+  },
+  {
+    "title": "Introduction to Biomedical and Health Informatics",
+    "role": "Lecturer",
+    "event": "Health Impact Assessment Course, Master of Public Health Program, Sirindhorn College of Public Health Khon Kaen",
+    "date": "January 14, 2024",
+    "location": "Khon Kaen, Thailand",
+    "description": "Foundational lecture on biomedical and health informatics for public health and health-impact assessment."
+  },
+  {
+    "title": "Peer Review and Program Committee Service",
+    "role": "Peer Reviewer / Program Committee Member",
+    "event": "AMIA, ICBO, MedInfo, Medical Informatics Europe, PLOS ONE, JMIR, and public health journals and conferences",
+    "date": "2020-present",
+    "location": "International and Thailand",
+    "description": "Peer review for biomedical informatics and public health journals, conferences, and institutional review submissions, with program committee service for AMIA, ICBO, and related meetings."
+  },
+  {
+    "title": "Scientific Program and Organizing Committees",
+    "role": "Program / Organizing Committee Member",
+    "event": "ICBO 2022, ICBO 2024-2026, ICBO-EAST 2025, OntoThailand 2025, and PHAS 2025",
+    "date": "2022-2026",
+    "location": "International conferences and Thailand",
+    "description": "Contributing to scientific program development, conference organization, reviewer coordination, and the local hosting of the OntoThailand 2025 session."
+  },
+  {
+    "title": "Award Judge, Session Referee, and Commentator",
+    "role": "Award Committee / Referee / Commentator",
+    "event": "Ministry of Public Health Annual Academic Conference 2026 and 2nd International Conference of PHAS 2025",
+    "date": "2025-2026",
+    "location": "Thailand",
+    "description": "Judging best poster and oral presentation awards, and serving as session referee and commentator for digital health, AI, pharmaceutical sciences, and innovation sessions."
+  },
+  {
+    "title": "Innovation Presentation Advisory Committee",
+    "role": "Advisory Committee Member",
+    "event": "Khon Kaen Provincial Public Health Office",
+    "date": "August 17, 2026",
+    "location": "Khon Kaen, Thailand",
+    "description": "Advising the preparation of innovation presentations for a provincial public health academic conference."
+  },
+  {
+    "title": "Cochrane Translation and OntoThailand Local Host",
+    "role": "Knowledge Exchange / Local Host",
+    "event": "Cochrane translation work and ICBO-EAST 2025 Thailand Session (OntoThailand 2025)",
+    "date": "2017-present - OntoThailand 2025",
+    "location": "Thailand",
+    "description": "Supporting Thai translation of Cochrane evidence and serving as local host for the OntoThailand 2025 session."
   }
 ]

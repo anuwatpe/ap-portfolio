@@ -322,35 +322,38 @@
 <h3 class="text-3xl font-bold text-primary mt-2" data-i18n="lab.teaching_title">Courses &amp; Learning Areas</h3>
 </div>
 <p class="text-secondary max-w-xl text-sm leading-relaxed" data-i18n="lab.teaching_desc">
-                    Teaching within the Lab connects practical digital health skills, research literacy, and data-informed public health practice.
+                    Teaching spans undergraduate public health courses and graduate-level topics in digital health, biomedical informatics, research methods, biostatistics, and primary care innovation.
                 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="teaching-list">
-<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
-<div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
-<i aria-hidden="true" class="fa-solid fa-laptop-medical"></i>
-</div>
-<h4 class="text-lg font-bold text-primary mb-3">Digital Health</h4>
-<p class="text-slate-500 text-sm leading-relaxed">
-                        Health information systems, digital tools for public health work, and applied technology in community health settings.
-                    </p>
-</article>
-<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
 <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
 <i aria-hidden="true" class="fa-solid fa-database"></i>
 </div>
-<h4 class="text-lg font-bold text-primary mb-3">Data &amp; Digital Literacy</h4>
+<h4 class="text-lg font-bold text-primary mb-3">Digital Literacy</h4>
+<p class="text-xs text-slate-500 mb-4">Bachelor of Public Health &middot; Undergraduate &middot; Core faculty &middot; 2024-present</p>
 <p class="text-slate-500 text-sm leading-relaxed">
-                        Data handling, critical use of digital resources, and foundational analytics for health science students.
+                        Digital information literacy, responsible use of online resources, information evaluation, and foundational data skills for health science students.
                     </p>
 </article>
-<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section">
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
+<div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
+<i aria-hidden="true" class="fa-solid fa-laptop-medical"></i>
+</div>
+<h4 class="text-lg font-bold text-primary mb-3">Computer in Community Health</h4>
+<p class="text-xs text-slate-500 mb-4">Bachelor of Public Health &middot; Undergraduate &middot; Course Director &middot; 2024-present</p>
+<p class="text-slate-500 text-sm leading-relaxed">
+                        Computers, health information systems, and digital tools for community health work, communication, and local public health practice.
+                    </p>
+</article>
+<article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
 <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
 <i aria-hidden="true" class="fa-solid fa-chart-line"></i>
 </div>
-<h4 class="text-lg font-bold text-primary mb-3">Research Methods</h4>
+<h4 class="text-lg font-bold text-primary mb-3">Biostatistics</h4>
+<p class="text-xs text-slate-500 mb-4">Bachelor of Public Health &middot; Undergraduate &middot; Core faculty &middot; 2024-present</p>
 <p class="text-slate-500 text-sm leading-relaxed">
-                        Epidemiology, biostatistics, literature appraisal, and evidence-based approaches to public health questions.
+                        Descriptive and inferential statistics, study design, sampling, regression, and interpretation of health data for public health research.
                     </p>
 </article>
 </div>
@@ -361,16 +364,16 @@
 </div>
 </div>
 </section>
-<!-- Section: Guest Speaker / Expert Lectures -->
+<!-- Section: Lectures & Academic Service -->
 <section class="py-24 px-6 bg-slate-50 border-y border-slate-100" id="lectures">
 <div class="max-w-4xl mx-auto">
 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 fade-in-section">
 <div>
-<span class="text-sm font-semibold tracking-wider uppercase text-accent" data-i18n="lab.lectures_label">Lab Knowledge Exchange</span>
-<h3 class="text-3xl font-bold text-primary mt-2" data-i18n="lab.lectures_title">Invited Talks &amp; Expert Sessions</h3>
+<span class="text-sm font-semibold tracking-wider uppercase text-accent" data-i18n="lab.lectures_label">Knowledge Exchange &amp; Academic Service</span>
+<h3 class="text-3xl font-bold text-primary mt-2" data-i18n="lab.lectures_title">Talks, Reviews &amp; Academic Service</h3>
 </div>
 <p class="text-secondary max-w-xl text-sm leading-relaxed" data-i18n="lab.lectures_desc">
-                    The Lab shares knowledge and experiences on digital health, research methods, and biomedical informatics at conferences and institutions.
+                    Invited talks, peer review, scientific committees, award judging, session referee work, and knowledge exchange across digital health, biomedical informatics, and public health.
                 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="lectures-list">
@@ -721,24 +724,33 @@
                 if (!container || !items.length) return;
 
                 container.innerHTML = items.map(item => {
-                    const courseId = /^[a-z0-9-]+$/i.test(String(item.id || '')) ? String(item.id) : 'digital-health';
                     const courseUrl = /^course-doc\.html\?course=[a-z0-9-]+$/i.test(String(item.docUrl || ''))
                         ? String(item.docUrl)
-                        : `course-doc.html?course=${encodeURIComponent(courseId)}`;
+                        : '';
+                    const courseMeta = [item.level, item.role].filter(Boolean);
+                    const courseMetaMarkup = courseMeta.length ? `
+                            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500 mb-4">
+                                ${courseMeta.map((meta, index) => `${index ? '<span aria-hidden="true" class="text-slate-300">&middot;</span>' : ''}<span>${escapeHtml(meta)}</span>`).join('')}
+                            </div>
+                        ` : '';
+                    const courseLinkMarkup = courseUrl ? `
+                            <div class="mt-auto pt-4 border-t border-slate-200/60">
+                                <a href="${escapeHtml(courseUrl)}" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-accentDark transition-colors">
+                                    <i aria-hidden="true" class="fa-solid fa-book-open-reader"></i>
+                                    <span>${escapeHtml(translate('course_doc.label', 'Read course materials'))}</span>
+                                    <i aria-hidden="true" class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        ` : '';
                     return `
                     <article class="p-6 bg-slate-50 border border-slate-100 rounded-2xl fade-in-section flex flex-col h-full">
                         <div class="w-11 h-11 rounded-full bg-white text-accent flex items-center justify-center mb-5 shadow-sm">
                             <i class="${escapeHtml(item.icon || 'fa-solid fa-book-open')}" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-lg font-bold text-primary mb-3">${escapeHtml(item.title)}</h4>
+                        ${courseMetaMarkup}
                         <p class="text-slate-500 text-sm leading-relaxed mb-6">${escapeHtml(item.description)}</p>
-                        <div class="mt-auto pt-4 border-t border-slate-200/60">
-                            <a href="${escapeHtml(courseUrl)}" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-accentDark transition-colors">
-                                <i aria-hidden="true" class="fa-solid fa-book-open-reader"></i>
-                                <span>${escapeHtml(translate('course_doc.label', 'Read course materials'))}</span>
-                                <i aria-hidden="true" class="fa-solid fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
+                        ${courseLinkMarkup}
                     </article>
                 `;
                 }).join('');
@@ -818,7 +830,10 @@
                     <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow fade-in-section flex flex-col h-full">
                         ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy" class="w-full h-48 object-cover border-b border-slate-100">` : ''}
                         <div class="p-6 flex flex-col flex-1">
-                            <span class="text-xs font-bold tracking-wider text-accent uppercase mb-2 block">${escapeHtml(item.date)}</span>
+                            <div class="flex flex-wrap items-center gap-2 mb-3">
+                                ${item.role ? `<span class="inline-flex items-center rounded-full bg-violet-50 border border-violet-100 px-2.5 py-1 text-[10px] font-bold tracking-wide text-accent uppercase">${escapeHtml(item.role)}</span>` : ''}
+                                ${item.date ? `<span class="text-xs font-semibold tracking-wide text-slate-400">${escapeHtml(item.date)}</span>` : ''}
+                            </div>
                             <h4 class="text-lg font-bold text-primary mb-2">${escapeHtml(item.title)}</h4>
                             <p class="text-sm font-medium text-secondary mb-3">${escapeHtml(item.event)}<br><span class="font-normal text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> ${escapeHtml(item.location)}</span></p>
                             <p class="text-slate-500 text-sm leading-relaxed mt-auto">${escapeHtml(item.description)}</p>
