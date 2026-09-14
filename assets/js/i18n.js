@@ -1,7 +1,6 @@
 const i18nDict = {
     en: {
         "nav.lab": "ONTHAI Lab",
-        "brand.pronunciation": "Pronounced: Ont-Thai",
         "nav.pi": "PI Profile",
         "nav.about": "About Lab",
         "nav.news": "News",
@@ -28,7 +27,7 @@ const i18nDict = {
         "lab.about_faculty": "Faculty of Public Health and Allied Health Sciences, Praboromarajchanok Institute, Ministry of Public Health.",
         "lab.identifier_label": "Lab Identifier",
         "lab.identifier": "ONTHAI LAB",
-        "lab.about_desc": "ONTHAI Lab brings together researchers, students, and collaborators to turn trustworthy evidence and health data into practical digital health tools and population health insights.",
+        "lab.about_desc": "ONTHAI Lab (Pronounced: Ont-Thai) brings together researchers, students, and collaborators to turn trustworthy evidence and health data into practical digital health tools and population health insights.",
         "lab.scope_label": "Research Scope",
         "lab.teaching_label": "Lab Teaching",
         "lab.teaching_title": "Courses & Learning Areas",
@@ -196,7 +195,6 @@ const i18nDict = {
     },
     th: {
         "nav.lab": "ONTHAI Lab",
-        "brand.pronunciation": "อ่านว่า: ออนท์-ไทย",
         "nav.pi": "ประวัติอาจารย์ (PI Profile)",
         "nav.about": "เกี่ยวกับ Lab",
         "nav.news": "ข่าวสาร",
@@ -223,7 +221,7 @@ const i18nDict = {
         "lab.about_faculty": "คณะสาธารณสุขศาสตร์และสหเวชศาสตร์ สถาบันพระบรมราชชนก กระทรวงสาธารณสุข",
         "lab.identifier_label": "รหัส Lab",
         "lab.identifier": "ONTHAI LAB",
-        "lab.about_desc": "ONTHAI Lab เชื่อมโยงนักวิจัย นักศึกษา และผู้ร่วมงาน เพื่อนำหลักฐานและข้อมูลสุขภาพที่น่าเชื่อถือไปพัฒนาเครื่องมือสุขภาพดิจิทัลและองค์ความรู้ด้านสุขภาพประชากร",
+        "lab.about_desc": "ONTHAI Lab (Pronounced: Ont-Thai) เชื่อมโยงนักวิจัย นักศึกษา และผู้ร่วมงาน เพื่อนำหลักฐานและข้อมูลสุขภาพที่น่าเชื่อถือไปพัฒนาเครื่องมือสุขภาพดิจิทัลและองค์ความรู้ด้านสุขภาพประชากร",
         "lab.scope_label": "ขอบเขตงานวิจัย",
         "lab.teaching_label": "การเรียนรู้ของ Lab",
         "lab.teaching_title": "รายวิชาและพื้นที่การเรียนรู้",
