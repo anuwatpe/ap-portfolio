@@ -253,8 +253,8 @@
             <i aria-hidden="true" class="fa-solid fa-diagram-project"></i>
         </div>
         <h4 class="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors" data-i18n="projects.group1_title">Biomedical Ontology &amp; Health Data Quality</h4>
-        <p class="text-secondary text-sm leading-relaxed" data-i18n="projects.group1_desc">Developing biomedical knowledge models and ontologies to structure health concepts, define relationships, improve questionnaire quality, support electronic health record interpretation, and enable semantic integration across datasets.</p>
-        <p class="mt-4 pt-4 border-t border-slate-200 text-xs leading-relaxed text-slate-500"><span class="font-semibold text-primary" data-i18n="projects.keywords_label">Keywords:</span> <span data-i18n="projects.group1_keywords">Biomedical ontology, knowledge representation, ontology engineering, semantic interoperability, EHR, questionnaire quality, health data standards</span></p>
+        <p class="text-secondary text-sm leading-relaxed" data-i18n="projects.group1_desc">Developing biomedical knowledge models and ontologies, grounded in Basic Formal Ontology (BFO), to structure health concepts, define relationships, improve questionnaire quality, support electronic health record interpretation, and enable semantic integration across datasets.</p>
+        <p class="mt-4 pt-4 border-t border-slate-200 text-xs leading-relaxed text-slate-500"><span class="font-semibold text-primary" data-i18n="projects.keywords_label">Keywords:</span> <span data-i18n="projects.group1_keywords">Biomedical ontology, Basic Formal Ontology (BFO), knowledge representation, ontology engineering, semantic interoperability, EHR, questionnaire quality, health data standards</span></p>
     </article>
 
     <!-- Research group 2 -->
@@ -464,13 +464,95 @@
 <h3 class="text-2xl font-bold text-primary text-center" data-i18n="lab.capabilities_title">Methods &amp; Tools</h3>
 <span class="h-px w-8 bg-accent"></span>
 </div>
-<div class="max-w-3xl mx-auto flex flex-wrap gap-3 justify-center">
-<span class="px-4 py-2 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">Ontology Engineering</span>
-<span class="px-4 py-2 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">GIS &amp; Spatial Analysis</span>
-<span class="px-4 py-2 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">Data Integration</span>
-<span class="px-4 py-2 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">Health Data Standards</span>
-<span class="px-4 py-2 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">Literature Synthesis</span>
-<span class="px-4 py-2 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:border-accent transition-colors">Community Evaluation</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+<div>
+<h4 class="text-sm font-bold text-primary mb-3" data-i18n="capabilities.ontology">Ontology, Semantics &amp; Standards</h4>
+<div class="flex flex-wrap gap-2.5">
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Biomedical Ontology</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Basic Formal Ontology (BFO)</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Ontology Engineering</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Knowledge Representation</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Semantic Integration</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">SNOMED CT</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">HL7 FHIR</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Common Logic</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Prolog</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">SPARQL</span>
+</div>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary mb-3" data-i18n="capabilities.evidence">Evidence Synthesis &amp; Research Design</h4>
+<div class="flex flex-wrap gap-2.5">
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Systematic Review</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Meta-analysis</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Evidence Synthesis</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">RCT Quality Assessment</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Research Measurement</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Sampling &amp; Sample Size</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Clinical Trials &amp; GCP</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">R2R Project Development</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Cochrane Methods</span>
+</div>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary mb-3" data-i18n="capabilities.stats">Biostatistics &amp; Data Analysis</h4>
+<div class="flex flex-wrap gap-2.5">
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Biostatistics</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">R</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Python</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">SQL</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">SAS</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Stata</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">SPSS</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Minitab</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Regression Analysis</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Survival Analysis</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Machine Learning Classification</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Data Cleaning &amp; Visualization</span>
+</div>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary mb-3" data-i18n="capabilities.spatial">Spatial Epidemiology &amp; Population Health</h4>
+<div class="flex flex-wrap gap-2.5">
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Epidemiology</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Spatial Epidemiology</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">GIS &amp; Spatial Analysis</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">QGIS</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">ArcGIS</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">GeoDa</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Spatial Analysis in R</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Disease Surveillance</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Outbreak Investigation</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Population Health</span>
+</div>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary mb-3" data-i18n="capabilities.digital">Digital &amp; Clinical Informatics</h4>
+<div class="flex flex-wrap gap-2.5">
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Biomedical Informatics</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Public Health Informatics</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Digital Health</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Clinical Informatics</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Telemedicine &amp; eHealth</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Mobile Health</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Health Information Systems</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Medication Safety</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Health Data Integration</span>
+</div>
+</div>
+<div>
+<h4 class="text-sm font-bold text-primary mb-3" data-i18n="capabilities.software">Research Software</h4>
+<div class="flex flex-wrap gap-2.5">
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Protégé</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">RevMan</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Covidence</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Rayyan</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">EndNote</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Zotero</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Mendeley</span>
+<span class="px-3 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium hover:border-accent transition-colors">Microsoft Access</span>
+</div>
+</div>
 </div>
 </div>
 </section>
