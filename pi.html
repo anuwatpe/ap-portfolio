@@ -67,37 +67,37 @@
 <body class="bg-slate-50 text-slate-800 leading-relaxed selection:bg-accent selection:text-white">
 
 <!-- Navigation Bar -->
-<nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
+<nav aria-label="Primary navigation" class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200 transition-all duration-300">
 <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 <a aria-label="ONTHAI Lab" class="flex items-center shrink-0" href="index.html">
     <img alt="ONTHAI Lab | Ontology for Health AI and Informatics" class="h-12 w-auto" height="176" src="assets/onthai-logo-designed.png" style="filter: hue-rotate(38deg) saturate(0.9);" width="710"/>
 </a>
 <!-- เมนูสำหรับหน้าจอ Desktop -->
-<div class="hidden md:flex space-x-8 text-sm font-medium text-secondary items-center">
-<a class="hover:text-accent transition-colors flex items-center gap-1.5" data-i18n="nav.lab" href="index.html"><i class="fa-solid fa-flask"></i> ONTHAI Lab</a>
-<a aria-current="page" class="text-accent font-bold transition-colors flex items-center gap-1.5" data-i18n="nav.pi" href="#"><i aria-hidden="true" class="fa-solid fa-id-badge"></i> PI Profile</a>
-<a class="hover:text-accent transition-colors" data-i18n="nav.experience" href="#experience">Experience</a>
-<a class="hover:text-accent transition-colors" data-i18n="nav.education" href="#education">Education</a>
+<div class="hidden xl:flex space-x-8 text-sm font-medium text-secondary items-center">
+<a class="hover:text-accent transition-colors" data-i18n="nav.lab" href="index.html">ONTHAI Lab</a>
+<a class="hover:text-accent transition-colors" data-i18n="nav.news" href="news.html">News</a>
 <a class="hover:text-accent transition-colors" data-i18n="nav.publications" href="publications.html">Publications</a>
 <a class="hover:text-accent transition-colors" data-i18n="nav.teaching" href="teaching.html">Teaching</a>
 <a class="hover:text-accent transition-colors" data-i18n="nav.lectures" href="lectures.html">Lectures</a>
-<div class="lang-toggler-container flex items-center pl-6 border-l border-slate-300 ml-6 hidden md:flex"></div>
+<a class="hover:text-accent transition-colors" data-i18n="nav.people" href="people.html">Lab Members</a>
+<a aria-current="page" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-primary font-bold transition-all flex items-center gap-2 border border-slate-200" data-i18n="nav.pi" href="#"><i aria-hidden="true" class="fa-solid fa-id-badge text-accent"></i> PI Profile</a>
+<div class="lang-toggler-container flex items-center pl-4 border-l border-slate-300 ml-2 hidden xl:flex"></div>
 </div>
 <!-- ปุ่มเมนูสำหรับหน้าจอ Mobile -->
-<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="md:hidden text-2xl text-primary focus:outline-none" id="mobile-menu-btn" type="button">
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="xl:hidden text-2xl text-primary focus:outline-none" id="mobile-menu-btn" type="button">
 <i aria-hidden="true" class="fa-solid fa-bars"></i>
 </button>
 </div>
 <!-- เมนูสำหรับหน้าจอ Mobile -->
-<div class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full" id="mobile-menu">
+<div class="hidden xl:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col space-y-4 shadow-lg absolute w-full" id="mobile-menu">
 <div class="lang-toggler-container flex items-center mb-4"></div>
 <a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.lab" href="index.html">ONTHAI Lab</a>
-<a aria-current="page" class="text-accent font-bold mobile-link" data-i18n="nav.pi" href="#">PI Profile</a>
-<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.experience" href="#experience">Experience</a>
-<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.education" href="#education">Education</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.news" href="news.html">News</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.publications" href="publications.html">Publications</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.teaching" href="teaching.html">Teaching</a>
 <a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.lectures" href="lectures.html">Lectures</a>
+<a class="text-secondary hover:text-accent font-medium mobile-link" data-i18n="nav.people" href="people.html">Lab Members</a>
+<a aria-current="page" class="font-bold text-accent mobile-link flex items-center gap-2" data-i18n="nav.pi" href="#"><i aria-hidden="true" class="fa-solid fa-id-badge"></i> PI Profile</a>
 </div>
 </nav>
 
@@ -159,8 +159,18 @@
 </div>
 </header>
 
+<!-- Local navigation for the PI profile -->
+<nav aria-label="PI profile sections" class="px-4 sm:px-6">
+<div class="max-w-6xl mx-auto flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-slate-100 pt-5 pb-6 text-sm">
+    <span class="font-semibold text-primary" data-i18n="pi.page_nav_label">On this page</span>
+    <a class="text-secondary hover:text-accent transition-colors" data-i18n="pi.page_nav_overview" href="#profile">Overview</a>
+    <a class="text-secondary hover:text-accent transition-colors" data-i18n="nav.experience" href="#experience">Experience</a>
+    <a class="text-secondary hover:text-accent transition-colors" data-i18n="nav.education" href="#education">Education</a>
+</div>
+</nav>
+
 <!-- Section: Curated Academic Profile -->
-<section class="py-16 px-6 bg-white border-y border-slate-100" id="profile">
+<section class="py-16 px-6 bg-white border-y border-slate-100 scroll-mt-28" id="profile">
 <div class="max-w-6xl mx-auto">
 <div class="max-w-3xl fade-in-section mb-10">
     <span class="text-xs font-bold tracking-wider uppercase text-accent" data-i18n="pi.profile_label">Academic Profile</span>
@@ -361,7 +371,7 @@
 </section>
 
 <!-- Section: Professional Experience Timeline -->
-<section class="py-16 px-6 max-w-6xl mx-auto" id="experience">
+<section class="py-16 px-6 max-w-6xl mx-auto scroll-mt-28" id="experience">
 <div class="fade-in-section mb-12">
     <span class="text-xs font-bold tracking-wider uppercase text-accent" data-i18n="pi.experience_label">Professional Path</span>
     <h2 class="text-3xl font-bold text-primary mt-1" data-i18n="experience.title">Professional Experience</h2>
@@ -400,7 +410,7 @@ Department of Community Public Health. Leading ONTHAI Lab research and teaching 
 </section>
 
 <!-- Section: Selected Graduate Education -->
-<section class="py-16 px-6 bg-white border-t border-slate-100" id="education">
+<section class="py-16 px-6 bg-white border-t border-slate-100 scroll-mt-28" id="education">
 <div class="max-w-6xl mx-auto">
 <div class="fade-in-section mb-10">
     <span class="text-xs font-bold tracking-wider uppercase text-accent" data-i18n="pi.education_label">Graduate Training</span>
