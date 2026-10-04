@@ -107,6 +107,16 @@
         "profileUrl": "https://scholar.google.com/citations?user=eB9zP4gAAAAJ&hl=en",
         "image": "assets/people/avatar2.png",
         "visible": true
+      },
+      {
+        "name": "Kittithat Ouanin",
+        "role": "Alumni Collaborator",
+        "program": "Ban Wang Dara Sub-district Health Promotion Hospital",
+        "topic": "Dietary Supplements for Weight Loss",
+        "period": "Graduated (2024) · Ongoing Collaboration",
+        "profileUrl": "",
+        "image": "assets/people/kittithat.jpg",
+        "visible": true
       }
     ]
   },
