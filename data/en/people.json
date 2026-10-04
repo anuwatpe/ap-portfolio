@@ -123,10 +123,20 @@
         "name": "Wannipha Thongsaard",
         "role": "Undergraduate Student",
         "program": "Bachelor of Public Health (Community Public Health)",
-        "topic": "Prevalence of pesticide residues in blood among farmers",
+        "topic": "Prevalence of Pesticide Residues in Blood Among Farmers",
         "period": "In progress (2026 - Present)",
         "profileUrl": "",
         "image": "assets/people/wannipha.jpg",
+        "visible": true
+      },
+      {
+        "name": "Rattaphum Thiannok",
+        "role": "Undergraduate Student",
+        "program": "Bachelor of Public Health (Community Public Health)",
+        "topic": "Liver Fluke Infection and Cholangiocarcinoma Risk",
+        "period": "In progress (2026 - Present)",
+        "profileUrl": "",
+        "image": "assets/people/rattaphum.jpg",
         "visible": true
       }
     ]

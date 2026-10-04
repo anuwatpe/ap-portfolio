@@ -42,8 +42,14 @@ CATEGORY_TO_GROUP = {
 
 PROGRAM_TRANSLATIONS = {
     "สาธารณสุขศาสตรบัณฑิต สาขาสาธารณสุขชุมชน": "Bachelor of Public Health (Community Public Health)",
+    "สาธารณสุขศาสตรบัณฑิต สาขาวิชาสาธารณสุขชุมชน": "Bachelor of Public Health (Community Public Health)",
     "สาธารณสุขศาสตรบัณฑิต": "Bachelor of Public Health",
     "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านวังดารา": "Ban Wang Dara Sub-district Health Promotion Hospital",
+}
+
+TOPIC_TRANSLATIONS = {
+    "ความชุกของสารกำจัดศัตรูพืชตกค้างในเลือดเกษตรกร": "Prevalence of Pesticide Residues in Blood Among Farmers",
+    "การติดเชื้อพยาธิใบไม้ตับต่อมะเร็งท่อน้ำดี": "Liver Fluke Infection and Cholangiocarcinoma Risk",
 }
 
 
@@ -234,7 +240,7 @@ def extract_members_from_excel(xl_path):
                     "name": name_en or name_th,
                     "role": role_en,
                     "program": program_en,
-                    "topic": topic,
+                    "topic": TOPIC_TRANSLATIONS.get(topic, topic),
                     "period": period_en,
                     "profileUrl": cells.get("O", ""),
                     "image": img_rel_path,

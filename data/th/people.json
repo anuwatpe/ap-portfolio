@@ -128,6 +128,16 @@
         "profileUrl": "",
         "image": "assets/people/wannipha.jpg",
         "visible": true
+      },
+      {
+        "name": "รัตภูมิ เถียรนอก",
+        "role": "นักศึกษาปริญญาตรี",
+        "program": "สาธารณสุขศาสตรบัณฑิต สาขาวิชาสาธารณสุขชุมชน",
+        "topic": "การติดเชื้อพยาธิใบไม้ตับต่อมะเร็งท่อน้ำดี",
+        "period": "กำลังศึกษา (2569 - ปัจจุบัน)",
+        "profileUrl": "",
+        "image": "assets/people/rattaphum.jpg",
+        "visible": true
       }
     ]
   },
