@@ -141,53 +141,13 @@
     "emptyText": "Graduation year, thesis topic, and current affiliation.",
     "members": [
       {
-        "name": "Dr. Lucas Miller",
-        "role": "Assistant Professor",
-        "program": "Community Public Health",
-        "topic": "Clinical decision support systems",
-        "period": "Graduated 2025",
+        "name": "Kittithat Ouanin",
+        "role": "Public Health Technical Officer",
+        "program": "Ban Wang Dara Sub-district Health Promotion Hospital",
+        "topic": "Dietary Supplements for Weight Loss",
+        "period": "Graduated (2024)",
         "profileUrl": "",
-        "image": "assets/people/avatar1.png",
-        "visible": true
-      },
-      {
-        "name": "Dr. Isabella Johnson",
-        "role": "Postdoctoral Researcher",
-        "program": "Community Public Health",
-        "topic": "Healthcare workflow optimization",
-        "period": "Graduated 2025",
-        "profileUrl": "",
-        "image": "assets/people/avatar2.png",
-        "visible": true
-      },
-      {
-        "name": "Dr. Charlotte Miller",
-        "role": "Data Scientist",
-        "program": "Community Public Health",
-        "topic": "Clinical decision support systems",
-        "period": "Graduated 2025",
-        "profileUrl": "",
-        "image": "assets/people/avatar2.png",
-        "visible": true
-      },
-      {
-        "name": "Dr. Sarah Conner",
-        "role": "Former Research Coordinator",
-        "program": "Public Health Analytics",
-        "topic": "Moved to Industry Role",
-        "period": "2023-2025",
-        "profileUrl": "",
-        "image": "assets/people/avatar1.png",
-        "visible": true
-      },
-      {
-        "name": "John Doe",
-        "role": "Former Data Analyst",
-        "program": "Biomedical Informatics",
-        "topic": "Moved to PhD Program",
-        "period": "2024-2025",
-        "profileUrl": "",
-        "image": "assets/people/avatar2.png",
+        "image": "assets/people/kittithat.jpg",
         "visible": true
       }
     ]

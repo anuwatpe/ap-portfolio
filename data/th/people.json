@@ -141,53 +141,13 @@
     "emptyText": "ปีที่สำเร็จการศึกษา หัวข้อวิทยานิพนธ์ และสังกัดปัจจุบัน",
     "members": [
       {
-        "name": "Dr. Lucas Miller",
-        "role": "ผู้ช่วยศาสตราจารย์",
-        "program": "Community Public Health",
-        "topic": "ระบบสนับสนุนการตัดสินใจทางคลินิก",
-        "period": "Graduated 2025",
+        "name": "กิตติธัช อ้วนอินทร์",
+        "role": "นักวิชาการสาธารณสุข",
+        "program": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านวังดารา",
+        "topic": "Dietary Supplements for Weight Loss",
+        "period": "สำเร็จการศึกษา (2567)",
         "profileUrl": "",
-        "image": "assets/people/avatar1.png",
-        "visible": true
-      },
-      {
-        "name": "Dr. Isabella Johnson",
-        "role": "นักวิจัยหลังปริญญาเอก",
-        "program": "Community Public Health",
-        "topic": "การปรับปรุงขั้นตอนการทำงานในสถานพยาบาล",
-        "period": "Graduated 2025",
-        "profileUrl": "",
-        "image": "assets/people/avatar2.png",
-        "visible": true
-      },
-      {
-        "name": "Dr. Charlotte Miller",
-        "role": "นักวิทยาศาสตร์ข้อมูล",
-        "program": "Community Public Health",
-        "topic": "ระบบสนับสนุนการตัดสินใจทางคลินิก",
-        "period": "Graduated 2025",
-        "profileUrl": "",
-        "image": "assets/people/avatar2.png",
-        "visible": true
-      },
-      {
-        "name": "Dr. Sarah Conner",
-        "role": "อดีตผู้ประสานงานวิจัย",
-        "program": "Public Health Analytics",
-        "topic": "ย้ายไปทำงานภาคอุตสาหกรรม",
-        "period": "2023-2025",
-        "profileUrl": "",
-        "image": "assets/people/avatar1.png",
-        "visible": true
-      },
-      {
-        "name": "John Doe",
-        "role": "อดีตนักวิเคราะห์ข้อมูล",
-        "program": "Biomedical Informatics",
-        "topic": "ศึกษาต่อระดับปริญญาเอก",
-        "period": "2024-2025",
-        "profileUrl": "",
-        "image": "assets/people/avatar2.png",
+        "image": "assets/people/kittithat.jpg",
         "visible": true
       }
     ]
