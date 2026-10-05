@@ -80,7 +80,9 @@
         }
     </style>
 <script src="assets/js/i18n.js?v=nav-short-20260914"></script>
-<script defer src="assets/js/visitor-counter.js?v=20261004"></script>
+<link rel="stylesheet" href="assets/css/visitor-counter.css?v=20261004-umami"/>
+<script defer src="assets/js/analytics-config.js?v=20261004-umami"></script>
+<script defer src="assets/js/visitor-counter.js?v=20261004-umami"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 leading-relaxed selection:bg-accent selection:text-white">
 <!-- Navigation Bar -->
@@ -202,7 +204,7 @@
 <div class="max-w-4xl mx-auto px-6">
 <p class="mb-4" data-i18n="footer.rights">© 2026 Anuwat Pengput. All rights reserved.</p>
 <p class="text-sm" data-i18n="footer.built">Built for GitHub Pages with HTML &amp; Tailwind CSS.</p>
-<p class="mt-4" data-visitor-counter hidden></p>
+<div class="mt-5" id="visitor-statistics" role="group" data-visitor-counter hidden></div>
 </div>
 </footer>
 <!-- JavaScript สำหรับจัดการ Interactions -->

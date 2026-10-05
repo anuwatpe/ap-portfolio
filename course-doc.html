@@ -57,7 +57,9 @@
         ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
     <script src="assets/js/i18n.js?v=nav-short-20260914"></script>
-    <script defer src="assets/js/visitor-counter.js?v=20261004"></script>
+<link rel="stylesheet" href="assets/css/visitor-counter.css?v=20261004-umami"/>
+<script defer src="assets/js/analytics-config.js?v=20261004-umami"></script>
+<script defer src="assets/js/visitor-counter.js?v=20261004-umami"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
@@ -447,7 +449,7 @@
     <!-- Footer Copyright -->
     <footer class="bg-primary text-slate-400 py-6 text-center text-xs border-t border-slate-800 mt-12">
         <p data-i18n="footer.rights">© 2026 Anuwat Pengput. All rights reserved.</p>
-        <p class="mt-4" data-visitor-counter hidden></p>
+<div class="mt-5" id="visitor-statistics" role="group" data-visitor-counter hidden></div>
     </footer>
 
     <!-- Course routes and mobile sidebar behavior -->
