@@ -51,6 +51,7 @@ TOPIC_TRANSLATIONS = {
     "ความชุกของสารกำจัดศัตรูพืชตกค้างในเลือดเกษตรกร": "Prevalence of Pesticide Residues in Blood Among Farmers",
     "การติดเชื้อพยาธิใบไม้ตับต่อมะเร็งท่อน้ำดี": "Liver Fluke Infection and Cholangiocarcinoma Risk",
     "ความสัมพันธ์ระหว่างความเครียด พฤติกรรมการกินตามอารมณ์ และพฤติกรรมการดำเนินชีวิตกับภาวะอ้วนลงพุงในประชาชนอายุ 18–60 ปี อำเภอเมือง จังหวัดขอนแก่น": "Associations Among Stress, Emotional Eating, and Lifestyle Behaviors with Abdominal Obesity in Adults Aged 18–60, Mueang District, Khon Kaen",
+    "พฤติกรรมการกินตามอารมณ์กับภาวะอ้วนลงพุง": "Emotional Eating Behavior and Abdominal Obesity",
 }
 
 
