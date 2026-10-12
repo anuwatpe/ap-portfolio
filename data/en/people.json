@@ -48,6 +48,36 @@
         "profileUrl": "",
         "image": "assets/people/rattaphum.jpg",
         "visible": true
+      },
+      {
+        "name": "Putticha Maneerat",
+        "role": "Undergraduate Student",
+        "program": "Bachelor of Public Health (Community Public Health)",
+        "topic": "Prevalence of Pesticide Residues in Blood Among Farmers",
+        "period": "In progress (2026 - Present)",
+        "profileUrl": "",
+        "image": "",
+        "visible": true
+      },
+      {
+        "name": "Anchana phankaen",
+        "role": "Undergraduate Student",
+        "program": "Bachelor of Public Health (Community Public Health)",
+        "topic": "Associations Among Stress, Emotional Eating, and Lifestyle Behaviors with Abdominal Obesity in Adults Aged 18–60, Mueang District, Khon Kaen",
+        "period": "In progress (2026 - Present)",
+        "profileUrl": "",
+        "image": "assets/people/anchana.jpg",
+        "visible": true
+      },
+      {
+        "name": "Sawitree Buayairaksa",
+        "role": "Undergraduate Student",
+        "program": "Bachelor of Public Health (Community Public Health)",
+        "topic": "Associations Among Stress, Emotional Eating, and Lifestyle Behaviors with Abdominal Obesity in Adults Aged 18–60, Mueang District, Khon Kaen",
+        "period": "In progress (2026 - Present)",
+        "profileUrl": "",
+        "image": "assets/people/sawitree.jpg",
+        "visible": true
       }
     ]
   },
