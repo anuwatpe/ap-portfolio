@@ -4,8 +4,8 @@
   "course_title_en": "AI and Life in the Digital Age",
   "institution_th": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
   "institution_en": "Sirindhorn College of Public Health Khon Kaen",
-  "total_students": 4,
-  "last_synced": "2026-10-25T17:51:27.935408+00:00",
+  "total_students": 5,
+  "last_synced": "2026-10-25T18:02:13.922478+00:00",
   "students": [
     {
       "no": 1,
@@ -52,6 +52,18 @@
       "student_id": "",
       "avatar": "https://raw.githubusercontent.com/gift290550/kr-issana/main/POR00270.jpg",
       "bio": "ชื่อเล่น: กิ๊ฟ | สาขาวิชาสาธารณสุขชุมชน",
+      "school": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
+      "status": "active"
+    },
+    {
+      "no": 5,
+      "url": "https://kanyanat12853.github.io/kanyanat/",
+      "name": "นางสาว กัญญาณัฐ สานคล่อง",
+      "name_en": "Kanyanat Sanklong",
+      "nickname": "มุก",
+      "student_id": "",
+      "avatar": "https://kanyanat12853.github.io/kanyanat/IMG_8547.jpg",
+      "bio": "ผู้มีความสนใจและมุ่งมั่นในการเรียนรู้ในสายวิทยาศาสตร์และสาธารณสุขศาสตร์ ปัจจุบันกำลังศึกษาต่อระดับอุดมศึกษาที่ วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
       "school": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
       "status": "active"
     }
