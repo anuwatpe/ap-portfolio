@@ -715,9 +715,15 @@
                 if (!container || !items.length) return;
 
                 container.innerHTML = items.map(item => {
-                    const courseUrl = /^course-doc\.html\?course=[a-z0-9-]+$/i.test(String(item.docUrl || ''))
-                        ? String(item.docUrl)
+                    const rawDocUrl = String(item.docUrl || '');
+                    const courseUrl = (/^(course-doc\.html\?course=[a-z0-9-]+|ge25301\.html)$/i.test(rawDocUrl))
+                        ? rawDocUrl
                         : '';
+                    const isGallery = courseUrl === 'ge25301.html';
+                    const linkIcon = isGallery ? 'fa-solid fa-images' : 'fa-solid fa-book-open-reader';
+                    const linkLabel = isGallery
+                        ? translate('course_gallery.label', 'Student Portfolio Gallery')
+                        : translate('course_doc.label', 'Read course materials');
                     const imageUrl = safeAssetUrl(item.image);
                     const imageMarkup = imageUrl ? `
                             <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(item.imageAlt || item.title || '')}" loading="lazy" decoding="async" class="w-full h-40 object-cover rounded-xl mb-5 border border-slate-200 bg-slate-100">
@@ -731,8 +737,8 @@
                     const courseLinkMarkup = courseUrl ? `
                             <div class="mt-auto pt-4 border-t border-slate-200/60">
                                 <a href="${escapeHtml(courseUrl)}" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-accentDark transition-colors">
-                                    <i aria-hidden="true" class="fa-solid fa-book-open-reader"></i>
-                                    <span>${escapeHtml(translate('course_doc.label', 'Read course materials'))}</span>
+                                    <i aria-hidden="true" class="${linkIcon}"></i>
+                                    <span>${escapeHtml(linkLabel)}</span>
                                     <i aria-hidden="true" class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>

@@ -1,0 +1,59 @@
+{
+  "course_code": "GE25301",
+  "course_title_th": "AI กับชีวิตยุคดิจิทัล",
+  "course_title_en": "AI and Life in the Digital Age",
+  "institution_th": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
+  "institution_en": "Sirindhorn College of Public Health Khon Kaen",
+  "total_students": 4,
+  "last_synced": "2026-10-25T17:51:27.935408+00:00",
+  "students": [
+    {
+      "no": 1,
+      "url": "https://kanokon0110.github.io/on.port/",
+      "name": "กนกอร อ่อนสิน",
+      "name_en": "Kanokon Onsin",
+      "nickname": "นาเดียร์",
+      "student_id": "",
+      "avatar": "https://kanokon0110.github.io/on.port/IMG_3465.JPG",
+      "bio": "นักศึกษาชั้นปีที่ 1 กนกอร อ่อนสิน (นาเดียร์) วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
+      "school": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
+      "status": "active"
+    },
+    {
+      "no": 2,
+      "url": "https://69202302002-arch.github.io/tuptim-kanada-port/",
+      "name": "น.ส. กนดา ไกยรัตน์",
+      "name_en": "Kanada Tuptim",
+      "nickname": "ทับทิม",
+      "student_id": "69202302002",
+      "avatar": "https://69202302002-arch.github.io/tuptim-kanada-port/IMG_20261012_174255_252.webp",
+      "bio": "นักศึกษา รายวิชา GE25301 AI กับชีวิตยุคดิจิทัล · วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
+      "school": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
+      "status": "active"
+    },
+    {
+      "no": 3,
+      "url": "https://69202302004-alt.github.io/krittiya-port/",
+      "name": "นางสาว กฤตติยา โพธิ์เวียงคำ",
+      "name_en": "",
+      "nickname": "มิ้ล",
+      "student_id": "69202302004",
+      "avatar": "https://69202302004-alt.github.io/krittiya-port/IMG_20250625_185437.jpg",
+      "bio": "เกี่ยวกับฉัน ชื่อเล่น: มิ้ล อายุ: 19 ปี ศาสนา: พุทธ สัญชาติ: ไทย การศึกษา กำลังศึกษาที่ วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น ช่องทางติดต่อ 69202302004@scphkk.ac.th",
+      "school": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
+      "status": "active"
+    },
+    {
+      "no": 4,
+      "url": "https://gift290550.github.io/kr-issa/",
+      "name": "กฤษณา หงษ์ทัพ",
+      "name_en": "",
+      "nickname": "กิ๊ฟ",
+      "student_id": "",
+      "avatar": "https://raw.githubusercontent.com/gift290550/kr-issana/main/POR00270.jpg",
+      "bio": "ชื่อเล่น: กิ๊ฟ | สาขาวิชาสาธารณสุขชุมชน",
+      "school": "วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น",
+      "status": "active"
+    }
+  ]
+}

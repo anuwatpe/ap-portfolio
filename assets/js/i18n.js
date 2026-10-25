@@ -209,7 +209,23 @@ const i18nDict = {
         "title.people": "Lab Members & Mentorship | ONTHAI Lab",
         "title.news": "News & Updates | ONTHAI Lab",
         "title.course_doc": "Course Documentation | ONTHAI Lab",
-        "doc.back_teaching": "Back to Courses"
+        "title.ge25301": "GE25301 AI & Life in the Digital Age | Student Portfolios | ONTHAI Lab",
+        "doc.back_teaching": "Back to Courses",
+        "course_gallery.label": "View Student Portfolio Gallery",
+        "ge25301.back_teaching": "Back to Courses",
+        "ge25301.badge": "<i class=\"fa-solid fa-robot mr-1\" aria-hidden=\"true\"></i> GE25301 · Digital Life & AI",
+        "ge25301.hero_title": "AI & Life in the Digital Age",
+        "ge25301.hero_subtitle": "Student Digital Portfolio Gallery",
+        "ge25301.hero_desc": "Student personal web portfolios showcasing skills, digital identity, and AI exploration in course GE25301 at Sirindhorn College of Public Health Khon Kaen.",
+        "ge25301.search_placeholder": "Search by name, nickname, or student ID...",
+        "ge25301.stat_portfolios": "Portfolios",
+        "ge25301.stat_school": "SCPH Khon Kaen",
+        "ge25301.stat_term": "Academic Year 2569",
+        "ge25301.view_portfolio": "Visit Portfolio",
+        "ge25301.copy_link": "Copy Link",
+        "ge25301.copied": "Copied!",
+        "ge25301.no_results": "No student portfolios match your search.",
+        "ge25301.reset_search": "Reset search"
     },
     th: {
         "nav.lab": "ONTHAI Lab",
@@ -421,7 +437,23 @@ const i18nDict = {
         "title.people": "สมาชิกห้องปฏิบัติการวิจัย | ONTHAI Lab",
         "title.news": "ข่าวสารและกิจกรรม | ONTHAI Lab",
         "title.course_doc": "คลังเอกสารบทเรียน | ONTHAI Lab",
-        "doc.back_teaching": "กลับหน้ารายวิชา"
+        "title.ge25301": "GE25301 AI กับชีวิตยุคดิจิทัล | คลังผลงานนักศึกษา | ONTHAI Lab",
+        "doc.back_teaching": "กลับหน้ารายวิชา",
+        "course_gallery.label": "ชมผลงานพอร์ตโฟลิโอนักศึกษา",
+        "ge25301.back_teaching": "กลับหน้ารายวิชา",
+        "ge25301.badge": "<i class=\"fa-solid fa-robot mr-1\" aria-hidden=\"true\"></i> GE25301 · หมวดวิชาศึกษาทั่วไป",
+        "ge25301.hero_title": "AI กับชีวิตยุคดิจิทัล",
+        "ge25301.hero_subtitle": "คลังผลงานพอร์ตโฟลิโอดิจิทัลของนักศึกษา",
+        "ge25301.hero_desc": "ผลงานการสร้างสรรค์เว็บไซต์พอร์ตโฟลิโอส่วนบุคคล (Personal Portfolio) ของนักศึกษารายวิชา GE25301 วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น นำเสนอประวัติ การศึกษา ทักษะ และการประยุกต์ใช้ดิจิทัลและ AI",
+        "ge25301.search_placeholder": "ค้นหาด้วยชื่อ, ชื่อเล่น หรือรหัสนักศึกษา...",
+        "ge25301.stat_portfolios": "ผลงานพอร์ตโฟลิโอ",
+        "ge25301.stat_school": "วสส. ขอนแก่น",
+        "ge25301.stat_term": "ปีการศึกษา 2569",
+        "ge25301.view_portfolio": "เปิดชมพอร์ตโฟลิโอ",
+        "ge25301.copy_link": "คัดลอกลิงก์",
+        "ge25301.copied": "คัดลอกแล้ว!",
+        "ge25301.no_results": "ไม่พบผลงานนักศึกษาที่ตรงกับคำค้นหา",
+        "ge25301.reset_search": "ล้างการค้นหา"
     }
 };
 

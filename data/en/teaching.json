@@ -1,5 +1,15 @@
 [
   {
+    "id": "ge25301",
+    "title": "AI and Life in the Digital Age (GE25301)",
+    "level": "General Education (GE) · Undergraduate",
+    "role": "Course Instructor · 2026-Present",
+    "image": "assets/illustrations/digital-health.png",
+    "icon": "fa-solid fa-robot",
+    "description": "Artificial Intelligence in daily life, practical applications of Generative AI, digital portfolio creation, and AI ethics in the digital era.",
+    "docUrl": "ge25301.html"
+  },
+  {
     "id": "digital-literacy",
     "title": "Digital Literacy",
     "level": "Bachelor of Public Health · Undergraduate",

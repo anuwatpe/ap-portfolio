@@ -1,5 +1,15 @@
 [
   {
+    "id": "ge25301",
+    "title": "AI กับชีวิตยุคดิจิทัล (AI and Life in the Digital Age)",
+    "level": "หมวดวิชาศึกษาทั่วไป (GE) · ระดับปริญญาตรี",
+    "role": "อาจารย์ผู้สอน · 2569-ปัจจุบัน",
+    "image": "assets/illustrations/digital-health.png",
+    "icon": "fa-solid fa-robot",
+    "description": "ปัญญาประดิษฐ์ในชีวิตประจำวัน การประยุกต์ใช้ Generative AI ทักษะการสร้างสรรค์ผลงานและพอร์ตโฟลิโอดิจิทัล และจริยธรรม AI ในสังคมยุคดิจิทัล",
+    "docUrl": "ge25301.html"
+  },
+  {
     "id": "digital-literacy",
     "title": "การรู้เท่าทันดิจิทัล (Digital Literacy)",
     "level": "สาธารณสุขศาสตรบัณฑิต · ระดับปริญญาตรี",
